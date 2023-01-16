@@ -1,0 +1,1024 @@
+[19:55:57.874][info] [#0:/home/msfe/.local/share/nvim/mason/packages/lua-language-server/extension/server/main.lua:66]: Lua Lsp startup, root: 	/home/msfe/.local/share/nvim/mason/packages/lua-language-server/extension/server
+[19:55:57.875][info] [#0:/home/msfe/.local/share/nvim/mason/packages/lua-language-server/extension/server/main.lua:67]: ROOT:	/home/msfe/.local/share/nvim/mason/packages/lua-language-server/extension/server
+[19:55:57.875][info] [#0:/home/msfe/.local/share/nvim/mason/packages/lua-language-server/extension/server/main.lua:68]: LOGPATH:	/home/msfe/.local/share/nvim/mason/packages/lua-language-server/extension/server/log
+[19:55:57.875][info] [#0:/home/msfe/.local/share/nvim/mason/packages/lua-language-server/extension/server/main.lua:69]: METAPATH:	/home/msfe/.local/share/nvim/mason/packages/lua-language-server/extension/server/meta
+[19:55:57.876][info] [#0:/home/msfe/.local/share/nvim/mason/packages/lua-language-server/extension/server/main.lua:70]: VERSION:	3.6.4-dev
+[19:55:57.974][info] [#0:script/service/service.lua:141]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 1.563 MB
+        # 00 : 1.563 MB
+        # 01 : 0.000 MB
+        # 02 : 0.000 MB
+        # 03 : 0.000 MB
+        # 04 : 0.000 MB
+    --------------- Coroutine ---------------
+        Total:     0
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      0
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[19:55:57.999][info] [#0:script/language.lua:137]: VSC language: nil
+[19:55:57.999][info] [#0:script/language.lua:138]: LS  language: en-us
+[19:55:57.999][info] [#0:script/workspace/workspace.lua:38]: Workspace init root: 	file:///home/msfe/.config/nvim/lua/
+[19:55:57.999][info] [#0:script/workspace/workspace.lua:42]: Log path: 	/home/msfe/.local/share/nvim/mason/packages/lua-language-server/extension/server/log/file_home_msfe_.config_nvim_lua_.log
+[19:55:58.000][info] [#0:script/workspace/workspace.lua:51]: Workspace create: 	file:///home/msfe/.config/nvim/lua/
+[19:55:58.005][info] [#0:script/provider/provider.lua:41]: Load config from client	file:///home/msfe/.config/nvim/lua/
+[19:55:58.006][info] [#0:script/provider/provider.lua:42]: {
+  Lua = {
+    diagnostics = {
+      globals = { "vim" }
+    },
+    telemetry = {
+      enable = false
+    },
+    workspace = {
+      checkThirdParty = false,
+      library = { "/home/msfe/.config/nvim", "/etc/xdg/nvim", "/home/msfe/.local/share/nvim/site", "/home/msfe/.local/share/nvim/site/pack/packer/start/Comment.nvim", "/home/msfe/.local/share/nvim/site/pack/packer/start/LuaSnip", "/home/msfe/.local/share/nvim/site/pack/packer/start/cmp-buffer", "/home/msfe/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp", "/home/msfe/.local/share/nvim/site/pack/packer/start/cmp-nvim-lua", "/home/msfe/.local/share/nvim/site/pack/packer/start/cmp-path", "/home/msfe/.local/share/nvim/site/pack/packer/start/cmp_luasnip", "/home/msfe/.local/share/nvim/site/pack/packer/start/copilot.vim", "/home/msfe/.local/share/nvim/site/pack/packer/start/fidget.nvim", "/home/msfe/.local/share/nvim/site/pack/packer/start/friendly-snippets", "/home/msfe/.local/share/nvim/site/pack/packer/start/gitsigns.nvim", "/home/msfe/.local/share/nvim/site/pack/packer/start/hop.nvim", "/home/msfe/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim", "/home/msfe/.local/share/nvim/site/pack/packer/start/kanagawa.nvim", "/home/msfe/.local/share/nvim/site/pack/packer/start/lualine.nvim", "/home/msfe/.local/share/nvim/site/pack/packer/start/mason-lspconfig.nvim", "/home/msfe/.local/share/nvim/site/pack/packer/start/mason.nvim", "/home/msfe/.local/share/nvim/site/pack/packer/start/mellow.nvim", "/home/msfe/.local/share/nvim/site/pack/packer/start/neoscroll.nvim", "/home/msfe/.local/share/nvim/site/pack/packer/start/null-ls.nvim", "/home/msfe/.local/share/nvim/site/pack/packer/start/nvim-autopairs", "/home/msfe/.local/share/nvim/site/pack/packer/start/nvim-cmp", "/home/msfe/.local/share/nvim/site/pack/packer/start/nvim-lspconfig", "/home/msfe/.local/share/nvim/site/pack/packer/start/nvim-surround", "/home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter", "/home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter-textobjects", "/home/msfe/.local/share/nvim/site/pack/packer/start/nvim-ts-autotag", "/home/msfe/.local/share/nvim/site/pack/packer/start/nvim-ts-context-commentstring", "/home/msfe/.local/share/nvim/site/pack/packer/start/nvim-web-devicons", "/home/msfe/.local/share/nvim/site/pack/packer/start/packer.nvim", "/home/msfe/.local/share/nvim/site/pack/packer/start/plenary.nvim", "/home/msfe/.local/share/nvim/site/pack/packer/start/telescope-file-browser.nvim", "/home/msfe/.local/share/nvim/site/pack/packer/start/telescope-ui-select.nvim", "/home/msfe/.local/share/nvim/site/pack/packer/start/telescope.nvim", "/home/msfe/.local/share/nvim/site/pack/packer/start/trouble.nvim", "/home/msfe/.local/share/nvim/site/pack/packer/start/vim-visual-multi", "/usr/share/nvim/runtime", "/usr/share/nvim/runtime/pack/dist/opt/matchit", "/usr/lib/nvim", "/home/msfe/.local/share/nvim/site/pack/packer/start/cmp-buffer/after", "/home/msfe/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp/after", "/home/msfe/.local/share/nvim/site/pack/packer/start/cmp-nvim-lua/after", "/home/msfe/.local/share/nvim/site/pack/packer/start/cmp-path/after", "/home/msfe/.local/share/nvim/site/pack/packer/start/cmp_luasnip/after", "/home/msfe/.config/nvim/after", "/usr/share/vim/vimfiles" }
+    }
+  }
+}
+[19:55:58.008][info] [#0:script/provider/provider.lua:41]: Load config from client	file:///home/msfe/.config/nvim/lua/
+[19:55:58.010][info] [#0:script/provider/provider.lua:42]: {
+  Lua = {
+    diagnostics = {
+      globals = { "vim" }
+    },
+    telemetry = {
+      enable = false
+    },
+    workspace = {
+      checkThirdParty = false,
+      library = { "/home/msfe/.config/nvim", "/etc/xdg/nvim", "/home/msfe/.local/share/nvim/site", "/home/msfe/.local/share/nvim/site/pack/packer/start/Comment.nvim", "/home/msfe/.local/share/nvim/site/pack/packer/start/LuaSnip", "/home/msfe/.local/share/nvim/site/pack/packer/start/cmp-buffer", "/home/msfe/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp", "/home/msfe/.local/share/nvim/site/pack/packer/start/cmp-nvim-lua", "/home/msfe/.local/share/nvim/site/pack/packer/start/cmp-path", "/home/msfe/.local/share/nvim/site/pack/packer/start/cmp_luasnip", "/home/msfe/.local/share/nvim/site/pack/packer/start/copilot.vim", "/home/msfe/.local/share/nvim/site/pack/packer/start/fidget.nvim", "/home/msfe/.local/share/nvim/site/pack/packer/start/friendly-snippets", "/home/msfe/.local/share/nvim/site/pack/packer/start/gitsigns.nvim", "/home/msfe/.local/share/nvim/site/pack/packer/start/hop.nvim", "/home/msfe/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim", "/home/msfe/.local/share/nvim/site/pack/packer/start/kanagawa.nvim", "/home/msfe/.local/share/nvim/site/pack/packer/start/lualine.nvim", "/home/msfe/.local/share/nvim/site/pack/packer/start/mason-lspconfig.nvim", "/home/msfe/.local/share/nvim/site/pack/packer/start/mason.nvim", "/home/msfe/.local/share/nvim/site/pack/packer/start/mellow.nvim", "/home/msfe/.local/share/nvim/site/pack/packer/start/neoscroll.nvim", "/home/msfe/.local/share/nvim/site/pack/packer/start/null-ls.nvim", "/home/msfe/.local/share/nvim/site/pack/packer/start/nvim-autopairs", "/home/msfe/.local/share/nvim/site/pack/packer/start/nvim-cmp", "/home/msfe/.local/share/nvim/site/pack/packer/start/nvim-lspconfig", "/home/msfe/.local/share/nvim/site/pack/packer/start/nvim-surround", "/home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter", "/home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter-textobjects", "/home/msfe/.local/share/nvim/site/pack/packer/start/nvim-ts-autotag", "/home/msfe/.local/share/nvim/site/pack/packer/start/nvim-ts-context-commentstring", "/home/msfe/.local/share/nvim/site/pack/packer/start/nvim-web-devicons", "/home/msfe/.local/share/nvim/site/pack/packer/start/packer.nvim", "/home/msfe/.local/share/nvim/site/pack/packer/start/plenary.nvim", "/home/msfe/.local/share/nvim/site/pack/packer/start/telescope-file-browser.nvim", "/home/msfe/.local/share/nvim/site/pack/packer/start/telescope-ui-select.nvim", "/home/msfe/.local/share/nvim/site/pack/packer/start/telescope.nvim", "/home/msfe/.local/share/nvim/site/pack/packer/start/trouble.nvim", "/home/msfe/.local/share/nvim/site/pack/packer/start/vim-visual-multi", "/usr/share/nvim/runtime", "/usr/share/nvim/runtime/pack/dist/opt/matchit", "/usr/lib/nvim", "/home/msfe/.local/share/nvim/site/pack/packer/start/cmp-buffer/after", "/home/msfe/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp/after", "/home/msfe/.local/share/nvim/site/pack/packer/start/cmp-nvim-lua/after", "/home/msfe/.local/share/nvim/site/pack/packer/start/cmp-path/after", "/home/msfe/.local/share/nvim/site/pack/packer/start/cmp_luasnip/after", "/home/msfe/.config/nvim/after", "/usr/share/vim/vimfiles" }
+    }
+  }
+}
+[19:55:58.012][info] [#0:script/provider/provider.lua:41]: Load config from client	file:///home/msfe/.config/nvim/lua/
+[19:55:58.012][info] [#0:script/provider/provider.lua:42]: {
+  Lua = {
+    diagnostics = {
+      globals = { "vim" }
+    },
+    telemetry = {
+      enable = false
+    },
+    workspace = {
+      checkThirdParty = false,
+      library = { "/home/msfe/.config/nvim", "/etc/xdg/nvim", "/home/msfe/.local/share/nvim/site", "/home/msfe/.local/share/nvim/site/pack/packer/start/Comment.nvim", "/home/msfe/.local/share/nvim/site/pack/packer/start/LuaSnip", "/home/msfe/.local/share/nvim/site/pack/packer/start/cmp-buffer", "/home/msfe/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp", "/home/msfe/.local/share/nvim/site/pack/packer/start/cmp-nvim-lua", "/home/msfe/.local/share/nvim/site/pack/packer/start/cmp-path", "/home/msfe/.local/share/nvim/site/pack/packer/start/cmp_luasnip", "/home/msfe/.local/share/nvim/site/pack/packer/start/copilot.vim", "/home/msfe/.local/share/nvim/site/pack/packer/start/fidget.nvim", "/home/msfe/.local/share/nvim/site/pack/packer/start/friendly-snippets", "/home/msfe/.local/share/nvim/site/pack/packer/start/gitsigns.nvim", "/home/msfe/.local/share/nvim/site/pack/packer/start/hop.nvim", "/home/msfe/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim", "/home/msfe/.local/share/nvim/site/pack/packer/start/kanagawa.nvim", "/home/msfe/.local/share/nvim/site/pack/packer/start/lualine.nvim", "/home/msfe/.local/share/nvim/site/pack/packer/start/mason-lspconfig.nvim", "/home/msfe/.local/share/nvim/site/pack/packer/start/mason.nvim", "/home/msfe/.local/share/nvim/site/pack/packer/start/mellow.nvim", "/home/msfe/.local/share/nvim/site/pack/packer/start/neoscroll.nvim", "/home/msfe/.local/share/nvim/site/pack/packer/start/null-ls.nvim", "/home/msfe/.local/share/nvim/site/pack/packer/start/nvim-autopairs", "/home/msfe/.local/share/nvim/site/pack/packer/start/nvim-cmp", "/home/msfe/.local/share/nvim/site/pack/packer/start/nvim-lspconfig", "/home/msfe/.local/share/nvim/site/pack/packer/start/nvim-surround", "/home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter", "/home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter-textobjects", "/home/msfe/.local/share/nvim/site/pack/packer/start/nvim-ts-autotag", "/home/msfe/.local/share/nvim/site/pack/packer/start/nvim-ts-context-commentstring", "/home/msfe/.local/share/nvim/site/pack/packer/start/nvim-web-devicons", "/home/msfe/.local/share/nvim/site/pack/packer/start/packer.nvim", "/home/msfe/.local/share/nvim/site/pack/packer/start/plenary.nvim", "/home/msfe/.local/share/nvim/site/pack/packer/start/telescope-file-browser.nvim", "/home/msfe/.local/share/nvim/site/pack/packer/start/telescope-ui-select.nvim", "/home/msfe/.local/share/nvim/site/pack/packer/start/telescope.nvim", "/home/msfe/.local/share/nvim/site/pack/packer/start/trouble.nvim", "/home/msfe/.local/share/nvim/site/pack/packer/start/vim-visual-multi", "/usr/share/nvim/runtime", "/usr/share/nvim/runtime/pack/dist/opt/matchit", "/usr/lib/nvim", "/home/msfe/.local/share/nvim/site/pack/packer/start/cmp-buffer/after", "/home/msfe/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp/after", "/home/msfe/.local/share/nvim/site/pack/packer/start/cmp-nvim-lua/after", "/home/msfe/.local/share/nvim/site/pack/packer/start/cmp-path/after", "/home/msfe/.local/share/nvim/site/pack/packer/start/cmp_luasnip/after", "/home/msfe/.config/nvim/after", "/usr/share/vim/vimfiles" }
+    }
+  }
+}
+[19:55:58.013][info] [#0:script/provider/provider.lua:56]: Load config from client	fallback
+[19:55:58.013][info] [#0:script/provider/provider.lua:57]: {
+  Lua = {
+    diagnostics = {
+      globals = { "vim" }
+    },
+    telemetry = {
+      enable = false
+    },
+    workspace = {
+      checkThirdParty = false,
+      library = { "/home/msfe/.config/nvim", "/etc/xdg/nvim", "/home/msfe/.local/share/nvim/site", "/home/msfe/.local/share/nvim/site/pack/packer/start/Comment.nvim", "/home/msfe/.local/share/nvim/site/pack/packer/start/LuaSnip", "/home/msfe/.local/share/nvim/site/pack/packer/start/cmp-buffer", "/home/msfe/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp", "/home/msfe/.local/share/nvim/site/pack/packer/start/cmp-nvim-lua", "/home/msfe/.local/share/nvim/site/pack/packer/start/cmp-path", "/home/msfe/.local/share/nvim/site/pack/packer/start/cmp_luasnip", "/home/msfe/.local/share/nvim/site/pack/packer/start/copilot.vim", "/home/msfe/.local/share/nvim/site/pack/packer/start/fidget.nvim", "/home/msfe/.local/share/nvim/site/pack/packer/start/friendly-snippets", "/home/msfe/.local/share/nvim/site/pack/packer/start/gitsigns.nvim", "/home/msfe/.local/share/nvim/site/pack/packer/start/hop.nvim", "/home/msfe/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim", "/home/msfe/.local/share/nvim/site/pack/packer/start/kanagawa.nvim", "/home/msfe/.local/share/nvim/site/pack/packer/start/lualine.nvim", "/home/msfe/.local/share/nvim/site/pack/packer/start/mason-lspconfig.nvim", "/home/msfe/.local/share/nvim/site/pack/packer/start/mason.nvim", "/home/msfe/.local/share/nvim/site/pack/packer/start/mellow.nvim", "/home/msfe/.local/share/nvim/site/pack/packer/start/neoscroll.nvim", "/home/msfe/.local/share/nvim/site/pack/packer/start/null-ls.nvim", "/home/msfe/.local/share/nvim/site/pack/packer/start/nvim-autopairs", "/home/msfe/.local/share/nvim/site/pack/packer/start/nvim-cmp", "/home/msfe/.local/share/nvim/site/pack/packer/start/nvim-lspconfig", "/home/msfe/.local/share/nvim/site/pack/packer/start/nvim-surround", "/home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter", "/home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter-textobjects", "/home/msfe/.local/share/nvim/site/pack/packer/start/nvim-ts-autotag", "/home/msfe/.local/share/nvim/site/pack/packer/start/nvim-ts-context-commentstring", "/home/msfe/.local/share/nvim/site/pack/packer/start/nvim-web-devicons", "/home/msfe/.local/share/nvim/site/pack/packer/start/packer.nvim", "/home/msfe/.local/share/nvim/site/pack/packer/start/plenary.nvim", "/home/msfe/.local/share/nvim/site/pack/packer/start/telescope-file-browser.nvim", "/home/msfe/.local/share/nvim/site/pack/packer/start/telescope-ui-select.nvim", "/home/msfe/.local/share/nvim/site/pack/packer/start/telescope.nvim", "/home/msfe/.local/share/nvim/site/pack/packer/start/trouble.nvim", "/home/msfe/.local/share/nvim/site/pack/packer/start/vim-visual-multi", "/usr/share/nvim/runtime", "/usr/share/nvim/runtime/pack/dist/opt/matchit", "/usr/lib/nvim", "/home/msfe/.local/share/nvim/site/pack/packer/start/cmp-buffer/after", "/home/msfe/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp/after", "/home/msfe/.local/share/nvim/site/pack/packer/start/cmp-nvim-lua/after", "/home/msfe/.local/share/nvim/site/pack/packer/start/cmp-path/after", "/home/msfe/.local/share/nvim/site/pack/packer/start/cmp_luasnip/after", "/home/msfe/.config/nvim/after", "/usr/share/vim/vimfiles" }
+    }
+  }
+}
+[19:55:58.013][info] [#0:script/library.lua:209]: Init builtin library at:	file:///home/msfe/.config/nvim/lua/
+[19:55:58.031][info] [#0:script/plugin.lua:86]: plugin path:	/home/msfe/.config/nvim/lua
+[19:55:58.031][warn] [#0:script/plugin.lua:101]: plugin not found:	/home/msfe/.config/nvim/lua
+[19:55:58.031][info] [#0:script/library.lua:209]: Init builtin library at:	nil
+[19:55:58.044][info] [#0:script/provider/provider.lua:56]: Load config from client	fallback
+[19:55:58.044][info] [#0:script/provider/provider.lua:57]: {
+  Lua = {
+    diagnostics = {
+      globals = { "vim" }
+    },
+    telemetry = {
+      enable = false
+    },
+    workspace = {
+      checkThirdParty = false,
+      library = { "/home/msfe/.config/nvim", "/etc/xdg/nvim", "/home/msfe/.local/share/nvim/site", "/home/msfe/.local/share/nvim/site/pack/packer/start/Comment.nvim", "/home/msfe/.local/share/nvim/site/pack/packer/start/LuaSnip", "/home/msfe/.local/share/nvim/site/pack/packer/start/cmp-buffer", "/home/msfe/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp", "/home/msfe/.local/share/nvim/site/pack/packer/start/cmp-nvim-lua", "/home/msfe/.local/share/nvim/site/pack/packer/start/cmp-path", "/home/msfe/.local/share/nvim/site/pack/packer/start/cmp_luasnip", "/home/msfe/.local/share/nvim/site/pack/packer/start/copilot.vim", "/home/msfe/.local/share/nvim/site/pack/packer/start/fidget.nvim", "/home/msfe/.local/share/nvim/site/pack/packer/start/friendly-snippets", "/home/msfe/.local/share/nvim/site/pack/packer/start/gitsigns.nvim", "/home/msfe/.local/share/nvim/site/pack/packer/start/hop.nvim", "/home/msfe/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim", "/home/msfe/.local/share/nvim/site/pack/packer/start/kanagawa.nvim", "/home/msfe/.local/share/nvim/site/pack/packer/start/lualine.nvim", "/home/msfe/.local/share/nvim/site/pack/packer/start/mason-lspconfig.nvim", "/home/msfe/.local/share/nvim/site/pack/packer/start/mason.nvim", "/home/msfe/.local/share/nvim/site/pack/packer/start/mellow.nvim", "/home/msfe/.local/share/nvim/site/pack/packer/start/neoscroll.nvim", "/home/msfe/.local/share/nvim/site/pack/packer/start/null-ls.nvim", "/home/msfe/.local/share/nvim/site/pack/packer/start/nvim-autopairs", "/home/msfe/.local/share/nvim/site/pack/packer/start/nvim-cmp", "/home/msfe/.local/share/nvim/site/pack/packer/start/nvim-lspconfig", "/home/msfe/.local/share/nvim/site/pack/packer/start/nvim-surround", "/home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter", "/home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter-textobjects", "/home/msfe/.local/share/nvim/site/pack/packer/start/nvim-ts-autotag", "/home/msfe/.local/share/nvim/site/pack/packer/start/nvim-ts-context-commentstring", "/home/msfe/.local/share/nvim/site/pack/packer/start/nvim-web-devicons", "/home/msfe/.local/share/nvim/site/pack/packer/start/packer.nvim", "/home/msfe/.local/share/nvim/site/pack/packer/start/plenary.nvim", "/home/msfe/.local/share/nvim/site/pack/packer/start/telescope-file-browser.nvim", "/home/msfe/.local/share/nvim/site/pack/packer/start/telescope-ui-select.nvim", "/home/msfe/.local/share/nvim/site/pack/packer/start/telescope.nvim", "/home/msfe/.local/share/nvim/site/pack/packer/start/trouble.nvim", "/home/msfe/.local/share/nvim/site/pack/packer/start/vim-visual-multi", "/usr/share/nvim/runtime", "/usr/share/nvim/runtime/pack/dist/opt/matchit", "/usr/lib/nvim", "/home/msfe/.local/share/nvim/site/pack/packer/start/cmp-buffer/after", "/home/msfe/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp/after", "/home/msfe/.local/share/nvim/site/pack/packer/start/cmp-nvim-lua/after", "/home/msfe/.local/share/nvim/site/pack/packer/start/cmp-path/after", "/home/msfe/.local/share/nvim/site/pack/packer/start/cmp_luasnip/after", "/home/msfe/.config/nvim/after", "/usr/share/vim/vimfiles" }
+    }
+  }
+}
+[19:55:58.044][info] [#0:script/provider/provider.lua:56]: Load config from client	fallback
+[19:55:58.044][info] [#0:script/provider/provider.lua:57]: {
+  Lua = {
+    diagnostics = {
+      globals = { "vim" }
+    },
+    telemetry = {
+      enable = false
+    },
+    workspace = {
+      checkThirdParty = false,
+      library = { "/home/msfe/.config/nvim", "/etc/xdg/nvim", "/home/msfe/.local/share/nvim/site", "/home/msfe/.local/share/nvim/site/pack/packer/start/Comment.nvim", "/home/msfe/.local/share/nvim/site/pack/packer/start/LuaSnip", "/home/msfe/.local/share/nvim/site/pack/packer/start/cmp-buffer", "/home/msfe/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp", "/home/msfe/.local/share/nvim/site/pack/packer/start/cmp-nvim-lua", "/home/msfe/.local/share/nvim/site/pack/packer/start/cmp-path", "/home/msfe/.local/share/nvim/site/pack/packer/start/cmp_luasnip", "/home/msfe/.local/share/nvim/site/pack/packer/start/copilot.vim", "/home/msfe/.local/share/nvim/site/pack/packer/start/fidget.nvim", "/home/msfe/.local/share/nvim/site/pack/packer/start/friendly-snippets", "/home/msfe/.local/share/nvim/site/pack/packer/start/gitsigns.nvim", "/home/msfe/.local/share/nvim/site/pack/packer/start/hop.nvim", "/home/msfe/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim", "/home/msfe/.local/share/nvim/site/pack/packer/start/kanagawa.nvim", "/home/msfe/.local/share/nvim/site/pack/packer/start/lualine.nvim", "/home/msfe/.local/share/nvim/site/pack/packer/start/mason-lspconfig.nvim", "/home/msfe/.local/share/nvim/site/pack/packer/start/mason.nvim", "/home/msfe/.local/share/nvim/site/pack/packer/start/mellow.nvim", "/home/msfe/.local/share/nvim/site/pack/packer/start/neoscroll.nvim", "/home/msfe/.local/share/nvim/site/pack/packer/start/null-ls.nvim", "/home/msfe/.local/share/nvim/site/pack/packer/start/nvim-autopairs", "/home/msfe/.local/share/nvim/site/pack/packer/start/nvim-cmp", "/home/msfe/.local/share/nvim/site/pack/packer/start/nvim-lspconfig", "/home/msfe/.local/share/nvim/site/pack/packer/start/nvim-surround", "/home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter", "/home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter-textobjects", "/home/msfe/.local/share/nvim/site/pack/packer/start/nvim-ts-autotag", "/home/msfe/.local/share/nvim/site/pack/packer/start/nvim-ts-context-commentstring", "/home/msfe/.local/share/nvim/site/pack/packer/start/nvim-web-devicons", "/home/msfe/.local/share/nvim/site/pack/packer/start/packer.nvim", "/home/msfe/.local/share/nvim/site/pack/packer/start/plenary.nvim", "/home/msfe/.local/share/nvim/site/pack/packer/start/telescope-file-browser.nvim", "/home/msfe/.local/share/nvim/site/pack/packer/start/telescope-ui-select.nvim", "/home/msfe/.local/share/nvim/site/pack/packer/start/telescope.nvim", "/home/msfe/.local/share/nvim/site/pack/packer/start/trouble.nvim", "/home/msfe/.local/share/nvim/site/pack/packer/start/vim-visual-multi", "/usr/share/nvim/runtime", "/usr/share/nvim/runtime/pack/dist/opt/matchit", "/usr/lib/nvim", "/home/msfe/.local/share/nvim/site/pack/packer/start/cmp-buffer/after", "/home/msfe/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp/after", "/home/msfe/.local/share/nvim/site/pack/packer/start/cmp-nvim-lua/after", "/home/msfe/.local/share/nvim/site/pack/packer/start/cmp-path/after", "/home/msfe/.local/share/nvim/site/pack/packer/start/cmp_luasnip/after", "/home/msfe/.config/nvim/after", "/usr/share/vim/vimfiles" }
+    }
+  }
+}
+[19:55:58.145][info] [#0:script/workspace/workspace.lua:304]: Preload start:	file:///home/msfe/.config/nvim/lua/
+[19:55:58.152][info] [#0:script/workspace/workspace.lua:310]: Scan files at:	file:///home/msfe/.config/nvim/lua/
+[19:55:58.153][info] [#0:script/workspace/workspace.lua:304]: Preload start:	<fallback>
+[19:55:58.159][info] [#0:script/workspace/workspace.lua:327]: Scan library at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/lualine.nvim
+[19:55:58.176][info] [#0:script/workspace/workspace.lua:327]: Scan library at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/lualine.nvim
+[19:55:58.191][info] [#0:script/workspace/workspace.lua:327]: Scan library at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/null-ls.nvim
+[19:55:58.207][info] [#0:script/workspace/workspace.lua:327]: Scan library at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/null-ls.nvim
+[19:55:58.239][info] [#0:script/workspace/workspace.lua:327]: Scan library at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-cmp
+[19:55:58.245][info] [#0:script/workspace/workspace.lua:327]: Scan library at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-cmp
+[19:55:58.254][info] [#0:script/workspace/workspace.lua:327]: Scan library at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/mason.nvim
+[19:55:58.293][info] [#0:script/workspace/workspace.lua:327]: Scan library at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/mason.nvim
+[19:55:58.366][info] [#0:script/workspace/workspace.lua:327]: Scan library at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/cmp-buffer
+[19:55:58.372][info] [#0:script/workspace/workspace.lua:327]: Scan library at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/cmp-buffer
+[19:55:58.376][info] [#0:script/workspace/workspace.lua:327]: Scan library at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/packer.nvim
+[19:55:58.381][info] [#0:script/workspace/workspace.lua:327]: Scan library at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/packer.nvim
+[19:55:58.388][info] [#0:script/workspace/workspace.lua:327]: Scan library at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/mellow.nvim
+[19:55:58.392][info] [#0:script/workspace/workspace.lua:327]: Scan library at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/mellow.nvim
+[19:55:58.397][info] [#0:script/workspace/workspace.lua:327]: Scan library at:	file:///usr/share/nvim/runtime
+[19:55:58.443][info] [#0:script/workspace/workspace.lua:327]: Scan library at:	file:///usr/share/nvim/runtime
+[19:55:58.543][info] [#0:script/workspace/workspace.lua:327]: Scan library at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim
+[19:55:58.560][info] [#0:script/workspace/workspace.lua:327]: Scan library at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim
+[19:55:58.565][info] [#0:script/workspace/workspace.lua:327]: Scan library at:	file:///home/msfe/.local/share/nvim/site
+[19:55:58.752][info] [#0:script/workspace/workspace.lua:327]: Scan library at:	file:///home/msfe/.local/share/nvim/site
+[19:56:00.530][info] [#0:script/workspace/workspace.lua:327]: Scan library at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/cmp_luasnip/after
+[19:56:00.530][info] [#0:script/workspace/workspace.lua:327]: Scan library at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/gitsigns.nvim
+[19:56:00.534][info] [#0:script/workspace/workspace.lua:327]: Scan library at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/cmp_luasnip/after
+[19:56:00.535][info] [#0:script/workspace/workspace.lua:327]: Scan library at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/gitsigns.nvim
+[19:56:00.586][info] [#0:script/workspace/workspace.lua:327]: Scan library at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/kanagawa.nvim
+[19:56:00.608][info] [#0:script/workspace/workspace.lua:327]: Scan library at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/kanagawa.nvim
+[19:56:00.636][info] [#0:script/workspace/workspace.lua:327]: Scan library at:	file:///usr/share/nvim/runtime/pack/dist/opt/matchit
+[19:56:00.637][info] [#0:script/workspace/workspace.lua:327]: Scan library at:	file:///usr/share/nvim/runtime/pack/dist/opt/matchit
+[19:56:00.637][info] [#0:script/workspace/workspace.lua:327]: Scan library at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/copilot.vim
+[19:56:00.655][info] [#0:script/workspace/workspace.lua:327]: Scan library at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/copilot.vim
+[19:56:00.724][info] [#0:script/workspace/workspace.lua:327]: Scan library at:	file:///usr/lib/nvim
+[19:56:00.724][info] [#0:script/workspace/workspace.lua:327]: Scan library at:	file:///home/msfe/.local/share/nvim/mason/packages/lua-language-server/extension/server/meta/Lua%205.4%20en-us%20utf8
+[19:56:00.726][info] [#0:script/workspace/workspace.lua:327]: Scan library at:	file:///usr/lib/nvim
+[19:56:00.726][info] [#0:script/workspace/workspace.lua:327]: Scan library at:	file:///home/msfe/.local/share/nvim/mason/packages/lua-language-server/extension/server/meta/Lua%205.4%20en-us%20utf8
+[19:56:00.727][info] [#0:script/workspace/workspace.lua:327]: Scan library at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-web-devicons
+[19:56:00.730][info] [#0:script/workspace/workspace.lua:327]: Scan library at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-web-devicons
+[19:56:00.756][info] [#0:script/workspace/workspace.lua:327]: Scan library at:	file:///usr/share/vim/vimfiles
+[19:56:00.757][info] [#0:script/workspace/workspace.lua:327]: Scan library at:	file:///usr/share/vim/vimfiles
+[19:56:00.757][info] [#0:script/workspace/workspace.lua:327]: Scan library at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-ts-context-commentstring
+[19:56:00.759][info] [#0:script/workspace/workspace.lua:327]: Scan library at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-ts-context-commentstring
+[19:56:00.791][info] [#0:script/workspace/workspace.lua:327]: Scan library at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/friendly-snippets
+[19:56:00.793][info] [#0:script/workspace/workspace.lua:327]: Scan library at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/friendly-snippets
+[19:56:00.849][info] [#0:script/workspace/workspace.lua:327]: Scan library at:	file:///home/msfe/.config/nvim/after
+[19:56:00.857][info] [#0:script/workspace/workspace.lua:327]: Scan library at:	file:///home/msfe/.config/nvim/after
+[19:56:00.866][info] [#0:script/workspace/workspace.lua:327]: Scan library at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/cmp-nvim-lua
+[19:56:00.874][info] [#0:script/workspace/workspace.lua:327]: Scan library at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/cmp-nvim-lua
+[19:56:00.878][info] [#0:script/workspace/workspace.lua:327]: Scan library at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/cmp-path/after
+[19:56:00.878][info] [#0:script/workspace/workspace.lua:327]: Scan library at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/mason-lspconfig.nvim
+[19:56:00.881][info] [#0:script/workspace/workspace.lua:327]: Scan library at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/cmp-path/after
+[19:56:00.881][info] [#0:script/workspace/workspace.lua:327]: Scan library at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/mason-lspconfig.nvim
+[19:56:00.954][info] [#0:script/workspace/workspace.lua:327]: Scan library at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/cmp-nvim-lua/after
+[19:56:00.955][info] [#0:script/workspace/workspace.lua:327]: Scan library at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/neoscroll.nvim
+[19:56:00.957][info] [#0:script/workspace/workspace.lua:327]: Scan library at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/cmp-nvim-lua/after
+[19:56:00.957][info] [#0:script/workspace/workspace.lua:327]: Scan library at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/neoscroll.nvim
+[19:56:00.963][info] [#0:script/workspace/workspace.lua:327]: Scan library at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/telescope-ui-select.nvim
+[19:56:00.966][info] [#0:script/workspace/workspace.lua:327]: Scan library at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/telescope-ui-select.nvim
+[19:56:00.998][info] [#0:script/workspace/workspace.lua:327]: Scan library at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/cmp-path
+[19:56:01.000][info] [#0:script/workspace/workspace.lua:327]: Scan library at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/cmp-path
+[19:56:01.010][info] [#0:script/workspace/workspace.lua:327]: Scan library at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-surround
+[19:56:01.017][info] [#0:script/workspace/workspace.lua:327]: Scan library at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-surround
+[19:56:01.051][info] [#0:script/workspace/workspace.lua:327]: Scan library at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp/after
+[19:56:01.051][info] [#0:script/workspace/workspace.lua:327]: Scan library at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/cmp-buffer/after
+[19:56:01.052][info] [#0:script/workspace/workspace.lua:327]: Scan library at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/plenary.nvim
+[19:56:01.059][info] [#0:script/workspace/workspace.lua:327]: Scan library at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp/after
+[19:56:01.063][info] [#0:script/workspace/workspace.lua:327]: Scan library at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/cmp-buffer/after
+[19:56:01.064][info] [#0:script/workspace/workspace.lua:327]: Scan library at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/plenary.nvim
+[19:56:01.123][info] [#0:script/workspace/workspace.lua:327]: Scan library at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/LuaSnip
+[19:56:01.126][info] [#0:script/workspace/workspace.lua:327]: Scan library at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/LuaSnip
+[19:56:01.204][info] [#0:script/workspace/workspace.lua:327]: Scan library at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/vim-visual-multi
+[19:56:01.209][info] [#0:script/workspace/workspace.lua:327]: Scan library at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/vim-visual-multi
+[19:56:01.266][info] [#0:script/workspace/workspace.lua:327]: Scan library at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/telescope-file-browser.nvim
+[19:56:01.274][info] [#0:script/workspace/workspace.lua:327]: Scan library at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/telescope-file-browser.nvim
+[19:56:01.298][info] [#0:script/workspace/workspace.lua:327]: Scan library at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter
+[19:56:01.321][info] [#0:script/workspace/workspace.lua:327]: Scan library at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter
+[19:56:01.544][info] [#0:script/workspace/workspace.lua:327]: Scan library at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/telescope.nvim
+[19:56:01.546][info] [#0:script/workspace/workspace.lua:327]: Scan library at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/telescope.nvim
+[19:56:01.564][info] [#0:script/workspace/workspace.lua:327]: Scan library at:	file:///home/msfe/.config/nvim
+[19:56:01.584][info] [#0:script/workspace/workspace.lua:327]: Scan library at:	file:///home/msfe/.config/nvim
+[19:56:01.600][info] [#0:script/workspace/workspace.lua:327]: Scan library at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/fidget.nvim
+[19:56:01.601][info] [#0:script/workspace/workspace.lua:327]: Scan library at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/fidget.nvim
+[19:56:01.609][info] [#0:script/workspace/workspace.lua:327]: Scan library at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-lspconfig
+[19:56:01.627][info] [#0:script/workspace/workspace.lua:327]: Scan library at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-lspconfig
+[19:56:01.715][info] [#0:script/workspace/workspace.lua:327]: Scan library at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/Comment.nvim
+[19:56:01.722][info] [#0:script/workspace/workspace.lua:327]: Scan library at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/Comment.nvim
+[19:56:01.746][info] [#0:script/workspace/workspace.lua:327]: Scan library at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/hop.nvim
+[19:56:01.748][info] [#0:script/workspace/workspace.lua:327]: Scan library at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/hop.nvim
+[19:56:01.764][info] [#0:script/workspace/workspace.lua:327]: Scan library at:	file:///etc/xdg/nvim
+[19:56:01.765][info] [#0:script/workspace/workspace.lua:327]: Scan library at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-autopairs
+[19:56:01.768][info] [#0:script/workspace/workspace.lua:327]: Scan library at:	file:///etc/xdg/nvim
+[19:56:01.769][info] [#0:script/workspace/workspace.lua:327]: Scan library at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-autopairs
+[19:56:01.793][info] [#0:script/workspace/workspace.lua:327]: Scan library at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp
+[19:56:01.795][info] [#0:script/workspace/workspace.lua:327]: Scan library at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp
+[19:56:01.828][info] [#0:script/workspace/workspace.lua:327]: Scan library at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/cmp_luasnip
+[19:56:01.829][info] [#0:script/workspace/workspace.lua:327]: Scan library at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/cmp_luasnip
+[19:56:01.836][info] [#0:script/workspace/workspace.lua:327]: Scan library at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/trouble.nvim
+[19:56:01.842][info] [#0:script/workspace/workspace.lua:327]: Scan library at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/trouble.nvim
+[19:56:01.880][info] [#0:script/workspace/workspace.lua:327]: Scan library at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter-textobjects
+[19:56:01.884][info] [#0:script/workspace/workspace.lua:327]: Scan library at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter-textobjects
+[19:56:01.964][info] [#0:script/workspace/workspace.lua:327]: Scan library at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-ts-autotag
+[19:56:01.966][info] [#0:script/workspace/workspace.lua:327]: Scan library at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-ts-autotag
+[19:56:02.094][info] [#0:script/workspace/workspace.lua:347]: Found 3572 files at:	<fallback>
+[19:56:02.094][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	<fallback>
+[19:56:02.094][info] [#0:script/workspace/workspace.lua:347]: Found 3576 files at:	file:///home/msfe/.config/nvim/lua/
+[19:56:02.094][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.config/nvim/lua/
+[19:56:03.378][warn] [#0:script/files.lua:683]: Compile [file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-lspconfig/plugin/lspconfig.lua] takes [0.142] sec, size [4.236] kb.
+[19:56:06.086][warn] [#0:script/files.lua:683]: Compile [file:///home/msfe/.local/share/nvim/site/pack/packer/start/plenary.nvim/lua/plenary/iterators.lua] takes [0.230] sec, size [17.985] kb.
+[19:56:08.014][warn] [#0:script/proto/proto.lua:171]: Method [textDocument/definition] takes [4.322]sec. {
+  _closeMessage = "Request cancelled.",
+  _closeReason = -32800,
+  id = 2,
+  jsonrpc = "2.0",
+  method = "textDocument/definition",
+  params = {
+    position = {
+      character = 13,
+      line = 1
+    },
+    textDocument = {
+      uri = "file:///home/msfe/.config/nvim/init.lua"
+    }
+  }
+}
+[19:56:11.204][warn] [#0:script/files.lua:544]: Parse LuaDoc of [file:///home/msfe/.local/share/nvim/site/pack/packer/start/mason.nvim/lua/mason-schemas/lsp/lua-language-server.lua] takes [0.561] sec, size [44.681] kb.
+[19:56:14.422][warn] [#0:script/files.lua:683]: Compile [file:///usr/share/nvim/runtime/lua/vim/diagnostic.lua] takes [0.392] sec, size [55.142] kb.
+[19:56:14.575][warn] [#0:script/files.lua:683]: Compile [file:///usr/share/nvim/runtime/lua/vim/filetype.lua] takes [0.123] sec, size [73.676] kb.
+[19:56:15.181][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [14.601] sec: <fallback>
+[19:56:15.182][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: <fallback>
+[19:56:15.182][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	<fallback>
+[19:56:15.182][info] [#0:script/workspace/workspace.lua:349]: Preload finish at:	<fallback>
+[19:56:15.485][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [14.904] sec: file:///home/msfe/.config/nvim/lua/
+[19:56:15.485][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.config/nvim/lua/
+[19:56:15.485][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.config/nvim/lua/
+[19:56:15.485][info] [#0:script/workspace/workspace.lua:349]: Preload finish at:	file:///home/msfe/.config/nvim/lua/
+[19:56:16.296][warn] [#0:script/await.lua:186]: Await step takes [0.812] sec.
+[19:56:16.308][info] [#0:script/provider/diagnostic.lua:552]: Diagnostics scope [file:///home/msfe/.config/nvim/lua/], files count:[1794]
+[19:56:16.309][warn] [#0:script/proto/proto.lua:122]: Response of [workspace/diagnostic/refresh] error [-32601]: MethodNotFound
+[19:56:16.312][warn] [#0:script/proto/proto.lua:122]: Response of [workspace/diagnostic/refresh] error [-32601]: MethodNotFound
+[19:56:16.312][warn] [#0:script/proto/proto.lua:171]: Method [textDocument/definition] takes [9.145]sec. {
+  id = 3,
+  jsonrpc = "2.0",
+  method = "textDocument/definition",
+  params = {
+    position = {
+      character = 13,
+      line = 1
+    },
+    textDocument = {
+      uri = "file:///home/msfe/.config/nvim/init.lua"
+    }
+  }
+}
+[19:56:16.312][warn] [#0:script/proto/proto.lua:171]: Method [textDocument/definition] takes [7.169]sec. {
+  id = 4,
+  jsonrpc = "2.0",
+  method = "textDocument/definition",
+  params = {
+    position = {
+      character = 13,
+      line = 1
+    },
+    textDocument = {
+      uri = "file:///home/msfe/.config/nvim/init.lua"
+    }
+  }
+}
+[19:56:16.943][info] [#0:script/provider/diagnostic.lua:569]: Diagnostics scope [file:///home/msfe/.config/nvim/lua/] finished, takes [0.647] sec.
+[19:56:27.257][info] [#0:script/provider/diagnostic.lua:171]: clearDiagnostics	file:///home/msfe/.config/nvim/init.lua
+[19:56:30.213][warn] [#0:script/core/diagnostics/init.lua:136]: Diagnostics [undefined-field] @ [file:///home/msfe/.config/nvim/lua/plugins.lua] takes [1.005] sec!
+[19:56:54.577][info] [#0:script/provider/diagnostic.lua:171]: clearDiagnostics	file:///home/msfe/.config/nvim/lua/plugins.lua
+[19:56:56.752][warn] [#0:script/core/diagnostics/init.lua:136]: Diagnostics [invisible] @ [file:///home/msfe/.config/nvim/lua/plugins.lua] takes [0.962] sec!
+[19:56:57.532][warn] [#0:script/core/diagnostics/init.lua:136]: Diagnostics [assign-type-mismatch] @ [file:///home/msfe/.config/nvim/lua/plugins.lua] takes [0.766] sec!
+[19:56:59.024][warn] [#0:script/core/diagnostics/init.lua:136]: Diagnostics [deprecated] @ [file:///home/msfe/.config/nvim/lua/plugins.lua] takes [0.695] sec!
+[19:57:00.281][warn] [#0:script/provider/provider.lua:637]: Completion takes 0.113 sec.
+[20:05:58.140][info] [#0:script/service/service.lua:141]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 343.671 MB
+        # 00 : 337.097 MB
+        # 01 : 3.186 MB
+        # 02 : 0.046 MB
+        # 03 : 0.046 MB
+        # 04 : 3.297 MB
+    --------------- Coroutine ---------------
+        Total:     29
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      29
+    --------------- Cache ---------------
+        Total: 6
+        Dead:  5
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[20:12:56.943][warn] [#0:script/provider/provider.lua:637]: Completion takes 0.189 sec.
+[20:12:58.281][warn] [#0:script/provider/provider.lua:637]: Completion takes 0.133 sec.
+[20:12:59.475][info] [#0:script/provider/diagnostic.lua:171]: clearDiagnostics	file:///home/msfe/.config/nvim/lua/plugins.lua
+[20:13:01.173][warn] [#0:script/provider/provider.lua:637]: Completion takes 0.215 sec.
+[20:13:02.683][warn] [#0:script/provider/provider.lua:637]: Completion takes 0.392 sec.
+[20:13:03.195][warn] [#0:script/provider/provider.lua:637]: Completion takes 0.124 sec.
+[20:13:57.685][warn] [#0:script/provider/provider.lua:637]: Completion takes 0.220 sec.
+[20:14:01.612][info] [#0:script/provider/diagnostic.lua:171]: clearDiagnostics	file:///home/msfe/.config/nvim/lua/plugins.lua
+[20:15:58.294][info] [#0:script/service/service.lua:141]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 356.334 MB
+        # 00 : 349.759 MB
+        # 01 : 3.186 MB
+        # 02 : 0.046 MB
+        # 03 : 0.046 MB
+        # 04 : 3.297 MB
+    --------------- Coroutine ---------------
+        Total:     86
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      86
+    --------------- Cache ---------------
+        Total: 16
+        Dead:  15
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[20:21:59.493][info] [#0:script/provider/diagnostic.lua:171]: clearDiagnostics	file:///home/msfe/.config/nvim/lua/plugins.lua
+[20:22:01.525][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.config/nvim/lua/plugins.lua
+[20:22:01.525][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.config/nvim/lua/plugins.lua
+[20:22:01.527][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.001] sec: file:///home/msfe/.config/nvim/lua/plugins.lua
+[20:22:01.527][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.config/nvim/lua/plugins.lua
+[20:22:01.527][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.config/nvim/lua/plugins.lua
+[20:22:04.413][info] [#0:script/provider/diagnostic.lua:552]: Diagnostics scope [file:///home/msfe/.config/nvim/lua/], files count:[1794]
+[20:22:04.810][info] [#0:script/provider/diagnostic.lua:569]: Diagnostics scope [file:///home/msfe/.config/nvim/lua/] finished, takes [0.418] sec.
+[20:22:29.902][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/d6
+[20:22:29.903][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/LuaSnip/.git/objects/f6
+[20:22:29.903][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/2a
+[20:22:29.904][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/3d
+[20:22:29.904][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/mason.nvim/.git/objects/bb
+[20:22:29.928][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/LuaSnip/.git/refs/remotes/origin/master
+[20:22:29.928][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/plenary.nvim/.git/refs/remotes/origin/master
+[20:22:29.939][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/mason.nvim/.git/objects/e8
+[20:22:30.019][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/03
+[20:22:30.022][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/mason.nvim/.git/objects/06
+[20:22:30.022][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/plenary.nvim/.git/objects/f4
+[20:22:30.036][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/34
+[20:22:30.037][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/fd
+[20:22:30.037][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/9d
+[20:22:30.048][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/5d
+[20:22:30.058][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/71
+[20:22:30.069][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/50
+[20:22:30.069][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/plenary.nvim/.github/workflows/release.yml
+[20:22:30.069][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/LuaSnip/.git/refs/heads/master
+[20:22:30.069][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/97
+[20:22:30.070][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/43
+[20:22:30.070][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/plenary.nvim/.git/objects/22
+[20:22:30.070][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/gitsigns.nvim/.git/objects/68
+[20:22:30.071][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/plenary.nvim/lua/plenary/test_harness.lua
+[20:22:30.071][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/gitsigns.nvim/.git/objects/e2
+[20:22:30.071][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/00
+[20:22:30.071][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/gitsigns.nvim/.git/objects/f5
+[20:22:30.071][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/gitsigns.nvim/.git/objects/3a
+[20:22:30.091][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/gitsigns.nvim/.git/objects/bc
+[20:22:30.091][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/c1
+[20:22:30.178][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/logs/refs/remotes/origin/update-readme-pr
+[20:22:30.189][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/plenary.nvim/.git/logs/refs/remotes/origin/master
+[20:22:30.189][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/6e
+[20:22:30.189][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/gitsigns.nvim/.git/objects/66
+[20:22:30.190][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/gitsigns.nvim/.git/objects/7e
+[20:22:30.190][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/gitsigns.nvim/.git/objects/c6
+[20:22:30.190][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/gitsigns.nvim/.git/objects/da
+[20:22:30.190][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/gitsigns.nvim/.git/objects/11
+[20:22:30.190][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/a7
+[20:22:30.201][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/gitsigns.nvim/.git/objects/b5
+[20:22:30.201][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/mason.nvim/.git/logs/refs/remotes/origin/main
+[20:22:30.201][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/0b
+[20:22:30.201][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/plenary.nvim/.git/objects/42
+[20:22:30.201][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/d8
+[20:22:30.202][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/gitsigns.nvim/.git/objects/29
+[20:22:30.213][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/LuaSnip/.git/objects/5d
+[20:22:30.213][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/LuaSnip/DOC.md
+[20:22:30.213][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/ea
+[20:22:30.214][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/b5
+[20:22:30.214][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/5f
+[20:22:30.244][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/LuaSnip/.git/index
+[20:22:30.244][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/refs/remotes/origin/update-readme-pr
+[20:22:30.253][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/06
+[20:22:30.325][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/plenary.nvim/.git/refs/heads/master
+[20:22:30.326][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/LuaSnip/doc/luasnip.txt
+[20:22:30.337][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/gitsigns.nvim/.git/objects/cf
+[20:22:30.338][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/plenary.nvim/.git/index
+[20:22:30.338][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/17
+[20:22:30.338][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/e1
+[20:22:30.338][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/refs/remotes/origin/update-lockfile-pr
+[20:22:30.338][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/82
+[20:22:30.339][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/a3
+[20:22:30.396][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/bb
+[20:22:30.397][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/32
+[20:22:30.497][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/refs/remotes/origin/master
+[20:22:30.533][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/gitsigns.nvim/.git/objects/ba
+[20:22:30.533][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/plenary.nvim/README.md
+[20:22:30.554][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/mason.nvim/.git/refs/remotes/origin/main
+[20:22:30.566][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/f9
+[20:22:30.566][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/67
+[20:22:30.567][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/plenary.nvim/.git/objects/4a
+[20:22:30.567][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/1d
+[20:22:30.567][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/0a
+[20:22:30.568][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/93
+[20:22:30.568][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/45
+[20:22:30.578][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/plenary.nvim/.git/objects/7a
+[20:22:30.579][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/4d
+[20:22:30.579][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/8e
+[20:22:30.579][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/ac
+[20:22:30.579][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/ff
+[20:22:30.579][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/8c
+[20:22:30.590][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/27
+[20:22:30.590][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/1e
+[20:22:30.653][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/e5
+[20:22:30.689][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/f6
+[20:22:30.706][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/plenary.nvim/.git/objects/5c
+[20:22:30.707][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/cf
+[20:22:30.707][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/14
+[20:22:30.738][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/c6
+[20:22:30.738][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/f2
+[20:22:30.738][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/40
+[20:22:30.739][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/1a
+[20:22:30.739][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/ef
+[20:22:30.739][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/0e
+[20:22:30.739][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/LuaSnip/.git/objects/33
+[20:22:30.739][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/81
+[20:22:30.740][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/logs/refs/remotes/origin/update-lockfile-pr
+[20:22:30.750][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/52
+[20:22:30.750][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/mason.nvim/.git/objects/e1
+[20:22:30.750][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/46
+[20:22:30.750][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/mason.nvim/.git/objects/3d
+[20:22:30.760][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/99
+[20:22:30.761][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/39
+[20:22:30.761][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/plenary.nvim/.git/objects/1c
+[20:22:30.761][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/LuaSnip/.git/objects/bb
+[20:22:30.761][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/mason.nvim/.git/objects/52
+[20:22:30.761][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/mason.nvim/.git/objects/ca
+[20:22:30.761][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/87
+[20:22:30.762][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/c4
+[20:22:30.781][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/plenary.nvim/.git/objects/31
+[20:22:30.781][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/mason.nvim/.git/objects/fa
+[20:22:30.845][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/logs/refs/remotes/origin/master
+[20:22:30.845][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/gitsigns.nvim/.git/objects/96
+[20:22:30.879][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/3f
+[20:22:30.889][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/02
+[20:22:30.899][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/c0
+[20:22:30.899][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/LuaSnip/.git/objects/4b
+[20:22:30.899][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/5b
+[20:22:30.899][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/plenary.nvim/.git/objects/39
+[20:22:30.909][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/a6
+[20:22:30.909][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/ed
+[20:22:30.909][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/plenary.nvim/.git/objects/f8
+[20:22:30.909][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/28
+[20:22:30.922][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/LuaSnip/.git/objects/aa
+[20:22:30.922][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/LuaSnip/.git/logs/refs/remotes/origin/master
+[20:22:30.978][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/gitsigns.nvim/.git/objects/46
+[20:22:30.981][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/56
+[20:22:30.981][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/LuaSnip/.git/objects/09
+[20:22:30.981][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/d1
+[20:22:30.995][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/mason.nvim/.git/objects/15
+[20:22:31.006][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/db
+[20:22:31.006][info] [#0:script/workspace/workspace.lua:264]: Scan files at:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/plenary.nvim/.git/objects/eb
+[20:22:31.006][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/d6
+[20:22:31.006][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/d6
+[20:22:31.007][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/d6
+[20:22:31.007][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/d6
+[20:22:31.010][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/LuaSnip/.git/objects/f6
+[20:22:31.010][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/LuaSnip/.git/objects/f6
+[20:22:31.010][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/LuaSnip/.git/objects/f6
+[20:22:31.010][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/LuaSnip/.git/objects/f6
+[20:22:31.010][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/2a
+[20:22:31.010][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/2a
+[20:22:31.010][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/2a
+[20:22:31.010][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/2a
+[20:22:31.010][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/3d
+[20:22:31.011][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/3d
+[20:22:31.011][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/3d
+[20:22:31.011][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/3d
+[20:22:31.011][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/mason.nvim/.git/objects/bb
+[20:22:31.011][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/mason.nvim/.git/objects/bb
+[20:22:31.011][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/mason.nvim/.git/objects/bb
+[20:22:31.011][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/mason.nvim/.git/objects/bb
+[20:22:31.011][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/LuaSnip/.git/refs/remotes/origin/master
+[20:22:31.011][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/LuaSnip/.git/refs/remotes/origin/master
+[20:22:31.011][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/LuaSnip/.git/refs/remotes/origin/master
+[20:22:31.011][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/LuaSnip/.git/refs/remotes/origin/master
+[20:22:31.011][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/plenary.nvim/.git/refs/remotes/origin/master
+[20:22:31.011][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/plenary.nvim/.git/refs/remotes/origin/master
+[20:22:31.011][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/plenary.nvim/.git/refs/remotes/origin/master
+[20:22:31.011][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/plenary.nvim/.git/refs/remotes/origin/master
+[20:22:31.011][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/mason.nvim/.git/objects/e8
+[20:22:31.011][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/mason.nvim/.git/objects/e8
+[20:22:31.011][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/mason.nvim/.git/objects/e8
+[20:22:31.011][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/mason.nvim/.git/objects/e8
+[20:22:31.011][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/03
+[20:22:31.011][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/03
+[20:22:31.011][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/03
+[20:22:31.011][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/03
+[20:22:31.011][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/mason.nvim/.git/objects/06
+[20:22:31.011][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/mason.nvim/.git/objects/06
+[20:22:31.011][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/mason.nvim/.git/objects/06
+[20:22:31.011][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/mason.nvim/.git/objects/06
+[20:22:31.011][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/plenary.nvim/.git/objects/f4
+[20:22:31.011][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/plenary.nvim/.git/objects/f4
+[20:22:31.011][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/plenary.nvim/.git/objects/f4
+[20:22:31.011][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/plenary.nvim/.git/objects/f4
+[20:22:31.011][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/34
+[20:22:31.011][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/34
+[20:22:31.011][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/34
+[20:22:31.011][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/34
+[20:22:31.011][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/fd
+[20:22:31.011][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/fd
+[20:22:31.011][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/fd
+[20:22:31.011][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/fd
+[20:22:31.011][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/9d
+[20:22:31.011][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/9d
+[20:22:31.011][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/9d
+[20:22:31.011][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/9d
+[20:22:31.011][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/5d
+[20:22:31.011][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/5d
+[20:22:31.011][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/5d
+[20:22:31.012][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/5d
+[20:22:31.012][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/50
+[20:22:31.012][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/50
+[20:22:31.012][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/50
+[20:22:31.012][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/50
+[20:22:31.012][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/plenary.nvim/.github/workflows/release.yml
+[20:22:31.012][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/plenary.nvim/.github/workflows/release.yml
+[20:22:31.012][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/plenary.nvim/.github/workflows/release.yml
+[20:22:31.012][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/plenary.nvim/.github/workflows/release.yml
+[20:22:31.012][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/LuaSnip/.git/refs/heads/master
+[20:22:31.012][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/LuaSnip/.git/refs/heads/master
+[20:22:31.012][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/LuaSnip/.git/refs/heads/master
+[20:22:31.012][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/LuaSnip/.git/refs/heads/master
+[20:22:31.012][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/97
+[20:22:31.012][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/97
+[20:22:31.012][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/97
+[20:22:31.012][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/97
+[20:22:31.012][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/43
+[20:22:31.012][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/43
+[20:22:31.012][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/43
+[20:22:31.012][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/43
+[20:22:31.012][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/plenary.nvim/.git/objects/22
+[20:22:31.012][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/plenary.nvim/.git/objects/22
+[20:22:31.012][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/plenary.nvim/.git/objects/22
+[20:22:31.012][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/plenary.nvim/.git/objects/22
+[20:22:31.012][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/gitsigns.nvim/.git/objects/68
+[20:22:31.012][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/gitsigns.nvim/.git/objects/68
+[20:22:31.012][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/gitsigns.nvim/.git/objects/68
+[20:22:31.012][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/gitsigns.nvim/.git/objects/68
+[20:22:31.012][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/plenary.nvim/lua/plenary/test_harness.lua
+[20:22:31.012][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/gitsigns.nvim/.git/objects/e2
+[20:22:31.012][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/gitsigns.nvim/.git/objects/e2
+[20:22:31.012][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/gitsigns.nvim/.git/objects/e2
+[20:22:31.012][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/gitsigns.nvim/.git/objects/e2
+[20:22:31.012][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/00
+[20:22:31.012][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/00
+[20:22:31.012][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/00
+[20:22:31.012][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/00
+[20:22:31.012][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/gitsigns.nvim/.git/objects/f5
+[20:22:31.013][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/gitsigns.nvim/.git/objects/f5
+[20:22:31.013][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/gitsigns.nvim/.git/objects/f5
+[20:22:31.013][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/gitsigns.nvim/.git/objects/f5
+[20:22:31.013][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/gitsigns.nvim/.git/objects/3a
+[20:22:31.013][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/gitsigns.nvim/.git/objects/3a
+[20:22:31.013][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/gitsigns.nvim/.git/objects/3a
+[20:22:31.013][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/gitsigns.nvim/.git/objects/3a
+[20:22:31.013][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/gitsigns.nvim/.git/objects/bc
+[20:22:31.013][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/gitsigns.nvim/.git/objects/bc
+[20:22:31.013][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/gitsigns.nvim/.git/objects/bc
+[20:22:31.013][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/gitsigns.nvim/.git/objects/bc
+[20:22:31.013][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/c1
+[20:22:31.013][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/c1
+[20:22:31.013][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/c1
+[20:22:31.013][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/c1
+[20:22:31.013][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/logs/refs/remotes/origin/update-readme-pr
+[20:22:31.013][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/logs/refs/remotes/origin/update-readme-pr
+[20:22:31.013][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/logs/refs/remotes/origin/update-readme-pr
+[20:22:31.013][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/logs/refs/remotes/origin/update-readme-pr
+[20:22:31.013][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/plenary.nvim/.git/logs/refs/remotes/origin/master
+[20:22:31.013][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/plenary.nvim/.git/logs/refs/remotes/origin/master
+[20:22:31.013][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/plenary.nvim/.git/logs/refs/remotes/origin/master
+[20:22:31.013][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/plenary.nvim/.git/logs/refs/remotes/origin/master
+[20:22:31.013][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/gitsigns.nvim/.git/objects/66
+[20:22:31.013][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/gitsigns.nvim/.git/objects/66
+[20:22:31.013][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/gitsigns.nvim/.git/objects/66
+[20:22:31.013][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/gitsigns.nvim/.git/objects/66
+[20:22:31.013][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/gitsigns.nvim/.git/objects/c6
+[20:22:31.013][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/gitsigns.nvim/.git/objects/c6
+[20:22:31.013][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/gitsigns.nvim/.git/objects/c6
+[20:22:31.013][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/gitsigns.nvim/.git/objects/c6
+[20:22:31.013][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/gitsigns.nvim/.git/objects/da
+[20:22:31.013][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/gitsigns.nvim/.git/objects/da
+[20:22:31.013][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/gitsigns.nvim/.git/objects/da
+[20:22:31.013][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/gitsigns.nvim/.git/objects/da
+[20:22:31.013][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/gitsigns.nvim/.git/objects/11
+[20:22:31.013][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/gitsigns.nvim/.git/objects/11
+[20:22:31.013][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/gitsigns.nvim/.git/objects/11
+[20:22:31.013][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/gitsigns.nvim/.git/objects/11
+[20:22:31.014][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/mason.nvim/.git/logs/refs/remotes/origin/main
+[20:22:31.014][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/mason.nvim/.git/logs/refs/remotes/origin/main
+[20:22:31.014][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/mason.nvim/.git/logs/refs/remotes/origin/main
+[20:22:31.014][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/mason.nvim/.git/logs/refs/remotes/origin/main
+[20:22:31.014][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/plenary.nvim/.git/objects/42
+[20:22:31.014][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/plenary.nvim/.git/objects/42
+[20:22:31.014][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/plenary.nvim/.git/objects/42
+[20:22:31.014][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/plenary.nvim/.git/objects/42
+[20:22:31.014][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/d8
+[20:22:31.014][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/d8
+[20:22:31.014][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/d8
+[20:22:31.014][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/d8
+[20:22:31.014][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/gitsigns.nvim/.git/objects/29
+[20:22:31.014][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/gitsigns.nvim/.git/objects/29
+[20:22:31.014][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/gitsigns.nvim/.git/objects/29
+[20:22:31.014][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/gitsigns.nvim/.git/objects/29
+[20:22:31.014][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/LuaSnip/.git/objects/5d
+[20:22:31.014][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/LuaSnip/.git/objects/5d
+[20:22:31.015][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/LuaSnip/.git/objects/5d
+[20:22:31.015][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/LuaSnip/.git/objects/5d
+[20:22:31.015][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/LuaSnip/DOC.md
+[20:22:31.015][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/LuaSnip/DOC.md
+[20:22:31.015][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/LuaSnip/DOC.md
+[20:22:31.015][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/LuaSnip/DOC.md
+[20:22:31.015][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/ea
+[20:22:31.015][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/ea
+[20:22:31.015][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/ea
+[20:22:31.015][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/ea
+[20:22:31.015][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/b5
+[20:22:31.015][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/b5
+[20:22:31.015][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/b5
+[20:22:31.015][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/b5
+[20:22:31.015][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/5f
+[20:22:31.015][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/5f
+[20:22:31.015][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/5f
+[20:22:31.015][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/5f
+[20:22:31.015][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/LuaSnip/.git/index
+[20:22:31.015][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/LuaSnip/.git/index
+[20:22:31.015][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/LuaSnip/.git/index
+[20:22:31.015][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/LuaSnip/.git/index
+[20:22:31.015][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/refs/remotes/origin/update-readme-pr
+[20:22:31.015][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/refs/remotes/origin/update-readme-pr
+[20:22:31.015][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/refs/remotes/origin/update-readme-pr
+[20:22:31.016][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/refs/remotes/origin/update-readme-pr
+[20:22:31.016][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/06
+[20:22:31.016][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/06
+[20:22:31.016][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/06
+[20:22:31.016][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/06
+[20:22:31.016][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/plenary.nvim/.git/refs/heads/master
+[20:22:31.016][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/plenary.nvim/.git/refs/heads/master
+[20:22:31.016][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/plenary.nvim/.git/refs/heads/master
+[20:22:31.016][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/plenary.nvim/.git/refs/heads/master
+[20:22:31.016][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/LuaSnip/doc/luasnip.txt
+[20:22:31.016][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/LuaSnip/doc/luasnip.txt
+[20:22:31.016][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/LuaSnip/doc/luasnip.txt
+[20:22:31.016][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/LuaSnip/doc/luasnip.txt
+[20:22:31.016][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/gitsigns.nvim/.git/objects/cf
+[20:22:31.016][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/gitsigns.nvim/.git/objects/cf
+[20:22:31.016][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/gitsigns.nvim/.git/objects/cf
+[20:22:31.016][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/gitsigns.nvim/.git/objects/cf
+[20:22:31.016][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/plenary.nvim/.git/index
+[20:22:31.016][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/plenary.nvim/.git/index
+[20:22:31.016][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/plenary.nvim/.git/index
+[20:22:31.016][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/plenary.nvim/.git/index
+[20:22:31.016][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/17
+[20:22:31.016][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/17
+[20:22:31.016][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/17
+[20:22:31.016][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/17
+[20:22:31.016][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/e1
+[20:22:31.016][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/e1
+[20:22:31.016][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/e1
+[20:22:31.016][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/e1
+[20:22:31.016][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/refs/remotes/origin/update-lockfile-pr
+[20:22:31.016][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/refs/remotes/origin/update-lockfile-pr
+[20:22:31.016][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/refs/remotes/origin/update-lockfile-pr
+[20:22:31.016][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/refs/remotes/origin/update-lockfile-pr
+[20:22:31.016][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/a3
+[20:22:31.016][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/a3
+[20:22:31.016][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/a3
+[20:22:31.016][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/a3
+[20:22:31.016][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/bb
+[20:22:31.016][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/bb
+[20:22:31.016][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/bb
+[20:22:31.016][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/bb
+[20:22:31.016][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/32
+[20:22:31.016][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/32
+[20:22:31.016][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/32
+[20:22:31.016][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/32
+[20:22:31.016][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/refs/remotes/origin/master
+[20:22:31.016][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/refs/remotes/origin/master
+[20:22:31.016][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/refs/remotes/origin/master
+[20:22:31.016][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/refs/remotes/origin/master
+[20:22:31.016][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/gitsigns.nvim/.git/objects/ba
+[20:22:31.016][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/gitsigns.nvim/.git/objects/ba
+[20:22:31.016][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/gitsigns.nvim/.git/objects/ba
+[20:22:31.017][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/gitsigns.nvim/.git/objects/ba
+[20:22:31.017][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/plenary.nvim/README.md
+[20:22:31.017][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/plenary.nvim/README.md
+[20:22:31.017][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/plenary.nvim/README.md
+[20:22:31.017][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/plenary.nvim/README.md
+[20:22:31.017][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/mason.nvim/.git/refs/remotes/origin/main
+[20:22:31.017][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/mason.nvim/.git/refs/remotes/origin/main
+[20:22:31.017][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/mason.nvim/.git/refs/remotes/origin/main
+[20:22:31.017][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/mason.nvim/.git/refs/remotes/origin/main
+[20:22:31.017][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/f9
+[20:22:31.017][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/f9
+[20:22:31.017][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/f9
+[20:22:31.017][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/f9
+[20:22:31.017][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/plenary.nvim/.git/objects/4a
+[20:22:31.017][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/plenary.nvim/.git/objects/4a
+[20:22:31.017][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/plenary.nvim/.git/objects/4a
+[20:22:31.017][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/plenary.nvim/.git/objects/4a
+[20:22:31.017][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/1d
+[20:22:31.017][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/1d
+[20:22:31.017][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/1d
+[20:22:31.017][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/1d
+[20:22:31.017][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/0a
+[20:22:31.017][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/0a
+[20:22:31.017][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/0a
+[20:22:31.017][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/0a
+[20:22:31.017][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/93
+[20:22:31.017][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/93
+[20:22:31.017][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/93
+[20:22:31.017][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/93
+[20:22:31.017][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/45
+[20:22:31.017][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/45
+[20:22:31.017][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/45
+[20:22:31.017][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/45
+[20:22:31.017][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/plenary.nvim/.git/objects/7a
+[20:22:31.017][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/plenary.nvim/.git/objects/7a
+[20:22:31.017][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/plenary.nvim/.git/objects/7a
+[20:22:31.017][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/plenary.nvim/.git/objects/7a
+[20:22:31.017][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/4d
+[20:22:31.017][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/4d
+[20:22:31.017][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/4d
+[20:22:31.017][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/4d
+[20:22:31.017][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/ac
+[20:22:31.017][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/ac
+[20:22:31.017][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/ac
+[20:22:31.017][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/ac
+[20:22:31.017][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/ff
+[20:22:31.017][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/ff
+[20:22:31.017][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/ff
+[20:22:31.017][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/ff
+[20:22:31.017][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/8c
+[20:22:31.017][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/8c
+[20:22:31.017][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/8c
+[20:22:31.017][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/8c
+[20:22:31.017][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/27
+[20:22:31.017][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/27
+[20:22:31.017][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/27
+[20:22:31.017][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/27
+[20:22:31.017][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/1e
+[20:22:31.017][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/1e
+[20:22:31.017][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/1e
+[20:22:31.017][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/1e
+[20:22:31.017][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/e5
+[20:22:31.017][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/e5
+[20:22:31.017][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/e5
+[20:22:31.018][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/e5
+[20:22:31.018][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/f6
+[20:22:31.018][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/f6
+[20:22:31.018][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/f6
+[20:22:31.018][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/f6
+[20:22:31.018][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/plenary.nvim/.git/objects/5c
+[20:22:31.018][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/plenary.nvim/.git/objects/5c
+[20:22:31.018][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/plenary.nvim/.git/objects/5c
+[20:22:31.018][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/plenary.nvim/.git/objects/5c
+[20:22:31.018][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/cf
+[20:22:31.018][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/cf
+[20:22:31.018][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/cf
+[20:22:31.018][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/cf
+[20:22:31.018][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/c6
+[20:22:31.018][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/c6
+[20:22:31.018][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/c6
+[20:22:31.018][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/c6
+[20:22:31.018][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/f2
+[20:22:31.018][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/f2
+[20:22:31.018][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/f2
+[20:22:31.018][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/f2
+[20:22:31.018][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/40
+[20:22:31.018][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/40
+[20:22:31.018][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/40
+[20:22:31.018][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/40
+[20:22:31.018][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/1a
+[20:22:31.018][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/1a
+[20:22:31.018][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/1a
+[20:22:31.018][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/1a
+[20:22:31.018][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/ef
+[20:22:31.018][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/ef
+[20:22:31.018][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/ef
+[20:22:31.018][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/ef
+[20:22:31.018][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/0e
+[20:22:31.018][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/0e
+[20:22:31.018][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/0e
+[20:22:31.018][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/0e
+[20:22:31.018][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/LuaSnip/.git/objects/33
+[20:22:31.018][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/LuaSnip/.git/objects/33
+[20:22:31.018][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/LuaSnip/.git/objects/33
+[20:22:31.018][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/LuaSnip/.git/objects/33
+[20:22:31.018][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/logs/refs/remotes/origin/update-lockfile-pr
+[20:22:31.018][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/logs/refs/remotes/origin/update-lockfile-pr
+[20:22:31.018][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/logs/refs/remotes/origin/update-lockfile-pr
+[20:22:31.018][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/logs/refs/remotes/origin/update-lockfile-pr
+[20:22:31.018][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/52
+[20:22:31.018][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/52
+[20:22:31.018][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/52
+[20:22:31.018][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/52
+[20:22:31.018][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/mason.nvim/.git/objects/e1
+[20:22:31.018][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/mason.nvim/.git/objects/e1
+[20:22:31.018][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/mason.nvim/.git/objects/e1
+[20:22:31.018][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/mason.nvim/.git/objects/e1
+[20:22:31.018][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/46
+[20:22:31.018][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/46
+[20:22:31.018][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/46
+[20:22:31.018][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/46
+[20:22:31.018][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/mason.nvim/.git/objects/3d
+[20:22:31.018][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/mason.nvim/.git/objects/3d
+[20:22:31.018][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/mason.nvim/.git/objects/3d
+[20:22:31.018][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/mason.nvim/.git/objects/3d
+[20:22:31.018][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/99
+[20:22:31.019][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/99
+[20:22:31.019][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/99
+[20:22:31.019][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/99
+[20:22:31.019][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/39
+[20:22:31.019][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/39
+[20:22:31.019][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/39
+[20:22:31.019][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/39
+[20:22:31.019][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/plenary.nvim/.git/objects/1c
+[20:22:31.019][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/plenary.nvim/.git/objects/1c
+[20:22:31.019][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/plenary.nvim/.git/objects/1c
+[20:22:31.019][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/plenary.nvim/.git/objects/1c
+[20:22:31.019][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/LuaSnip/.git/objects/bb
+[20:22:31.019][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/LuaSnip/.git/objects/bb
+[20:22:31.019][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/LuaSnip/.git/objects/bb
+[20:22:31.019][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/LuaSnip/.git/objects/bb
+[20:22:31.019][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/mason.nvim/.git/objects/52
+[20:22:31.019][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/mason.nvim/.git/objects/52
+[20:22:31.019][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/mason.nvim/.git/objects/52
+[20:22:31.019][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/mason.nvim/.git/objects/52
+[20:22:31.019][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/mason.nvim/.git/objects/ca
+[20:22:31.019][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/mason.nvim/.git/objects/ca
+[20:22:31.019][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/mason.nvim/.git/objects/ca
+[20:22:31.019][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/mason.nvim/.git/objects/ca
+[20:22:31.019][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/87
+[20:22:31.019][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/87
+[20:22:31.019][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/87
+[20:22:31.019][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/87
+[20:22:31.019][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/c4
+[20:22:31.019][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/c4
+[20:22:31.019][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/c4
+[20:22:31.019][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/c4
+[20:22:31.019][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/plenary.nvim/.git/objects/31
+[20:22:31.019][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/plenary.nvim/.git/objects/31
+[20:22:31.019][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/plenary.nvim/.git/objects/31
+[20:22:31.019][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/plenary.nvim/.git/objects/31
+[20:22:31.019][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/mason.nvim/.git/objects/fa
+[20:22:31.019][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/mason.nvim/.git/objects/fa
+[20:22:31.019][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/mason.nvim/.git/objects/fa
+[20:22:31.019][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/mason.nvim/.git/objects/fa
+[20:22:31.019][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/logs/refs/remotes/origin/master
+[20:22:31.019][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/logs/refs/remotes/origin/master
+[20:22:31.019][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/logs/refs/remotes/origin/master
+[20:22:31.019][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/logs/refs/remotes/origin/master
+[20:22:31.019][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/gitsigns.nvim/.git/objects/96
+[20:22:31.019][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/gitsigns.nvim/.git/objects/96
+[20:22:31.019][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/gitsigns.nvim/.git/objects/96
+[20:22:31.019][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/gitsigns.nvim/.git/objects/96
+[20:22:31.019][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/3f
+[20:22:31.019][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/3f
+[20:22:31.019][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/3f
+[20:22:31.019][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/3f
+[20:22:31.019][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/02
+[20:22:31.019][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/02
+[20:22:31.019][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/02
+[20:22:31.019][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/02
+[20:22:31.019][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/LuaSnip/.git/objects/4b
+[20:22:31.019][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/LuaSnip/.git/objects/4b
+[20:22:31.019][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/LuaSnip/.git/objects/4b
+[20:22:31.019][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/LuaSnip/.git/objects/4b
+[20:22:31.019][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/plenary.nvim/.git/objects/39
+[20:22:31.019][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/plenary.nvim/.git/objects/39
+[20:22:31.019][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/plenary.nvim/.git/objects/39
+[20:22:31.019][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/plenary.nvim/.git/objects/39
+[20:22:31.019][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/a6
+[20:22:31.019][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/a6
+[20:22:31.019][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/a6
+[20:22:31.019][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/a6
+[20:22:31.019][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/ed
+[20:22:31.019][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/ed
+[20:22:31.019][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/ed
+[20:22:31.019][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/ed
+[20:22:31.019][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/plenary.nvim/.git/objects/f8
+[20:22:31.020][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/plenary.nvim/.git/objects/f8
+[20:22:31.020][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/plenary.nvim/.git/objects/f8
+[20:22:31.020][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/plenary.nvim/.git/objects/f8
+[20:22:31.020][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/28
+[20:22:31.020][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/28
+[20:22:31.020][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/28
+[20:22:31.020][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/28
+[20:22:31.020][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/LuaSnip/.git/objects/aa
+[20:22:31.020][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/LuaSnip/.git/objects/aa
+[20:22:31.020][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/LuaSnip/.git/objects/aa
+[20:22:31.020][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/LuaSnip/.git/objects/aa
+[20:22:31.020][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/LuaSnip/.git/logs/refs/remotes/origin/master
+[20:22:31.020][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/LuaSnip/.git/logs/refs/remotes/origin/master
+[20:22:31.020][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/LuaSnip/.git/logs/refs/remotes/origin/master
+[20:22:31.020][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/LuaSnip/.git/logs/refs/remotes/origin/master
+[20:22:31.020][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/gitsigns.nvim/.git/objects/46
+[20:22:31.020][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/gitsigns.nvim/.git/objects/46
+[20:22:31.020][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/gitsigns.nvim/.git/objects/46
+[20:22:31.020][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/gitsigns.nvim/.git/objects/46
+[20:22:31.020][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/56
+[20:22:31.020][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/56
+[20:22:31.020][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/56
+[20:22:31.020][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/56
+[20:22:31.020][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/LuaSnip/.git/objects/09
+[20:22:31.020][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/LuaSnip/.git/objects/09
+[20:22:31.020][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/LuaSnip/.git/objects/09
+[20:22:31.020][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/LuaSnip/.git/objects/09
+[20:22:31.020][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/d1
+[20:22:31.020][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/d1
+[20:22:31.020][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/d1
+[20:22:31.020][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/d1
+[20:22:31.020][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/mason.nvim/.git/objects/15
+[20:22:31.020][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/mason.nvim/.git/objects/15
+[20:22:31.020][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/mason.nvim/.git/objects/15
+[20:22:31.020][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/mason.nvim/.git/objects/15
+[20:22:31.020][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/db
+[20:22:31.020][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/db
+[20:22:31.020][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/db
+[20:22:31.020][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/db
+[20:22:31.020][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/plenary.nvim/.git/objects/eb
+[20:22:31.020][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/plenary.nvim/.git/objects/eb
+[20:22:31.020][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/plenary.nvim/.git/objects/eb
+[20:22:31.020][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/plenary.nvim/.git/objects/eb
+[20:22:31.020][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/71
+[20:22:31.020][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/71
+[20:22:31.020][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/71
+[20:22:31.020][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/71
+[20:22:31.020][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.010] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/plenary.nvim/lua/plenary/test_harness.lua
+[20:22:31.020][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/plenary.nvim/lua/plenary/test_harness.lua
+[20:22:31.020][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/plenary.nvim/lua/plenary/test_harness.lua
+[20:22:31.020][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/6e
+[20:22:31.020][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/6e
+[20:22:31.020][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/6e
+[20:22:31.020][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/6e
+[20:22:31.021][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/gitsigns.nvim/.git/objects/b5
+[20:22:31.021][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/gitsigns.nvim/.git/objects/b5
+[20:22:31.021][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/gitsigns.nvim/.git/objects/b5
+[20:22:31.021][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/gitsigns.nvim/.git/objects/b5
+[20:22:31.021][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/82
+[20:22:31.021][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/82
+[20:22:31.021][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/82
+[20:22:31.021][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/82
+[20:22:31.021][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/67
+[20:22:31.021][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/67
+[20:22:31.021][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/67
+[20:22:31.021][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/67
+[20:22:31.021][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/8e
+[20:22:31.021][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/8e
+[20:22:31.021][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/8e
+[20:22:31.021][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/8e
+[20:22:31.021][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/14
+[20:22:31.021][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/14
+[20:22:31.021][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/14
+[20:22:31.021][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/14
+[20:22:31.021][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/81
+[20:22:31.021][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/81
+[20:22:31.021][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/81
+[20:22:31.021][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/81
+[20:22:31.021][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/c0
+[20:22:31.021][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/c0
+[20:22:31.021][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/c0
+[20:22:31.021][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/c0
+[20:22:31.021][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/5b
+[20:22:31.021][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/5b
+[20:22:31.021][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/5b
+[20:22:31.021][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/5b
+[20:22:31.021][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/gitsigns.nvim/.git/objects/7e
+[20:22:31.021][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/gitsigns.nvim/.git/objects/7e
+[20:22:31.021][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/gitsigns.nvim/.git/objects/7e
+[20:22:31.021][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/gitsigns.nvim/.git/objects/7e
+[20:22:31.021][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/a7
+[20:22:31.021][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/a7
+[20:22:31.021][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/a7
+[20:22:31.021][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/a7
+[20:22:31.021][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/0b
+[20:22:31.021][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/0b
+[20:22:31.021][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/0b
+[20:22:31.021][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/msfe/.local/share/nvim/site/pack/packer/start/nvim-treesitter/.git/objects/0b
+[20:22:42.988][info] [#0:script/provider/provider.lua:170]: Server shutdown.
+[20:22:43.691][info] [#0:script/provider/provider.lua:163]: Server exited.

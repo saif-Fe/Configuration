@@ -1,0 +1,92 @@
+[INFO  Mon 09 Jan 2023 08:04:07 PM PKT] ...acker/start/mason.nvim/lua/mason-core/installer/init.lua:120: Executing installer for Package(name=lua-language-server)
+[INFO  Mon 09 Jan 2023 08:04:07 PM PKT] ...acker/start/mason.nvim/lua/mason-core/installer/init.lua:120: Executing installer for Package(name=typescript-language-server)
+[INFO  Mon 09 Jan 2023 08:04:07 PM PKT] ...acker/start/mason.nvim/lua/mason-core/installer/init.lua:120: Executing installer for Package(name=html-lsp)
+[INFO  Mon 09 Jan 2023 08:04:07 PM PKT] ...acker/start/mason.nvim/lua/mason-core/installer/init.lua:120: Executing installer for Package(name=css-lsp)
+[INFO  Mon 09 Jan 2023 08:04:21 PM PKT] ...acker/start/mason.nvim/lua/mason-core/installer/init.lua:120: Executing installer for Package(name=elixir-ls)
+[ERROR Mon 09 Jan 2023 08:04:21 PM PKT] ...acker/start/mason.nvim/lua/mason-core/installer/init.lua:159: Installation failed for Package(name=typescript-language-server) error=spawn: npm failed with exit code 127 and signal 0. 
+[INFO  Mon 09 Jan 2023 08:04:22 PM PKT] ...acker/start/mason.nvim/lua/mason-core/installer/init.lua:120: Executing installer for Package(name=gopls)
+[ERROR Mon 09 Jan 2023 08:04:22 PM PKT] ...acker/start/mason.nvim/lua/mason-core/installer/init.lua:159: Installation failed for Package(name=css-lsp) error=spawn: npm failed with exit code 127 and signal 0. 
+[INFO  Mon 09 Jan 2023 08:04:23 PM PKT] ...acker/start/mason.nvim/lua/mason-core/installer/init.lua:120: Executing installer for Package(name=json-lsp)
+[ERROR Mon 09 Jan 2023 08:04:23 PM PKT] ...acker/start/mason.nvim/lua/mason-core/installer/init.lua:159: Installation failed for Package(name=html-lsp) error=spawn: npm failed with exit code 127 and signal 0. 
+[INFO  Mon 09 Jan 2023 08:04:25 PM PKT] ...acker/start/mason.nvim/lua/mason-core/installer/init.lua:120: Executing installer for Package(name=marksman)
+[ERROR Mon 09 Jan 2023 08:04:25 PM PKT] ...acker/start/mason.nvim/lua/mason-core/installer/init.lua:159: Installation failed for Package(name=json-lsp) error=spawn: npm failed with exit code 127 and signal 0. 
+[INFO  Mon 09 Jan 2023 08:04:28 PM PKT] ...acker/start/mason.nvim/lua/mason-core/installer/init.lua:120: Executing installer for Package(name=tailwindcss-language-server)
+[ERROR Mon 09 Jan 2023 08:04:28 PM PKT] ...acker/start/mason.nvim/lua/mason-core/installer/init.lua:159: Installation failed for Package(name=elixir-ls) error=spawn: unzip failed with exit code - and signal -. unzip is not executable
+[INFO  Mon 09 Jan 2023 08:04:29 PM PKT] ...acker/start/mason.nvim/lua/mason-core/installer/init.lua:120: Executing installer for Package(name=emmet-ls)
+[ERROR Mon 09 Jan 2023 08:04:29 PM PKT] ...acker/start/mason.nvim/lua/mason-core/installer/init.lua:159: Installation failed for Package(name=lua-language-server) error=spawn: unzip failed with exit code - and signal -. unzip is not executable
+[INFO  Mon 09 Jan 2023 08:04:31 PM PKT] ...acker/start/mason.nvim/lua/mason-core/installer/init.lua:120: Executing installer for Package(name=rust-analyzer)
+[ERROR Mon 09 Jan 2023 08:04:31 PM PKT] ...acker/start/mason.nvim/lua/mason-core/installer/init.lua:159: Installation failed for Package(name=tailwindcss-language-server) error=spawn: npm failed with exit code 127 and signal 0. 
+[ERROR Mon 09 Jan 2023 08:04:31 PM PKT] ...acker/start/mason.nvim/lua/mason-core/installer/init.lua:159: Installation failed for Package(name=emmet-ls) error=spawn: npm failed with exit code 127 and signal 0. 
+[INFO  Mon 09 Jan 2023 08:05:12 PM PKT] ...acker/start/mason.nvim/lua/mason-core/installer/init.lua:152: Installation succeeded for Package(name=marksman)
+[INFO  Mon 09 Jan 2023 08:05:16 PM PKT] ...acker/start/mason.nvim/lua/mason-core/installer/init.lua:152: Installation succeeded for Package(name=rust-analyzer)
+[ERROR Mon 09 Jan 2023 08:05:50 PM PKT] ...acker/start/mason.nvim/lua/mason-core/installer/init.lua:159: Installation failed for Package(name=gopls) error="Installation was aborted."
+[INFO  Mon 09 Jan 2023 08:07:44 PM PKT] ...acker/start/mason.nvim/lua/mason-core/installer/init.lua:120: Executing installer for Package(name=lua-language-server)
+[INFO  Mon 09 Jan 2023 08:07:44 PM PKT] ...acker/start/mason.nvim/lua/mason-core/installer/init.lua:120: Executing installer for Package(name=typescript-language-server)
+[INFO  Mon 09 Jan 2023 08:07:44 PM PKT] ...acker/start/mason.nvim/lua/mason-core/installer/init.lua:120: Executing installer for Package(name=html-lsp)
+[INFO  Mon 09 Jan 2023 08:07:44 PM PKT] ...acker/start/mason.nvim/lua/mason-core/installer/init.lua:120: Executing installer for Package(name=css-lsp)
+[INFO  Mon 09 Jan 2023 08:08:01 PM PKT] ...acker/start/mason.nvim/lua/mason-core/installer/init.lua:120: Executing installer for Package(name=elixir-ls)
+[ERROR Mon 09 Jan 2023 08:08:01 PM PKT] ...acker/start/mason.nvim/lua/mason-core/installer/init.lua:159: Installation failed for Package(name=typescript-language-server) error=spawn: npm failed with exit code 127 and signal 0. 
+[INFO  Mon 09 Jan 2023 08:08:02 PM PKT] ...acker/start/mason.nvim/lua/mason-core/installer/init.lua:120: Executing installer for Package(name=gopls)
+[ERROR Mon 09 Jan 2023 08:08:02 PM PKT] ...acker/start/mason.nvim/lua/mason-core/installer/init.lua:159: Installation failed for Package(name=css-lsp) error=spawn: npm failed with exit code 127 and signal 0. 
+[INFO  Mon 09 Jan 2023 08:08:02 PM PKT] ...acker/start/mason.nvim/lua/mason-core/installer/init.lua:120: Executing installer for Package(name=json-lsp)
+[ERROR Mon 09 Jan 2023 08:08:02 PM PKT] ...acker/start/mason.nvim/lua/mason-core/installer/init.lua:159: Installation failed for Package(name=html-lsp) error=spawn: npm failed with exit code 127 and signal 0. 
+[INFO  Mon 09 Jan 2023 08:08:03 PM PKT] ...acker/start/mason.nvim/lua/mason-core/installer/init.lua:120: Executing installer for Package(name=tailwindcss-language-server)
+[ERROR Mon 09 Jan 2023 08:08:03 PM PKT] ...acker/start/mason.nvim/lua/mason-core/installer/init.lua:159: Installation failed for Package(name=json-lsp) error=spawn: npm failed with exit code 127 and signal 0. 
+[INFO  Mon 09 Jan 2023 08:08:03 PM PKT] ...acker/start/mason.nvim/lua/mason-core/installer/init.lua:120: Executing installer for Package(name=emmet-ls)
+[ERROR Mon 09 Jan 2023 08:08:03 PM PKT] ...acker/start/mason.nvim/lua/mason-core/installer/init.lua:159: Installation failed for Package(name=tailwindcss-language-server) error=spawn: npm failed with exit code 127 and signal 0. 
+[ERROR Mon 09 Jan 2023 08:08:04 PM PKT] ...acker/start/mason.nvim/lua/mason-core/installer/init.lua:159: Installation failed for Package(name=emmet-ls) error=spawn: npm failed with exit code 127 and signal 0. 
+[ERROR Mon 09 Jan 2023 08:08:04 PM PKT] ...acker/start/mason.nvim/lua/mason-core/installer/init.lua:159: Installation failed for Package(name=elixir-ls) error=spawn: unzip failed with exit code - and signal -. unzip is not executable
+[INFO  Mon 09 Jan 2023 08:08:29 PM PKT] ...acker/start/mason.nvim/lua/mason-core/installer/init.lua:152: Installation succeeded for Package(name=gopls)
+[ERROR Mon 09 Jan 2023 08:08:47 PM PKT] ...acker/start/mason.nvim/lua/mason-core/installer/init.lua:159: Installation failed for Package(name=lua-language-server) error=spawn: unzip failed with exit code - and signal -. unzip is not executable
+[INFO  Mon 09 Jan 2023 08:09:12 PM PKT] ...acker/start/mason.nvim/lua/mason-core/installer/init.lua:120: Executing installer for Package(name=lua-language-server)
+[INFO  Mon 09 Jan 2023 08:09:12 PM PKT] ...acker/start/mason.nvim/lua/mason-core/installer/init.lua:120: Executing installer for Package(name=typescript-language-server)
+[INFO  Mon 09 Jan 2023 08:09:12 PM PKT] ...acker/start/mason.nvim/lua/mason-core/installer/init.lua:120: Executing installer for Package(name=html-lsp)
+[INFO  Mon 09 Jan 2023 08:09:12 PM PKT] ...acker/start/mason.nvim/lua/mason-core/installer/init.lua:120: Executing installer for Package(name=css-lsp)
+[INFO  Mon 09 Jan 2023 08:09:18 PM PKT] ...acker/start/mason.nvim/lua/mason-core/installer/init.lua:120: Executing installer for Package(name=elixir-ls)
+[ERROR Mon 09 Jan 2023 08:09:18 PM PKT] ...acker/start/mason.nvim/lua/mason-core/installer/init.lua:159: Installation failed for Package(name=html-lsp) error=spawn: npm failed with exit code 127 and signal 0. 
+[INFO  Mon 09 Jan 2023 08:09:18 PM PKT] ...acker/start/mason.nvim/lua/mason-core/installer/init.lua:120: Executing installer for Package(name=json-lsp)
+[ERROR Mon 09 Jan 2023 08:09:18 PM PKT] ...acker/start/mason.nvim/lua/mason-core/installer/init.lua:159: Installation failed for Package(name=typescript-language-server) error=spawn: npm failed with exit code 127 and signal 0. 
+[INFO  Mon 09 Jan 2023 08:09:18 PM PKT] ...acker/start/mason.nvim/lua/mason-core/installer/init.lua:120: Executing installer for Package(name=tailwindcss-language-server)
+[ERROR Mon 09 Jan 2023 08:09:18 PM PKT] ...acker/start/mason.nvim/lua/mason-core/installer/init.lua:159: Installation failed for Package(name=css-lsp) error=spawn: npm failed with exit code 127 and signal 0. 
+[INFO  Mon 09 Jan 2023 08:09:19 PM PKT] ...acker/start/mason.nvim/lua/mason-core/installer/init.lua:120: Executing installer for Package(name=emmet-ls)
+[ERROR Mon 09 Jan 2023 08:09:19 PM PKT] ...acker/start/mason.nvim/lua/mason-core/installer/init.lua:159: Installation failed for Package(name=json-lsp) error=spawn: npm failed with exit code 127 and signal 0. 
+[ERROR Mon 09 Jan 2023 08:09:19 PM PKT] ...acker/start/mason.nvim/lua/mason-core/installer/init.lua:159: Installation failed for Package(name=tailwindcss-language-server) error=spawn: npm failed with exit code 127 and signal 0. 
+[ERROR Mon 09 Jan 2023 08:09:19 PM PKT] ...acker/start/mason.nvim/lua/mason-core/installer/init.lua:159: Installation failed for Package(name=emmet-ls) error=spawn: npm failed with exit code 127 and signal 0. 
+[INFO  Mon 09 Jan 2023 08:09:24 PM PKT] ...acker/start/mason.nvim/lua/mason-core/installer/init.lua:152: Installation succeeded for Package(name=elixir-ls)
+[INFO  Mon 09 Jan 2023 08:09:24 PM PKT] ...acker/start/mason.nvim/lua/mason-core/installer/init.lua:152: Installation succeeded for Package(name=lua-language-server)
+[INFO  Mon 09 Jan 2023 08:24:58 PM PKT] ...acker/start/mason.nvim/lua/mason-core/installer/init.lua:120: Executing installer for Package(name=typescript-language-server)
+[INFO  Mon 09 Jan 2023 08:24:58 PM PKT] ...acker/start/mason.nvim/lua/mason-core/installer/init.lua:120: Executing installer for Package(name=html-lsp)
+[INFO  Mon 09 Jan 2023 08:24:58 PM PKT] ...acker/start/mason.nvim/lua/mason-core/installer/init.lua:120: Executing installer for Package(name=css-lsp)
+[INFO  Mon 09 Jan 2023 08:24:58 PM PKT] ...acker/start/mason.nvim/lua/mason-core/installer/init.lua:120: Executing installer for Package(name=json-lsp)
+[INFO  Mon 09 Jan 2023 08:25:10 PM PKT] ...acker/start/mason.nvim/lua/mason-core/installer/init.lua:120: Executing installer for Package(name=tailwindcss-language-server)
+[ERROR Mon 09 Jan 2023 08:25:10 PM PKT] ...acker/start/mason.nvim/lua/mason-core/installer/init.lua:159: Installation failed for Package(name=html-lsp) error=spawn: npm failed with exit code 127 and signal 0. 
+[INFO  Mon 09 Jan 2023 08:25:10 PM PKT] ...acker/start/mason.nvim/lua/mason-core/installer/init.lua:120: Executing installer for Package(name=emmet-ls)
+[ERROR Mon 09 Jan 2023 08:25:10 PM PKT] ...acker/start/mason.nvim/lua/mason-core/installer/init.lua:159: Installation failed for Package(name=css-lsp) error=spawn: npm failed with exit code 127 and signal 0. 
+[ERROR Mon 09 Jan 2023 08:25:10 PM PKT] ...acker/start/mason.nvim/lua/mason-core/installer/init.lua:159: Installation failed for Package(name=json-lsp) error=spawn: npm failed with exit code 127 and signal 0. 
+[ERROR Mon 09 Jan 2023 08:25:11 PM PKT] ...acker/start/mason.nvim/lua/mason-core/installer/init.lua:159: Installation failed for Package(name=typescript-language-server) error=spawn: npm failed with exit code 127 and signal 0. 
+[ERROR Mon 09 Jan 2023 08:25:11 PM PKT] ...acker/start/mason.nvim/lua/mason-core/installer/init.lua:159: Installation failed for Package(name=tailwindcss-language-server) error=spawn: npm failed with exit code 127 and signal 0. 
+[ERROR Mon 09 Jan 2023 08:25:11 PM PKT] ...acker/start/mason.nvim/lua/mason-core/installer/init.lua:159: Installation failed for Package(name=emmet-ls) error=spawn: npm failed with exit code 127 and signal 0. 
+[INFO  Mon 09 Jan 2023 08:26:31 PM PKT] ...acker/start/mason.nvim/lua/mason-core/installer/init.lua:120: Executing installer for Package(name=typescript-language-server)
+[INFO  Mon 09 Jan 2023 08:26:31 PM PKT] ...acker/start/mason.nvim/lua/mason-core/installer/init.lua:120: Executing installer for Package(name=html-lsp)
+[INFO  Mon 09 Jan 2023 08:26:31 PM PKT] ...acker/start/mason.nvim/lua/mason-core/installer/init.lua:120: Executing installer for Package(name=css-lsp)
+[INFO  Mon 09 Jan 2023 08:26:31 PM PKT] ...acker/start/mason.nvim/lua/mason-core/installer/init.lua:120: Executing installer for Package(name=json-lsp)
+[INFO  Mon 09 Jan 2023 08:26:34 PM PKT] ...acker/start/mason.nvim/lua/mason-core/installer/init.lua:120: Executing installer for Package(name=tailwindcss-language-server)
+[ERROR Mon 09 Jan 2023 08:26:34 PM PKT] ...acker/start/mason.nvim/lua/mason-core/installer/init.lua:159: Installation failed for Package(name=css-lsp) error=spawn: npm failed with exit code 127 and signal 0. 
+[INFO  Mon 09 Jan 2023 08:26:34 PM PKT] ...acker/start/mason.nvim/lua/mason-core/installer/init.lua:120: Executing installer for Package(name=emmet-ls)
+[ERROR Mon 09 Jan 2023 08:26:34 PM PKT] ...acker/start/mason.nvim/lua/mason-core/installer/init.lua:159: Installation failed for Package(name=json-lsp) error=spawn: npm failed with exit code 127 and signal 0. 
+[ERROR Mon 09 Jan 2023 08:26:34 PM PKT] ...acker/start/mason.nvim/lua/mason-core/installer/init.lua:159: Installation failed for Package(name=typescript-language-server) error=spawn: npm failed with exit code 127 and signal 0. 
+[ERROR Mon 09 Jan 2023 08:26:34 PM PKT] ...acker/start/mason.nvim/lua/mason-core/installer/init.lua:159: Installation failed for Package(name=html-lsp) error=spawn: npm failed with exit code 127 and signal 0. 
+[ERROR Mon 09 Jan 2023 08:26:34 PM PKT] ...acker/start/mason.nvim/lua/mason-core/installer/init.lua:159: Installation failed for Package(name=tailwindcss-language-server) error=spawn: npm failed with exit code 127 and signal 0. 
+[ERROR Mon 09 Jan 2023 08:26:34 PM PKT] ...acker/start/mason.nvim/lua/mason-core/installer/init.lua:159: Installation failed for Package(name=emmet-ls) error=spawn: npm failed with exit code 127 and signal 0. 
+[INFO  Mon 09 Jan 2023 08:29:21 PM PKT] ...acker/start/mason.nvim/lua/mason-core/installer/init.lua:120: Executing installer for Package(name=typescript-language-server)
+[INFO  Mon 09 Jan 2023 08:29:21 PM PKT] ...acker/start/mason.nvim/lua/mason-core/installer/init.lua:120: Executing installer for Package(name=html-lsp)
+[INFO  Mon 09 Jan 2023 08:29:21 PM PKT] ...acker/start/mason.nvim/lua/mason-core/installer/init.lua:120: Executing installer for Package(name=css-lsp)
+[INFO  Mon 09 Jan 2023 08:29:21 PM PKT] ...acker/start/mason.nvim/lua/mason-core/installer/init.lua:120: Executing installer for Package(name=json-lsp)
+[INFO  Mon 09 Jan 2023 08:30:14 PM PKT] ...acker/start/mason.nvim/lua/mason-core/installer/init.lua:120: Executing installer for Package(name=tailwindcss-language-server)
+[INFO  Mon 09 Jan 2023 08:30:14 PM PKT] ...acker/start/mason.nvim/lua/mason-core/installer/init.lua:152: Installation succeeded for Package(name=json-lsp)
+[INFO  Mon 09 Jan 2023 08:30:17 PM PKT] ...acker/start/mason.nvim/lua/mason-core/installer/init.lua:120: Executing installer for Package(name=emmet-ls)
+[INFO  Mon 09 Jan 2023 08:30:17 PM PKT] ...acker/start/mason.nvim/lua/mason-core/installer/init.lua:152: Installation succeeded for Package(name=css-lsp)
+[INFO  Mon 09 Jan 2023 08:30:23 PM PKT] ...acker/start/mason.nvim/lua/mason-core/installer/init.lua:152: Installation succeeded for Package(name=html-lsp)
+[INFO  Mon 09 Jan 2023 08:30:25 PM PKT] ...acker/start/mason.nvim/lua/mason-core/installer/init.lua:152: Installation succeeded for Package(name=typescript-language-server)
+[INFO  Mon 09 Jan 2023 08:30:26 PM PKT] ...acker/start/mason.nvim/lua/mason-core/installer/init.lua:152: Installation succeeded for Package(name=tailwindcss-language-server)
+[INFO  Mon 09 Jan 2023 08:30:32 PM PKT] ...acker/start/mason.nvim/lua/mason-core/installer/init.lua:152: Installation succeeded for Package(name=emmet-ls)

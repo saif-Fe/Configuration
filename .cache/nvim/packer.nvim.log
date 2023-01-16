@@ -1,0 +1,28 @@
+[ERROR Mon 09 Jan 2023 08:03:47 PM PKT 10124718132803] .../site/pack/packer/start/packer.nvim/lua/packer/async.lua:20: Error in coroutine: ...ack/packer/start/packer.nvim/lua/packer/plugin_utils.lua:204: Vim(lua):E5108: Error executing lua ...r/start/nvim-ts-autotag/lua/nvim-ts-autotag/internal.lua:3: module 'nvim-treesitter.configs' not found:
+	no field package.preload['nvim-treesitter.configs']
+	no file './nvim-treesitter/configs.lua'
+	no file '/usr/share/luajit-2.1.0-beta3/nvim-treesitter/configs.lua'
+	no file '/usr/local/share/lua/5.1/nvim-treesitter/configs.lua'
+	no file '/usr/local/share/lua/5.1/nvim-treesitter/configs/init.lua'
+	no file '/usr/share/lua/5.1/nvim-treesitter/configs.lua'
+	no file '/usr/share/lua/5.1/nvim-treesitter/configs/init.lua'
+	no file './nvim-treesitter/configs.so'
+	no file '/usr/local/lib/lua/5.1/nvim-treesitter/configs.so'
+	no file '/usr/lib/lua/5.1/nvim-treesitter/configs.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+	no file './nvim-treesitter.so'
+	no file '/usr/local/lib/lua/5.1/nvim-treesitter.so'
+	no file '/usr/lib/lua/5.1/nvim-treesitter.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+stack traceback:
+	[C]: in function 'require'
+	...r/start/nvim-ts-autotag/lua/nvim-ts-autotag/internal.lua:3: in main chunk
+	[C]: in function 'require'
+	...ack/packer/start/nvim-ts-autotag/lua/nvim-ts-autotag.lua:1: in main chunk
+	[C]: in function 'require'
+	[string ":lua"]:1: in main chunk
+	[C]: in function 'resume'
+	.../site/pack/packer/start/packer.nvim/lua/packer/async.lua:12: in function <.../site/pack/packer/start/packer.nvim/lua/packer/async.lua:11>
+[ERROR Mon 09 Jan 2023 08:03:52 PM PKT 10129317447682] .../site/pack/packer/start/packer.nvim/lua/packer/async.lua:20: Error in coroutine: ...ack/packer/start/packer.nvim/lua/packer/plugin_utils.lua:236: Vim:E492: Not an editor command: TSUpdate
+[WARN  Mon 09 Jan 2023 08:50:31 PM PKT 12928621319873] ...e/nvim/site/pack/packer/start/packer.nvim/lua/packer.lua:219: Plugin "mason.nvim" is used twice! (line 126)
+[WARN  Tue 10 Jan 2023 08:22:06 PM PKT 26494427526353] ...ite/pack/packer/start/packer.nvim/lua/packer/display.lua:610: Potential breaking change in commit e272fcf of lewis6991/gitsigns.nvim

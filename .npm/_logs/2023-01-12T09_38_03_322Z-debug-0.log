@@ -1,0 +1,237 @@
+0 verbose cli /usr/bin/node /usr/bin/npm
+1 info using npm@8.19.2
+2 info using node@v19.4.0
+3 timing npm:load:whichnode Completed in 0ms
+4 timing config:load:defaults Completed in 3ms
+5 timing config:load:file:/usr/lib/node_modules/npm/npmrc Completed in 3ms
+6 timing config:load:builtin Completed in 3ms
+7 timing config:load:cli Completed in 3ms
+8 timing config:load:env Completed in 1ms
+9 timing config:load:file:/home/msfe/.cache/typescript/4.9/.npmrc Completed in 0ms
+10 timing config:load:project Completed in 2ms
+11 timing config:load:file:/home/msfe/.npmrc Completed in 1ms
+12 timing config:load:user Completed in 1ms
+13 timing config:load:file:/usr/etc/npmrc Completed in 0ms
+14 timing config:load:global Completed in 0ms
+15 timing config:load:validate Completed in 0ms
+16 timing config:load:credentials Completed in 1ms
+17 timing config:load:setEnvs Completed in 1ms
+18 timing config:load Completed in 15ms
+19 timing npm:load:configload Completed in 16ms
+20 timing npm:load:mkdirpcache Completed in 2ms
+21 timing npm:load:mkdirplogs Completed in 0ms
+22 verbose title npm install @types/react-bootstrap@ts4.9 @types/react-redux@ts4.9 @types/react-router-dom@ts4.9 @types/styled-components@ts4.9 @types/validator@ts4.9
+23 verbose argv "install" "--ignore-scripts" "@types/react-bootstrap@ts4.9" "@types/react-redux@ts4.9" "@types/react-router-dom@ts4.9" "@types/styled-components@ts4.9" "@types/validator@ts4.9" "--save-dev" "--user-agent" "typesInstaller/4.9.4"
+24 timing npm:load:setTitle Completed in 3ms
+25 timing config:load:flatten Completed in 9ms
+26 timing npm:load:display Completed in 11ms
+27 verbose logfile logs-max:10 dir:/home/msfe/.npm/_logs
+28 verbose logfile /home/msfe/.npm/_logs/2023-01-12T09_38_03_322Z-debug-0.log
+29 timing npm:load:logFile Completed in 19ms
+30 timing npm:load:timers Completed in 1ms
+31 timing npm:load:configScope Completed in 0ms
+32 timing npm:load Completed in 53ms
+33 timing arborist:ctor Completed in 1ms
+34 silly logfile start cleaning logs, removing 1 files
+35 silly logfile done cleaning log files
+36 timing idealTree:init Completed in 67ms
+37 timing arborist:ctor Completed in 0ms
+38 http fetch GET 200 https://registry.npmjs.org/@types%2freact-router-dom 303ms (cache miss)
+39 http fetch GET 200 https://registry.npmjs.org/@types%2fvalidator 312ms (cache miss)
+40 http fetch GET 200 https://registry.npmjs.org/@types%2fstyled-components 318ms (cache miss)
+41 http fetch GET 200 https://registry.npmjs.org/@types%2freact-redux 2723ms (cache miss)
+42 http fetch GET 200 https://registry.npmjs.org/@types%2freact-bootstrap 4656ms (cache miss)
+43 timing idealTree:userRequests Completed in 4662ms
+44 silly idealTree buildDeps
+45 silly fetch manifest @types/react-router-dom@5.3.3
+46 silly fetch manifest @types/validator@13.7.10
+47 silly fetch manifest @types/styled-components@5.1.26
+48 silly fetch manifest @types/react-redux@7.1.25
+49 silly fetch manifest @types/react-bootstrap@0.32.32
+50 silly placeDep ROOT @types/react-bootstrap@0.32.32 OK for:  want: 0.32.32
+51 silly placeDep ROOT @types/react-redux@7.1.25 OK for:  want: 7.1.25
+52 silly placeDep ROOT @types/react-router-dom@5.3.3 OK for:  want: 5.3.3
+53 silly placeDep ROOT @types/styled-components@5.1.26 OK for:  want: 5.1.26
+54 silly placeDep ROOT @types/validator@13.7.10 OK for:  want: 13.7.10
+55 silly fetch manifest @types/hoist-non-react-statics@^3.3.0
+56 silly fetch manifest hoist-non-react-statics@^3.3.0
+57 silly fetch manifest redux@^4.0.0
+58 silly fetch manifest @types/history@^4.7.11
+59 silly fetch manifest @types/react-router@*
+60 silly fetch manifest @types/hoist-non-react-statics@*
+61 http fetch GET 200 https://registry.npmjs.org/@types%2fhoist-non-react-statics 93ms (cache miss)
+62 http fetch GET 200 https://registry.npmjs.org/@types%2fhistory 100ms (cache miss)
+63 http fetch GET 200 https://registry.npmjs.org/@types%2fhoist-non-react-statics 149ms (cache miss)
+64 http fetch GET 200 https://registry.npmjs.org/@types%2freact-router 265ms (cache miss)
+65 http fetch GET 200 https://registry.npmjs.org/hoist-non-react-statics 314ms (cache miss)
+66 http fetch GET 200 https://registry.npmjs.org/redux 590ms (cache miss)
+67 timing idealTree:#root Completed in 604ms
+68 timing idealTree:node_modules/@types/react-bootstrap Completed in 0ms
+69 silly placeDep ROOT @types/hoist-non-react-statics@3.3.1 OK for: @types/react-redux@7.1.25 want: ^3.3.0
+70 silly placeDep ROOT hoist-non-react-statics@3.3.2 OK for: @types/react-redux@7.1.25 want: ^3.3.0
+71 silly placeDep ROOT redux@4.2.0 OK for: @types/react-redux@7.1.25 want: ^4.0.0
+72 silly fetch manifest react-is@^16.7.0
+73 silly fetch manifest @babel/runtime@^7.9.2
+74 http fetch GET 200 https://registry.npmjs.org/@babel%2fruntime 319ms (cache miss)
+75 http fetch GET 200 https://registry.npmjs.org/react-is 1290ms (cache updated)
+76 timing idealTree:node_modules/@types/react-redux Completed in 1327ms
+77 timing idealTree:node_modules/@types/hoist-non-react-statics Completed in 0ms
+78 silly placeDep ROOT @types/history@4.7.11 OK for: @types/react-router-dom@5.3.3 want: ^4.7.11
+79 silly placeDep ROOT @types/react-router@5.1.20 OK for: @types/react-router-dom@5.3.3 want: *
+80 timing idealTree:node_modules/@types/react-router-dom Completed in 5ms
+81 timing idealTree:node_modules/@types/history Completed in 0ms
+82 timing idealTree:node_modules/@types/react-router Completed in 0ms
+83 timing idealTree:node_modules/@types/styled-components Completed in 0ms
+84 timing idealTree:node_modules/@types/validator Completed in 0ms
+85 silly placeDep node_modules/hoist-non-react-statics react-is@16.13.1 OK for: hoist-non-react-statics@3.3.2 want: ^16.7.0
+86 timing idealTree:node_modules/hoist-non-react-statics Completed in 3ms
+87 silly placeDep ROOT @babel/runtime@7.20.7 OK for: redux@4.2.0 want: ^7.9.2
+88 silly fetch manifest regenerator-runtime@^0.13.11
+89 http fetch GET 200 https://registry.npmjs.org/regenerator-runtime 96ms (cache revalidated)
+90 timing idealTree:node_modules/redux Completed in 99ms
+91 silly placeDep ROOT regenerator-runtime@0.13.11 OK for: @babel/runtime@7.20.7 want: ^0.13.11
+92 timing idealTree:node_modules/@babel/runtime Completed in 1ms
+93 timing idealTree:node_modules/regenerator-runtime Completed in 0ms
+94 timing idealTree:node_modules/hoist-non-react-statics/node_modules/react-is Completed in 0ms
+95 timing idealTree:buildDeps Completed in 2043ms
+96 timing idealTree:fixDepFlags Completed in 1ms
+97 timing idealTree Completed in 6777ms
+98 timing reify:loadTrees Completed in 6778ms
+99 timing reify:diffTrees Completed in 4ms
+100 silly reify moves {}
+101 timing reify:retireShallow Completed in 1ms
+102 timing reify:createSparse Completed in 6ms
+103 timing reify:loadBundles Completed in 0ms
+104 silly audit bulk request {
+104 silly audit   '@babel/code-frame': [ '7.18.6' ],
+104 silly audit   '@babel/helper-validator-identifier': [ '7.19.1' ],
+104 silly audit   '@babel/highlight': [ '7.18.6' ],
+104 silly audit   'ansi-styles': [ '3.2.1', '4.3.0', '5.2.0' ],
+104 silly audit   chalk: [ '2.4.2', '4.1.2' ],
+104 silly audit   'color-convert': [ '1.9.3', '2.0.1' ],
+104 silly audit   'color-name': [ '1.1.3', '1.1.4' ],
+104 silly audit   'escape-string-regexp': [ '1.0.5', '2.0.0' ],
+104 silly audit   'has-flag': [ '3.0.0', '4.0.0' ],
+104 silly audit   'supports-color': [ '5.5.0', '7.2.0' ],
+104 silly audit   '@jest/expect-utils': [ '29.3.1' ],
+104 silly audit   '@jest/schemas': [ '29.0.0' ],
+104 silly audit   '@jest/types': [ '29.3.1' ],
+104 silly audit   '@popperjs/core': [ '2.11.6' ],
+104 silly audit   '@sinclair/typebox': [ '0.24.51' ],
+104 silly audit   '@types/bootstrap': [ '5.2.6' ],
+104 silly audit   '@types/istanbul-lib-coverage': [ '2.0.4' ],
+104 silly audit   '@types/istanbul-lib-report': [ '3.0.0' ],
+104 silly audit   '@types/istanbul-reports': [ '3.0.1' ],
+104 silly audit   '@types/jest': [ '29.2.5' ],
+104 silly audit   '@types/node': [ '18.11.18' ],
+104 silly audit   '@types/prop-types': [ '15.7.5' ],
+104 silly audit   '@types/react': [ '18.0.26' ],
+104 silly audit   '@types/react-dom': [ '18.0.10' ],
+104 silly audit   '@types/scheduler': [ '0.16.2' ],
+104 silly audit   '@types/stack-utils': [ '2.0.1' ],
+104 silly audit   '@types/testing-library__jest-dom': [ '5.14.5' ],
+104 silly audit   '@types/yargs': [ '17.0.19' ],
+104 silly audit   '@types/yargs-parser': [ '21.0.0' ],
+104 silly audit   braces: [ '3.0.2' ],
+104 silly audit   'ci-info': [ '3.7.1' ],
+104 silly audit   csstype: [ '3.1.1' ],
+104 silly audit   'diff-sequences': [ '29.3.1' ],
+104 silly audit   expect: [ '29.3.1' ],
+104 silly audit   'fill-range': [ '7.0.1' ],
+104 silly audit   'graceful-fs': [ '4.2.10' ],
+104 silly audit   'is-number': [ '7.0.0' ],
+104 silly audit   'jest-diff': [ '29.3.1' ],
+104 silly audit   'jest-get-type': [ '29.2.0' ],
+104 silly audit   'jest-matcher-utils': [ '29.3.1' ],
+104 silly audit   'jest-message-util': [ '29.3.1' ],
+104 silly audit   'jest-util': [ '29.3.1' ],
+104 silly audit   'js-tokens': [ '4.0.0' ],
+104 silly audit   micromatch: [ '4.0.5' ],
+104 silly audit   picomatch: [ '2.3.1' ],
+104 silly audit   'pretty-format': [ '29.3.1' ],
+104 silly audit   'react-is': [ '18.2.0', '16.13.1' ],
+104 silly audit   slash: [ '3.0.0' ],
+104 silly audit   'stack-utils': [ '2.0.6' ],
+104 silly audit   'to-regex-range': [ '5.0.1' ],
+104 silly audit   'types-registry': [ '0.1.626' ],
+104 silly audit   '@types/react-bootstrap': [ '0.32.32' ],
+104 silly audit   '@types/react-redux': [ '7.1.25' ],
+104 silly audit   '@types/react-router-dom': [ '5.3.3' ],
+104 silly audit   '@types/styled-components': [ '5.1.26' ],
+104 silly audit   '@types/validator': [ '13.7.10' ],
+104 silly audit   '@types/hoist-non-react-statics': [ '3.3.1' ],
+104 silly audit   'hoist-non-react-statics': [ '3.3.2' ],
+104 silly audit   redux: [ '4.2.0' ],
+104 silly audit   '@types/history': [ '4.7.11' ],
+104 silly audit   '@types/react-router': [ '5.1.20' ],
+104 silly audit   '@babel/runtime': [ '7.20.7' ],
+104 silly audit   'regenerator-runtime': [ '0.13.11' ]
+104 silly audit }
+105 silly tarball no local data for redux@https://registry.npmjs.org/redux/-/redux-4.2.0.tgz. Extracting by manifest.
+106 silly tarball no local data for hoist-non-react-statics@https://registry.npmjs.org/hoist-non-react-statics/-/hoist-non-react-statics-3.3.2.tgz. Extracting by manifest.
+107 silly tarball no local data for @babel/runtime@https://registry.npmjs.org/@babel/runtime/-/runtime-7.20.7.tgz. Extracting by manifest.
+108 silly tarball no local data for @types/history@https://registry.npmjs.org/@types/history/-/history-4.7.11.tgz. Extracting by manifest.
+109 silly tarball no local data for @types/validator@https://registry.npmjs.org/@types/validator/-/validator-13.7.10.tgz. Extracting by manifest.
+110 silly tarball no local data for @types/hoist-non-react-statics@https://registry.npmjs.org/@types/hoist-non-react-statics/-/hoist-non-react-statics-3.3.1.tgz. Extracting by manifest.
+111 silly tarball no local data for @types/styled-components@https://registry.npmjs.org/@types/styled-components/-/styled-components-5.1.26.tgz. Extracting by manifest.
+112 silly tarball no local data for @types/react-router@https://registry.npmjs.org/@types/react-router/-/react-router-5.1.20.tgz. Extracting by manifest.
+113 silly tarball no local data for @types/react-redux@https://registry.npmjs.org/@types/react-redux/-/react-redux-7.1.25.tgz. Extracting by manifest.
+114 silly tarball no local data for @types/react-router-dom@https://registry.npmjs.org/@types/react-router-dom/-/react-router-dom-5.3.3.tgz. Extracting by manifest.
+115 silly tarball no local data for @types/react-bootstrap@https://registry.npmjs.org/@types/react-bootstrap/-/react-bootstrap-0.32.32.tgz. Extracting by manifest.
+116 silly tarball no local data for react-is@https://registry.npmjs.org/react-is/-/react-is-16.13.1.tgz. Extracting by manifest.
+117 timing reifyNode:node_modules/regenerator-runtime Completed in 77ms
+118 http fetch GET 200 https://registry.npmjs.org/hoist-non-react-statics/-/hoist-non-react-statics-3.3.2.tgz 100ms (cache miss)
+119 timing reifyNode:node_modules/hoist-non-react-statics Completed in 121ms
+120 http fetch GET 200 https://registry.npmjs.org/@types/history/-/history-4.7.11.tgz 129ms (cache miss)
+121 timing reifyNode:node_modules/@types/history Completed in 156ms
+122 http fetch GET 200 https://registry.npmjs.org/redux/-/redux-4.2.0.tgz 151ms (cache miss)
+123 timing reifyNode:node_modules/redux Completed in 173ms
+124 http fetch GET 200 https://registry.npmjs.org/@types/hoist-non-react-statics/-/hoist-non-react-statics-3.3.1.tgz 239ms (cache miss)
+125 timing reifyNode:node_modules/@types/hoist-non-react-statics Completed in 272ms
+126 http fetch GET 200 https://registry.npmjs.org/@types/styled-components/-/styled-components-5.1.26.tgz 244ms (cache miss)
+127 timing reifyNode:node_modules/@types/styled-components Completed in 279ms
+128 http fetch GET 200 https://registry.npmjs.org/@types/react-router/-/react-router-5.1.20.tgz 243ms (cache miss)
+129 timing reifyNode:node_modules/@types/react-router Completed in 282ms
+130 http fetch GET 200 https://registry.npmjs.org/@types/react-redux/-/react-redux-7.1.25.tgz 247ms (cache miss)
+131 timing reifyNode:node_modules/@types/react-redux Completed in 286ms
+132 http fetch GET 200 https://registry.npmjs.org/react-is/-/react-is-16.13.1.tgz 245ms (cache miss)
+133 timing reifyNode:node_modules/hoist-non-react-statics/node_modules/react-is Completed in 289ms
+134 http fetch GET 200 https://registry.npmjs.org/@babel/runtime/-/runtime-7.20.7.tgz 322ms (cache miss)
+135 timing reifyNode:node_modules/@babel/runtime Completed in 347ms
+136 http fetch GET 200 https://registry.npmjs.org/@types/validator/-/validator-13.7.10.tgz 336ms (cache miss)
+137 timing reifyNode:node_modules/@types/validator Completed in 365ms
+138 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 383ms
+139 timing auditReport:getReport Completed in 389ms
+140 silly audit report {}
+141 timing auditReport:init Completed in 0ms
+142 timing reify:audit Completed in 390ms
+143 http fetch GET 200 https://registry.npmjs.org/@types/react-router-dom/-/react-router-dom-5.3.3.tgz 345ms (cache miss)
+144 timing reifyNode:node_modules/@types/react-router-dom Completed in 385ms
+145 http fetch GET 200 https://registry.npmjs.org/@types/react-bootstrap/-/react-bootstrap-0.32.32.tgz 1164ms (cache miss)
+146 timing reifyNode:node_modules/@types/react-bootstrap Completed in 1206ms
+147 timing reify:unpack Completed in 1207ms
+148 timing reify:unretire Completed in 1ms
+149 timing build:queue Completed in 2ms
+150 timing build:deps Completed in 2ms
+151 timing build Completed in 2ms
+152 timing reify:build Completed in 2ms
+153 timing reify:trash Completed in 0ms
+154 timing reify:save Completed in 32ms
+155 timing reify Completed in 8056ms
+156 silly ADD node_modules/regenerator-runtime
+157 silly ADD node_modules/@babel/runtime
+158 silly ADD node_modules/@types/react-router
+159 silly ADD node_modules/@types/history
+160 silly ADD node_modules/redux
+161 silly ADD node_modules/hoist-non-react-statics
+162 silly ADD node_modules/hoist-non-react-statics/node_modules/react-is
+163 silly ADD node_modules/@types/hoist-non-react-statics
+164 silly ADD node_modules/@types/validator
+165 silly ADD node_modules/@types/styled-components
+166 silly ADD node_modules/@types/react-router-dom
+167 silly ADD node_modules/@types/react-redux
+168 silly ADD node_modules/@types/react-bootstrap
+169 timing command:install Completed in 8063ms
+170 verbose exit 0
+171 timing npm Completed in 8223ms
+172 info ok

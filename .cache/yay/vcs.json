@@ -1,0 +1,20 @@
+{
+	"cbonsai-git": {
+		"gitlab.com/jallbrit/cbonsai.git": {
+			"protocols": [
+				"https"
+			],
+			"branch": "HEAD",
+			"sha": "ca2bcbbdacf3199e5d5c1260b33a8c07b94e2b28"
+		}
+	},
+	"zsh-theme-powerlevel10k-git": {
+		"github.com/romkatv/powerlevel10k.git": {
+			"protocols": [
+				"https"
+			],
+			"branch": "HEAD",
+			"sha": "35165798a83e2e4f2f0aa6c820e2f7fba23e0179"
+		}
+	}
+}

@@ -1,0 +1,180 @@
+[WARN  Mon 09 Jan 2023 08:09:29 PM PKT] ...ck/packer/start/telescope.nvim/lua/telescope/pickers.lua:489: Finder failed with msg:  ...ite/pack/packer/start/telescope.nvim/lua/telescope/_.lua:297: fd: Executable not found
+stack traceback:
+	...ite/pack/packer/start/telescope.nvim/lua/telescope/_.lua:297: in function 'convert_opts'
+	...ite/pack/packer/start/telescope.nvim/lua/telescope/_.lua:17: in function 'new'
+	...ite/pack/packer/start/telescope.nvim/lua/telescope/_.lua:63: in function 'spawn'
+	...cope.nvim/lua/telescope/finders/async_oneshot_finder.lua:48: in function 'finder'
+	...ck/packer/start/telescope.nvim/lua/telescope/pickers.lua:485: in function <...ck/packer/start/telescope.nvim/lua/telescope/pickers.lua:484>
+	[C]: in function 'pcall'
+	...ck/packer/start/telescope.nvim/lua/telescope/pickers.lua:484: in function <...ck/packer/start/telescope.nvim/lua/telescope/pickers.lua:450>
+[WARN  Mon 09 Jan 2023 08:14:09 PM PKT] ...ck/packer/start/telescope.nvim/lua/telescope/pickers.lua:489: Finder failed with msg:  ...ite/pack/packer/start/telescope.nvim/lua/telescope/_.lua:297: fd: Executable not found
+stack traceback:
+	...ite/pack/packer/start/telescope.nvim/lua/telescope/_.lua:297: in function 'convert_opts'
+	...ite/pack/packer/start/telescope.nvim/lua/telescope/_.lua:17: in function 'new'
+	...ite/pack/packer/start/telescope.nvim/lua/telescope/_.lua:63: in function 'spawn'
+	...cope.nvim/lua/telescope/finders/async_oneshot_finder.lua:48: in function 'finder'
+	...ck/packer/start/telescope.nvim/lua/telescope/pickers.lua:485: in function <...ck/packer/start/telescope.nvim/lua/telescope/pickers.lua:484>
+	[C]: in function 'pcall'
+	...ck/packer/start/telescope.nvim/lua/telescope/pickers.lua:484: in function <...ck/packer/start/telescope.nvim/lua/telescope/pickers.lua:450>
+[WARN  Mon 09 Jan 2023 08:14:10 PM PKT] ...ck/packer/start/telescope.nvim/lua/telescope/pickers.lua:489: Finder failed with msg:  ...ite/pack/packer/start/telescope.nvim/lua/telescope/_.lua:297: fd: Executable not found
+stack traceback:
+	...ite/pack/packer/start/telescope.nvim/lua/telescope/_.lua:297: in function 'convert_opts'
+	...ite/pack/packer/start/telescope.nvim/lua/telescope/_.lua:17: in function 'new'
+	...ite/pack/packer/start/telescope.nvim/lua/telescope/_.lua:63: in function 'spawn'
+	...cope.nvim/lua/telescope/finders/async_oneshot_finder.lua:48: in function 'finder'
+	...ck/packer/start/telescope.nvim/lua/telescope/pickers.lua:485: in function <...ck/packer/start/telescope.nvim/lua/telescope/pickers.lua:484>
+	[C]: in function 'pcall'
+	...ck/packer/start/telescope.nvim/lua/telescope/pickers.lua:484: in function <...ck/packer/start/telescope.nvim/lua/telescope/pickers.lua:450>
+[WARN  Mon 09 Jan 2023 08:14:11 PM PKT] ...ck/packer/start/telescope.nvim/lua/telescope/pickers.lua:489: Finder failed with msg:  ...ite/pack/packer/start/telescope.nvim/lua/telescope/_.lua:297: fd: Executable not found
+stack traceback:
+	...ite/pack/packer/start/telescope.nvim/lua/telescope/_.lua:297: in function 'convert_opts'
+	...ite/pack/packer/start/telescope.nvim/lua/telescope/_.lua:17: in function 'new'
+	...ite/pack/packer/start/telescope.nvim/lua/telescope/_.lua:63: in function 'spawn'
+	...cope.nvim/lua/telescope/finders/async_oneshot_finder.lua:48: in function 'finder'
+	...ck/packer/start/telescope.nvim/lua/telescope/pickers.lua:485: in function <...ck/packer/start/telescope.nvim/lua/telescope/pickers.lua:484>
+	[C]: in function 'pcall'
+	...ck/packer/start/telescope.nvim/lua/telescope/pickers.lua:484: in function <...ck/packer/start/telescope.nvim/lua/telescope/pickers.lua:450>
+[WARN  Mon 09 Jan 2023 08:25:15 PM PKT] ...ck/packer/start/telescope.nvim/lua/telescope/pickers.lua:489: Finder failed with msg:  ...ite/pack/packer/start/telescope.nvim/lua/telescope/_.lua:297: fd: Executable not found
+stack traceback:
+	...ite/pack/packer/start/telescope.nvim/lua/telescope/_.lua:297: in function 'convert_opts'
+	...ite/pack/packer/start/telescope.nvim/lua/telescope/_.lua:17: in function 'new'
+	...ite/pack/packer/start/telescope.nvim/lua/telescope/_.lua:63: in function 'spawn'
+	...cope.nvim/lua/telescope/finders/async_oneshot_finder.lua:48: in function 'finder'
+	...ck/packer/start/telescope.nvim/lua/telescope/pickers.lua:485: in function <...ck/packer/start/telescope.nvim/lua/telescope/pickers.lua:484>
+	[C]: in function 'pcall'
+	...ck/packer/start/telescope.nvim/lua/telescope/pickers.lua:484: in function <...ck/packer/start/telescope.nvim/lua/telescope/pickers.lua:450>
+[WARN  Mon 09 Jan 2023 08:25:26 PM PKT] ...ck/packer/start/telescope.nvim/lua/telescope/pickers.lua:489: Finder failed with msg:  ...ite/pack/packer/start/telescope.nvim/lua/telescope/_.lua:297: fd: Executable not found
+stack traceback:
+	...ite/pack/packer/start/telescope.nvim/lua/telescope/_.lua:297: in function 'convert_opts'
+	...ite/pack/packer/start/telescope.nvim/lua/telescope/_.lua:17: in function 'new'
+	...ite/pack/packer/start/telescope.nvim/lua/telescope/_.lua:63: in function 'spawn'
+	...cope.nvim/lua/telescope/finders/async_oneshot_finder.lua:48: in function 'finder'
+	...ck/packer/start/telescope.nvim/lua/telescope/pickers.lua:485: in function <...ck/packer/start/telescope.nvim/lua/telescope/pickers.lua:484>
+	[C]: in function 'pcall'
+	...ck/packer/start/telescope.nvim/lua/telescope/pickers.lua:484: in function <...ck/packer/start/telescope.nvim/lua/telescope/pickers.lua:450>
+[WARN  Mon 09 Jan 2023 08:25:26 PM PKT] ...ck/packer/start/telescope.nvim/lua/telescope/pickers.lua:489: Finder failed with msg:  ...ite/pack/packer/start/telescope.nvim/lua/telescope/_.lua:297: fd: Executable not found
+stack traceback:
+	...ite/pack/packer/start/telescope.nvim/lua/telescope/_.lua:297: in function 'convert_opts'
+	...ite/pack/packer/start/telescope.nvim/lua/telescope/_.lua:17: in function 'new'
+	...ite/pack/packer/start/telescope.nvim/lua/telescope/_.lua:63: in function 'spawn'
+	...cope.nvim/lua/telescope/finders/async_oneshot_finder.lua:48: in function 'finder'
+	...ck/packer/start/telescope.nvim/lua/telescope/pickers.lua:485: in function <...ck/packer/start/telescope.nvim/lua/telescope/pickers.lua:484>
+	[C]: in function 'pcall'
+	...ck/packer/start/telescope.nvim/lua/telescope/pickers.lua:484: in function <...ck/packer/start/telescope.nvim/lua/telescope/pickers.lua:450>
+[WARN  Mon 09 Jan 2023 08:25:37 PM PKT] ...ck/packer/start/telescope.nvim/lua/telescope/pickers.lua:489: Finder failed with msg:  ...ite/pack/packer/start/telescope.nvim/lua/telescope/_.lua:297: fd: Executable not found
+stack traceback:
+	...ite/pack/packer/start/telescope.nvim/lua/telescope/_.lua:297: in function 'convert_opts'
+	...ite/pack/packer/start/telescope.nvim/lua/telescope/_.lua:17: in function 'new'
+	...ite/pack/packer/start/telescope.nvim/lua/telescope/_.lua:63: in function 'spawn'
+	...cope.nvim/lua/telescope/finders/async_oneshot_finder.lua:48: in function 'finder'
+	...ck/packer/start/telescope.nvim/lua/telescope/pickers.lua:485: in function <...ck/packer/start/telescope.nvim/lua/telescope/pickers.lua:484>
+	[C]: in function 'pcall'
+	...ck/packer/start/telescope.nvim/lua/telescope/pickers.lua:484: in function <...ck/packer/start/telescope.nvim/lua/telescope/pickers.lua:450>
+[WARN  Mon 09 Jan 2023 08:25:38 PM PKT] ...ck/packer/start/telescope.nvim/lua/telescope/pickers.lua:489: Finder failed with msg:  ...ite/pack/packer/start/telescope.nvim/lua/telescope/_.lua:297: fd: Executable not found
+stack traceback:
+	...ite/pack/packer/start/telescope.nvim/lua/telescope/_.lua:297: in function 'convert_opts'
+	...ite/pack/packer/start/telescope.nvim/lua/telescope/_.lua:17: in function 'new'
+	...ite/pack/packer/start/telescope.nvim/lua/telescope/_.lua:63: in function 'spawn'
+	...cope.nvim/lua/telescope/finders/async_oneshot_finder.lua:48: in function 'finder'
+	...ck/packer/start/telescope.nvim/lua/telescope/pickers.lua:485: in function <...ck/packer/start/telescope.nvim/lua/telescope/pickers.lua:484>
+	[C]: in function 'pcall'
+	...ck/packer/start/telescope.nvim/lua/telescope/pickers.lua:484: in function <...ck/packer/start/telescope.nvim/lua/telescope/pickers.lua:450>
+[WARN  Mon 09 Jan 2023 08:26:37 PM PKT] ...ck/packer/start/telescope.nvim/lua/telescope/pickers.lua:489: Finder failed with msg:  ...ite/pack/packer/start/telescope.nvim/lua/telescope/_.lua:297: fd: Executable not found
+stack traceback:
+	...ite/pack/packer/start/telescope.nvim/lua/telescope/_.lua:297: in function 'convert_opts'
+	...ite/pack/packer/start/telescope.nvim/lua/telescope/_.lua:17: in function 'new'
+	...ite/pack/packer/start/telescope.nvim/lua/telescope/_.lua:63: in function 'spawn'
+	...cope.nvim/lua/telescope/finders/async_oneshot_finder.lua:48: in function 'finder'
+	...ck/packer/start/telescope.nvim/lua/telescope/pickers.lua:485: in function <...ck/packer/start/telescope.nvim/lua/telescope/pickers.lua:484>
+	[C]: in function 'pcall'
+	...ck/packer/start/telescope.nvim/lua/telescope/pickers.lua:484: in function <...ck/packer/start/telescope.nvim/lua/telescope/pickers.lua:450>
+[WARN  Mon 09 Jan 2023 08:30:10 PM PKT] ...ck/packer/start/telescope.nvim/lua/telescope/pickers.lua:489: Finder failed with msg:  ...ite/pack/packer/start/telescope.nvim/lua/telescope/_.lua:297: fd: Executable not found
+stack traceback:
+	...ite/pack/packer/start/telescope.nvim/lua/telescope/_.lua:297: in function 'convert_opts'
+	...ite/pack/packer/start/telescope.nvim/lua/telescope/_.lua:17: in function 'new'
+	...ite/pack/packer/start/telescope.nvim/lua/telescope/_.lua:63: in function 'spawn'
+	...cope.nvim/lua/telescope/finders/async_oneshot_finder.lua:48: in function 'finder'
+	...ck/packer/start/telescope.nvim/lua/telescope/pickers.lua:485: in function <...ck/packer/start/telescope.nvim/lua/telescope/pickers.lua:484>
+	[C]: in function 'pcall'
+	...ck/packer/start/telescope.nvim/lua/telescope/pickers.lua:484: in function <...ck/packer/start/telescope.nvim/lua/telescope/pickers.lua:450>
+[WARN  Mon 09 Jan 2023 08:37:31 PM PKT] ...ck/packer/start/telescope.nvim/lua/telescope/pickers.lua:489: Finder failed with msg:  ...ite/pack/packer/start/telescope.nvim/lua/telescope/_.lua:297: fd: Executable not found
+stack traceback:
+	...ite/pack/packer/start/telescope.nvim/lua/telescope/_.lua:297: in function 'convert_opts'
+	...ite/pack/packer/start/telescope.nvim/lua/telescope/_.lua:17: in function 'new'
+	...ite/pack/packer/start/telescope.nvim/lua/telescope/_.lua:63: in function 'spawn'
+	...cope.nvim/lua/telescope/finders/async_oneshot_finder.lua:48: in function 'finder'
+	...ck/packer/start/telescope.nvim/lua/telescope/pickers.lua:485: in function <...ck/packer/start/telescope.nvim/lua/telescope/pickers.lua:484>
+	[C]: in function 'pcall'
+	...ck/packer/start/telescope.nvim/lua/telescope/pickers.lua:484: in function <...ck/packer/start/telescope.nvim/lua/telescope/pickers.lua:450>
+[WARN  Mon 09 Jan 2023 08:49:25 PM PKT] ...ck/packer/start/telescope.nvim/lua/telescope/pickers.lua:489: Finder failed with msg:  ...ite/pack/packer/start/telescope.nvim/lua/telescope/_.lua:297: fd: Executable not found
+stack traceback:
+	...ite/pack/packer/start/telescope.nvim/lua/telescope/_.lua:297: in function 'convert_opts'
+	...ite/pack/packer/start/telescope.nvim/lua/telescope/_.lua:17: in function 'new'
+	...ite/pack/packer/start/telescope.nvim/lua/telescope/_.lua:63: in function 'spawn'
+	...cope.nvim/lua/telescope/finders/async_oneshot_finder.lua:48: in function 'finder'
+	...ck/packer/start/telescope.nvim/lua/telescope/pickers.lua:485: in function <...ck/packer/start/telescope.nvim/lua/telescope/pickers.lua:484>
+	[C]: in function 'pcall'
+	...ck/packer/start/telescope.nvim/lua/telescope/pickers.lua:484: in function <...ck/packer/start/telescope.nvim/lua/telescope/pickers.lua:450>
+[WARN  Mon 09 Jan 2023 08:49:28 PM PKT] ...ck/packer/start/telescope.nvim/lua/telescope/pickers.lua:489: Finder failed with msg:  ...ite/pack/packer/start/telescope.nvim/lua/telescope/_.lua:297: fd: Executable not found
+stack traceback:
+	...ite/pack/packer/start/telescope.nvim/lua/telescope/_.lua:297: in function 'convert_opts'
+	...ite/pack/packer/start/telescope.nvim/lua/telescope/_.lua:17: in function 'new'
+	...ite/pack/packer/start/telescope.nvim/lua/telescope/_.lua:63: in function 'spawn'
+	...cope.nvim/lua/telescope/finders/async_oneshot_finder.lua:48: in function 'finder'
+	...ck/packer/start/telescope.nvim/lua/telescope/pickers.lua:485: in function <...ck/packer/start/telescope.nvim/lua/telescope/pickers.lua:484>
+	[C]: in function 'pcall'
+	...ck/packer/start/telescope.nvim/lua/telescope/pickers.lua:484: in function <...ck/packer/start/telescope.nvim/lua/telescope/pickers.lua:450>
+[WARN  Mon 09 Jan 2023 08:49:28 PM PKT] ...ck/packer/start/telescope.nvim/lua/telescope/pickers.lua:489: Finder failed with msg:  ...ite/pack/packer/start/telescope.nvim/lua/telescope/_.lua:297: fd: Executable not found
+stack traceback:
+	...ite/pack/packer/start/telescope.nvim/lua/telescope/_.lua:297: in function 'convert_opts'
+	...ite/pack/packer/start/telescope.nvim/lua/telescope/_.lua:17: in function 'new'
+	...ite/pack/packer/start/telescope.nvim/lua/telescope/_.lua:63: in function 'spawn'
+	...cope.nvim/lua/telescope/finders/async_oneshot_finder.lua:48: in function 'finder'
+	...ck/packer/start/telescope.nvim/lua/telescope/pickers.lua:485: in function <...ck/packer/start/telescope.nvim/lua/telescope/pickers.lua:484>
+	[C]: in function 'pcall'
+	...ck/packer/start/telescope.nvim/lua/telescope/pickers.lua:484: in function <...ck/packer/start/telescope.nvim/lua/telescope/pickers.lua:450>
+[WARN  Mon 09 Jan 2023 08:49:29 PM PKT] ...ck/packer/start/telescope.nvim/lua/telescope/pickers.lua:489: Finder failed with msg:  ...ite/pack/packer/start/telescope.nvim/lua/telescope/_.lua:297: fd: Executable not found
+stack traceback:
+	...ite/pack/packer/start/telescope.nvim/lua/telescope/_.lua:297: in function 'convert_opts'
+	...ite/pack/packer/start/telescope.nvim/lua/telescope/_.lua:17: in function 'new'
+	...ite/pack/packer/start/telescope.nvim/lua/telescope/_.lua:63: in function 'spawn'
+	...cope.nvim/lua/telescope/finders/async_oneshot_finder.lua:48: in function 'finder'
+	...ck/packer/start/telescope.nvim/lua/telescope/pickers.lua:485: in function <...ck/packer/start/telescope.nvim/lua/telescope/pickers.lua:484>
+	[C]: in function 'pcall'
+	...ck/packer/start/telescope.nvim/lua/telescope/pickers.lua:484: in function <...ck/packer/start/telescope.nvim/lua/telescope/pickers.lua:450>
+[WARN  Mon 09 Jan 2023 08:49:29 PM PKT] ...ck/packer/start/telescope.nvim/lua/telescope/pickers.lua:489: Finder failed with msg:  ...ite/pack/packer/start/telescope.nvim/lua/telescope/_.lua:297: fd: Executable not found
+stack traceback:
+	...ite/pack/packer/start/telescope.nvim/lua/telescope/_.lua:297: in function 'convert_opts'
+	...ite/pack/packer/start/telescope.nvim/lua/telescope/_.lua:17: in function 'new'
+	...ite/pack/packer/start/telescope.nvim/lua/telescope/_.lua:63: in function 'spawn'
+	...cope.nvim/lua/telescope/finders/async_oneshot_finder.lua:48: in function 'finder'
+	...ck/packer/start/telescope.nvim/lua/telescope/pickers.lua:485: in function <...ck/packer/start/telescope.nvim/lua/telescope/pickers.lua:484>
+	[C]: in function 'pcall'
+	...ck/packer/start/telescope.nvim/lua/telescope/pickers.lua:484: in function <...ck/packer/start/telescope.nvim/lua/telescope/pickers.lua:450>
+[WARN  Mon 09 Jan 2023 08:49:30 PM PKT] ...ck/packer/start/telescope.nvim/lua/telescope/pickers.lua:489: Finder failed with msg:  ...ite/pack/packer/start/telescope.nvim/lua/telescope/_.lua:297: fd: Executable not found
+stack traceback:
+	...ite/pack/packer/start/telescope.nvim/lua/telescope/_.lua:297: in function 'convert_opts'
+	...ite/pack/packer/start/telescope.nvim/lua/telescope/_.lua:17: in function 'new'
+	...ite/pack/packer/start/telescope.nvim/lua/telescope/_.lua:63: in function 'spawn'
+	...cope.nvim/lua/telescope/finders/async_oneshot_finder.lua:48: in function 'finder'
+	...ck/packer/start/telescope.nvim/lua/telescope/pickers.lua:485: in function <...ck/packer/start/telescope.nvim/lua/telescope/pickers.lua:484>
+	[C]: in function 'pcall'
+	...ck/packer/start/telescope.nvim/lua/telescope/pickers.lua:484: in function <...ck/packer/start/telescope.nvim/lua/telescope/pickers.lua:450>
+[WARN  Mon 09 Jan 2023 08:49:31 PM PKT] ...ck/packer/start/telescope.nvim/lua/telescope/pickers.lua:489: Finder failed with msg:  ...ite/pack/packer/start/telescope.nvim/lua/telescope/_.lua:297: fd: Executable not found
+stack traceback:
+	...ite/pack/packer/start/telescope.nvim/lua/telescope/_.lua:297: in function 'convert_opts'
+	...ite/pack/packer/start/telescope.nvim/lua/telescope/_.lua:17: in function 'new'
+	...ite/pack/packer/start/telescope.nvim/lua/telescope/_.lua:63: in function 'spawn'
+	...cope.nvim/lua/telescope/finders/async_oneshot_finder.lua:48: in function 'finder'
+	...ck/packer/start/telescope.nvim/lua/telescope/pickers.lua:485: in function <...ck/packer/start/telescope.nvim/lua/telescope/pickers.lua:484>
+	[C]: in function 'pcall'
+	...ck/packer/start/telescope.nvim/lua/telescope/pickers.lua:484: in function <...ck/packer/start/telescope.nvim/lua/telescope/pickers.lua:450>
+[WARN  Mon 09 Jan 2023 08:55:03 PM PKT] ...ck/packer/start/telescope.nvim/lua/telescope/pickers.lua:489: Finder failed with msg:  ...ite/pack/packer/start/telescope.nvim/lua/telescope/_.lua:297: fd: Executable not found
+stack traceback:
+	...ite/pack/packer/start/telescope.nvim/lua/telescope/_.lua:297: in function 'convert_opts'
+	...ite/pack/packer/start/telescope.nvim/lua/telescope/_.lua:17: in function 'new'
+	...ite/pack/packer/start/telescope.nvim/lua/telescope/_.lua:63: in function 'spawn'
+	...cope.nvim/lua/telescope/finders/async_oneshot_finder.lua:48: in function 'finder'
+	...ck/packer/start/telescope.nvim/lua/telescope/pickers.lua:485: in function <...ck/packer/start/telescope.nvim/lua/telescope/pickers.lua:484>
+	[C]: in function 'pcall'
+	...ck/packer/start/telescope.nvim/lua/telescope/pickers.lua:484: in function <...ck/packer/start/telescope.nvim/lua/telescope/pickers.lua:450>
