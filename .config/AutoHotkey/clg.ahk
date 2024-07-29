@@ -9,24 +9,13 @@ CapsLock::{
 	Send "{Esc}"
 }
 
-ih := InputHook("B L1 T1", "{Esc}")
-
-*Esc::
+#^+Tab::
 {
-	ih.Start()
-	reason := ih.Wait()
-	if (reason = "Stopped") {
-		Send "{Esc}"
-	} else if (reason = "Max") {
-		Send "{Blind}{Ctrl down}" ih.Input
-	}
-}
-
-*Esc up::
-{
-	if (ih.InProgress) {
-		ih.Stop()
-	} else {
-		Send "{Ctrl up}"
-	}
+hwnd := WinExist("A")
+          if hwnd
+          {
+              ; Remove the window title bar and borders
+                  WinSetStyle("^0xC00000", hwnd)
+          }
+      return
 }
