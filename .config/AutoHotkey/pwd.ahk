@@ -1,3 +1,6 @@
+#Requires AutoHotkey v2.0.2
+#SingleInstance
+
 :*:usrr::admin@admin.com
 :*:pwdr::12345678
 :*:pwdw::local.taf@123$$
