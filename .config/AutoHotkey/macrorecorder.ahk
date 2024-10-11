@@ -31,7 +31,7 @@ DetectHiddenWindows, On
 ;--------------------------
 logkeys:=""
 playspeed:=3                           ; Set default playing speed here
-EditorPath:="Notepad.exe"              ; set default editor path here
+EditorPath:="neovide"              ; set default editor path here
 ;~ EditorPath:=StrReplace(a_ahkpath, "autohotkey.exe") . "SciTE\SciTE.exe"     ; actvate if you have installed SciTE
 LogFile:=A_Temp . "\~Record.ahk"
 UsedKeys:="F1,F2,F3,F4,F5,F6,F9"
