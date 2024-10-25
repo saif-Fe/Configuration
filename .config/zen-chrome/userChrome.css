@@ -1,0 +1,9 @@
+:root {
+}
+.browserSidebarContainer{
+}
+#tabbrowser-tabpanels{
+	--zen-element-separation: 0px !important;
+	overflow: hidden !important;
+border-radius: var(--zen-border-radius) !important;
+}
