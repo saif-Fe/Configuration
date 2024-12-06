@@ -15,3 +15,8 @@ hwnd := WinExist("A")
           }
       return
 }
+F12::
+{
+id := WinGetID("A")
+            WinSetExStyle "^0x80", "A"
+}
