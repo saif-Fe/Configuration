@@ -1,3 +1,10 @@
+if vim.g.fvim_loaded then
+  if vim.g.fvim_os == 'windows' or vim.g.fvim_render_scale > 1.0 then
+    vim.o.guifont = 'JetBrainsMono Nerd Font'
+  else
+    vim.o.guifont = 'JetBrainsMono Nerd Font'
+  end
+end
 if vim.g.neovide then
   vim.o.guifont = 'JetBrainsMono Nerd Font'
   vim.g.neovide_scale_factor = 1
@@ -18,6 +25,7 @@ vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 vim.g.have_nerd_font = true
 vim.g.disable_autoformat = true
+vim.g.instant_username = 'Saif'
 
 --  NOTE: You can change these options as you wish! For more options, you can see `:help option-list`
 
@@ -259,15 +267,46 @@ require('lazy').setup({
 
       -- [[ Configure Telescope ]]
       -- See `:help telescope` and `:help telescope.setup()`
-      require('telescope').setup {
+      local telescope = require 'telescope'
+      local actions = require 'telescope.actions'
+
+      -- https://github.com/MagicDuck/grug-far.nvim/pull/305
+      local is_windows = vim.fn.has 'win64' == 1 or vim.fn.has 'win32' == 1
+      local vimfnameescape = vim.fn.fnameescape
+      local winfnameescape = function(path)
+        local escaped_path = vimfnameescape(path)
+        if is_windows then
+          local need_extra_esc = path:find '[%[%]`%$~]'
+          local esc = need_extra_esc and '\\\\' or '\\'
+          escaped_path = escaped_path:gsub('\\[%(%)%^&;]', esc .. '%1')
+          if need_extra_esc then
+            escaped_path = escaped_path:gsub("\\\\['` ]", '\\%1')
+          end
+        end
+        return escaped_path
+      end
+
+      local select_default = function(prompt_bufnr)
+        local original_fnameescape = vim.fn.fnameescape
+        vim.fn.fnameescape = winfnameescape
+        local result = actions.select_default(prompt_bufnr)
+        vim.fn.fnameescape = original_fnameescape
+        return result
+      end
+      telescope.setup {
         -- You can put your default mappings / updates / etc. in here
         --  All the info you're looking for is in `:help telescope.setup()`
         --
-        -- defaults = {
-        --   mappings = {
-        --     i = { ['<c-enter>'] = 'to_fuzzy_refine' },
-        --   },
-        -- },
+        defaults = {
+          mappings = {
+            i = {
+              ['<cr>'] = select_default,
+            },
+            n = {
+              ['<cr>'] = select_default,
+            }
+          },
+        },
         pickers = {
           find_files = {
             hidden = true,
@@ -552,6 +591,8 @@ require('lazy').setup({
         lua = { 'stylua' },
         javascript = { 'prettierd' },
         javascriptreact = { 'prettierd' },
+        typescript = { 'prettierd' },
+        typescriptreact = { 'prettierd' },
         html = { 'prettierd' },
       },
     },

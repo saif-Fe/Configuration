@@ -1,6 +1,6 @@
 local lush = require 'lush'
 local hsl = lush.hsl
-local color = hsl(240, 10, 100)
+local color = hsl(42, 5, 90)
 
 ---@diagnostic disable: undefined-global
 local theme = lush(function(injected_functions)
@@ -15,18 +15,21 @@ local theme = lush(function(injected_functions)
     -- to reorder items as you go.
     --
     -- See :h highlight-groups
-    --
     Base { fg = color.da(10), bg = '' },
-    Text { fg = color.da(30) },
+    Text { fg = color.de(20).da(40) },
     Accent { fg = color },
     Selection { bg = Accent.fg.da(80), fg = Base.fg },
+    OilFile { Accent },
+    Fold { fg = color.da(60) },
+    Border { fg = Accent.fg.da(60) },
+    Underlined { Text, gui = 'underline' }, -- Text that stands out, HTML links
     Red { fg = hsl(0, 100, 25) },
     Yellow { fg = hsl(50, 100, 25) },
     Green { fg = hsl(80, 100, 25) },
     -- ColorColumn    { }, -- Columns set with 'colorcolumn'
     -- Conceal        { }, -- Placeholder characters substituted for concealed text (see 'conceallevel')
-    Cursor { bg = Base.fg.da(80).de(80), fg = Base.fg }, -- Character under the cursor
-    CurSearch { bg = Base.fg.da(80).de(80), fg = Base.fg }, -- Highlighting a search pattern under the cursor (see 'hlsearch')
+    Cursor { fg = Base.fg.da(40) }, -- Character under the cursor
+    CurSearch { fg = Base.fg.da(40) }, -- Highlighting a search pattern under the cursor (see 'hlsearch')
     -- lCursor        { }, -- Character under the cursor when |language-mapping| is used (see 'guicursor')
     -- CursorIM       { }, -- Like Cursor, but used when in IME mode |CursorIM|
     -- CursorColumn   {  }, -- Screen-column at the cursor, when 'cursorcolumn' is set.
@@ -42,8 +45,8 @@ local theme = lush(function(injected_functions)
     -- TermCursorNC   { }, -- Cursor in an unfocused terminal
     ErrorMsg { Red }, -- Error messages on the command line
     VertSplit { fg = Text.fg.da(70) }, -- Column separating vertically split windows
-    Folded { Base }, -- Line used for closed folds
-    FoldColumn { Base }, -- 'foldcolumn'
+    Folded { Fold }, -- Line used for closed folds
+    FoldColumn { Fold }, -- 'foldcolumn'
     SignColumn { bg = Base.bg }, -- Column where |signs| are displayed
     IncSearch { Selection }, -- 'incsearch' highlighting; also used for the text replaced with ":s///c"
     Substitute { Selection }, -- |:substitute| replacement text highlighting
@@ -63,7 +66,7 @@ local theme = lush(function(injected_functions)
     NormalFloat { Base }, -- Normal text in floating windows.
     FloatShadow { Base },
     FloatShadowThrough { Base },
-    FloatBorder { fg = Text.fg.da(70) }, -- Border of floating windows.
+    FloatBorder { Border }, -- Border of floating windows.
     FloatTitle { Text }, -- Title of floating windows.
     -- NormalNC       { }, -- normal text in non-current windows
     Pmenu { Base }, -- Popup menu: Normal item.
@@ -110,8 +113,8 @@ local theme = lush(function(injected_functions)
     Constant { Text }, -- (*) Any constant
     String { fg = Accent.fg.da(20) }, --   A string constant: "this is a string"
     Character { fg = Accent.fg.da(30) }, --   A character constant: 'c', '\n'
-    Number { fg = Accent.fg.sa(25) }, --   A number constant: 234, 0xff
-    Boolean { fg = Accent.fg.sa(40) }, --   A boolean constant: TRUE, false
+    Number { fg = Accent.fg }, --   A number constant: 234, 0xff
+    Boolean { fg = Accent.fg }, --   A boolean constant: TRUE, false
     -- Float          { }, --   A floating point constant: 2.3e10
 
     Identifier { Accent }, -- (*) Any variable name
@@ -121,7 +124,7 @@ local theme = lush(function(injected_functions)
     -- Conditional    { }, --   if, then, else, endif, switch, etc.
     -- Repeat         { }, --   for, do, while, etc.
     -- Label          { }, --   case, default, etc.
-    -- Operator       { }, --   "sizeof", "+", "*", etc.
+    Operator       { Fold }, --   "sizeof", "+", "*", etc.
     -- Keyword        { }, --   any other keyword
     -- Exception      { }, --   try, catch, throw
 
@@ -139,11 +142,10 @@ local theme = lush(function(injected_functions)
     Special { Text }, -- (*) Any special symbol
     -- SpecialChar    { }, --   Special character in a constant
     -- Tag            { }, --   You can use CTRL-] on this
-    -- Delimiter      { }, --   Character that needs attention
+    Delimiter      { fg = Text.fg.da(40) }, --   Character that needs attention
     -- SpecialComment { }, --   Special things inside a comment (e.g. '\n')
     -- Debug          { }, --   Debugging statements
 
-    Underlined { Text, gui = 'underline' }, -- Text that stands out, HTML links
     -- Ignore         { }, -- Left blank, hidden |hl-Ignore| (NOTE: May be invisible here in template)
     Error { Red }, -- Any erroneous construct
     Todo { Yellow }, -- Anything that needs extra attention; mostly the keywords TODO FIXME and XXX
@@ -241,7 +243,7 @@ local theme = lush(function(injected_functions)
     -- sym"@operator"          { }, -- Operator
     -- sym"@keyword"           { }, -- Keyword
     -- sym"@exception"         { }, -- Exception
-    -- sym"@variable"          { }, -- Identifier
+    sym"@variable"          { fg = Accent.fg }, -- Identifier
     -- sym"@type"              { }, -- Type
     -- sym"@type.definition"   { }, -- Typedef
     -- sym"@storageclass"      { }, -- StorageClass
@@ -377,22 +379,22 @@ local theme = lush(function(injected_functions)
     --
     -- Telescope
     --
-    TelescopeBorder { fg = Accent.fg.da(60) },
-    TelescopePromptBorder { fg = Accent.fg.da(60) },
-    TelescopeResultsBorder { fg = Accent.fg.da(60) },
-    TelescopePreviewBorder { fg = Accent.fg.da(60) },
-    TelescopeSelection {},
+    TelescopeBorder { Border },
+    TelescopePromptBorder { Border },
+    TelescopeResultsBorder { Border },
+    TelescopePreviewBorder { Border },
+    TelescopeSelection { Selection },
     TelescopeSelectionCaret {},
     TelescopeMultiIcon {},
     TelescopeMatching {},
-    TelescopeNormal {},
+    TelescopeNormal { fg = Accent.fg.da(40) },
     TelescopePromptPrefix {},
 
     --
     -- Harpoon
     --
-    HarpoonBorder { fg = Accent.fg.da(60) },
-    HarpoonWindow { fg = Accent.fg.da(60) },
+    HarpoonBorder { Border },
+    HarpoonWindow { Border },
 
     --
     -- fFHighlight
@@ -527,12 +529,11 @@ local theme = lush(function(injected_functions)
     DignosticHint { Text },
     -- CSS
     sym '@property.class.css' { Text },
-    sym '@property.css' { fg = Accent.fg.da(40) },
+    sym '@property.css' { fg = Accent.fg.da(10) },
     -- Javascript
     sym '@none.javascript' { fg = Accent.fg.da(20) },
     sym '@punctuation.bracket.javascript' { fg = Accent.fg.da(40) },
-    sym '@tag.delimiter.javascript' { fg = Accent.fg.da(40) },
-    sym '@variable.javascript' { fg = Accent.fg.da(20).sa(30) },
+    sym '@tag.delimiter.javascript' { Fold },
   }
 end)
 

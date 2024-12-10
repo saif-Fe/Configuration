@@ -26,7 +26,6 @@ vim.keymap.set('n', 'j', "v:count == 0 ? 'gj' : 'j'", { expr = true, silent = tr
 
 -- Harpoon Configure
 local harpoon = require 'harpoon'
--- REQUIRED
 harpoon:setup()
 -- REQUIRED
 
@@ -68,20 +67,17 @@ vim.keymap.set('n', '<A-.>', function()
   harpoon:list():next()
 end)
 
-require('oil').setup({
+require('oil').setup {
   keymaps = {
-    ["q"] = "actions.close",
+    ['q'] = 'actions.close',
   },
-      float = {
-        padding = 2,
-        max_width = 120,
-        max_height = 20,
-      },
-})
-vim.keymap.set('n', '-', '<CMD>Oil --float<CR>', { desc = 'Open parent directory' })
-
--- Undo Tree
-vim.keymap.set('n', '<leader><F5>', vim.cmd.UndotreeToggle)
+  float = {
+    padding = 2,
+    max_width = 120,
+    max_height = 20,
+  },
+}
+vim.keymap.set('n', '-', '<CMD>Oil<CR>', { desc = 'Open parent directory' })
 
 vim.opt.termguicolors = true
 
@@ -97,7 +93,7 @@ ccc.setup {
   },
 }
 
-vim.api.nvim_create_user_command("FormatDisable", function(args)
+vim.api.nvim_create_user_command('FormatDisable', function(args)
   if args.bang then
     -- FormatDisable! will disable formatting just for this buffer
     vim.b.disable_autoformat = true
@@ -105,83 +101,46 @@ vim.api.nvim_create_user_command("FormatDisable", function(args)
     vim.g.disable_autoformat = true
   end
 end, {
-    desc = "Disable autoformat-on-save",
-    bang = true,
-  })
-vim.keymap.set("", "<leader>f", function()
-  require("conform").format({ async = true, lsp_fallback = true })
-end, { desc = "[F]ormat" })
-vim.api.nvim_create_user_command("FormatEnable", function()
+  desc = 'Disable autoformat-on-save',
+  bang = true,
+})
+vim.keymap.set('', '<leader>f', function()
+  require('conform').format { async = true, lsp_fallback = true }
+end, { desc = '[F]ormat' })
+vim.api.nvim_create_user_command('FormatEnable', function()
   vim.b.disable_autoformat = false
   vim.g.disable_autoformat = false
 end, {
-    desc = "Re-enable autoformat-on-save",
-  })
-vim.keymap.set("n", "<leader>F", function()
+  desc = 'Re-enable autoformat-on-save',
+})
+vim.keymap.set('n', '<leader>F', function()
   if vim.b.disable_autoformat or vim.g.disable_autoformat then
-    vim.cmd("FormatEnable")
+    vim.cmd 'FormatEnable'
   else
-    vim.cmd("FormatDisable")
+    vim.cmd 'FormatDisable'
   end
-end, { desc = "Toggle [F]ormat" })
+end, { desc = 'Toggle [F]ormat' })
 
-vim.api.nvim_create_user_command("Q", function()
+vim.api.nvim_create_user_command('Q', function()
   local uis = vim.api.nvim_list_uis() -- Get the list of active UIs
   if #uis > 0 then
     local channel_id = uis[1].chan -- Access the channel ID from the first UI
-    print("Closing Channel ID:", channel_id)
+    print('Closing Channel ID:', channel_id)
     vim.fn.chanclose(channel_id) -- Close the channel using the chanclose function
   else
-    print("No active UIs found.")
+    print 'No active UIs found.'
   end
 end, {
-    desc = "Exit",
-  })
+  desc = 'Exit',
+})
 
-
---    },
---  },
-
---
---
---<<<<<<< HEAD
---
---local lspconfig = require('lspconfig')
---local configs = require('lspconfig/configs')
---capabilities.textDocument.completion.completionItem.snippetSupport = true
---
---lspconfig.emmet_ls.setup({
---  -- on_attach = on_attach,
---  capabilities = capabilities,
---  filetypes = { "css", "html", "javascript", "javascriptreact", "less", "sass", "scss", "typescriptreact" },
---  init_options = {
---    html = {
---      options = {
---        -- For possible options, see: https://github.com/emmetio/emmet/blob/master/src/config.ts#L79-L267
---        ["bem.enabled"] = true,
---      },
---    },
---  }
---})
---
---
----- nvim-cmp supports additional completion capabilities, so broadcast that to servers
---capabilities = require('cmp_nvim_lsp').default_capabilities(capabilities)
---
----- Ensure the servers above are installed
---local mason_lspconfig = require 'mason-lspconfig'
---
---mason_lspconfig.setup {
---  ensure_installed = vim.tbl_keys(servers),
---}
---
---mason_lspconfig.setup_handlers {
---  function(server_name)
---    require('lspconfig')[server_name].setup {
---      capabilities = capabilities,
---      on_attach = on_attach,
---      settings = servers[server_name],
---      filetypes = (servers[server_name] or {}).filetypes,
---    }
---  end
---}
+vim.api.nvim_create_autocmd('Termopen', {
+  desc = 'Unclutter terminal',
+  callback = function()
+    local winid = vim.api.nvim_get_current_win()
+    vim.wo[winid][0].number = false
+    vim.wo[winid][0].relativenumber = false
+    vim.wo[winid][0].scrolloff = 0
+    vim.wo[winid][0].foldcolumn = '0'
+  end,
+})
