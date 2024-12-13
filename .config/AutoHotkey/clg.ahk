@@ -20,3 +20,9 @@ F12::
 id := WinGetID("A")
             WinSetExStyle "^0x80", "A"
 }
+
+GetActiveWindowHWND() {
+        hwnd := WinActive("A")
+              A_Clipboard := String(hwnd)
+}
+F1::GetActiveWindowHWND()
