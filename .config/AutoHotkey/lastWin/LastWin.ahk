@@ -5,6 +5,7 @@ SetWorkingDir(A_ScriptDir)
 VDA_PATH := A_ScriptDir . "\VirtualDesktopAccessor.dll"
 hVirtualDesktopAccessor := DllCall("LoadLibrary", "Str", VDA_PATH, "Ptr")
 
+LastDestop := 1
 GetDesktopCountProc := DllCall("GetProcAddress", "Ptr", hVirtualDesktopAccessor, "AStr", "GetDesktopCount", "Ptr")
 GoToDesktopNumberProc := DllCall("GetProcAddress", "Ptr", hVirtualDesktopAccessor, "AStr", "GoToDesktopNumber", "Ptr")
 GetCurrentDesktopNumberProc := DllCall("GetProcAddress", "Ptr", hVirtualDesktopAccessor, "AStr", "GetCurrentDesktopNumber", "Ptr")
@@ -66,6 +67,9 @@ GoToDesktopNumber(num) {
     return
 }
 MoveOrGotoDesktopNumber(num) {
+    global GetCurrentDesktopNumberProc, GoToDesktopNumberProc, LastDestop
+    current := DllCall(GetCurrentDesktopNumberProc, "Int")
+    LastDestop := current
     ; If user is holding down Mouse left button, move the current window also
     if (GetKeyState("LButton")) {
         MoveCurrentWindowToDesktop(num)
@@ -101,7 +105,6 @@ RemoveDesktop(remove_desktop_number, fallback_desktop_number) {
 }
 
 GotoLastDesktop() {
-    
 }
 
 ; SetDesktopName(0, "It works! 🐱")
@@ -119,6 +122,17 @@ OnChangeDesktop(wParam, lParam, msg, hwnd) {
     ; TraySetIcon(".\Icons\icon" NewDesktop ".ico")
 }
 
+!1::MoveOrGotoDesktopNumber(0)
+!2::MoveOrGotoDesktopNumber(1)
+!3::MoveOrGotoDesktopNumber(2)
+!4::MoveOrGotoDesktopNumber(3)
+!5::MoveOrGotoDesktopNumber(4)
+!6::MoveOrGotoDesktopNumber(5)
+!7::MoveOrGotoDesktopNumber(6)
+!8::MoveOrGotoDesktopNumber(7)
+!9::MoveOrGotoDesktopNumber(8)
+!0::MoveOrGotoDesktopNumber(9)
+
 !+1::MoveCurrentWindowToDesktop(0)
 !+2::MoveCurrentWindowToDesktop(1)
 !+3::MoveCurrentWindowToDesktop(2)
@@ -132,4 +146,4 @@ OnChangeDesktop(wParam, lParam, msg, hwnd) {
 ; F14 UP:: GoToPrevDesktop()
 ; F15 UP:: GoToNextDesktop()
 
-!Escape::MoveOrGotoDesktopNumber(0)
+!Escape::MoveOrGotoDesktopNumber(LastDestop)
