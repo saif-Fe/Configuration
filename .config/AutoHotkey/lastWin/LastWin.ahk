@@ -5,7 +5,7 @@ SetWorkingDir(A_ScriptDir)
 VDA_PATH := A_ScriptDir . "\VirtualDesktopAccessor.dll"
 hVirtualDesktopAccessor := DllCall("LoadLibrary", "Str", VDA_PATH, "Ptr")
 
-LastDestop := 1
+LastDesktop := 1
 GetDesktopCountProc := DllCall("GetProcAddress", "Ptr", hVirtualDesktopAccessor, "AStr", "GetDesktopCount", "Ptr")
 GoToDesktopNumberProc := DllCall("GetProcAddress", "Ptr", hVirtualDesktopAccessor, "AStr", "GoToDesktopNumber", "Ptr")
 GetCurrentDesktopNumberProc := DllCall("GetProcAddress", "Ptr", hVirtualDesktopAccessor, "AStr", "GetCurrentDesktopNumber", "Ptr")
@@ -29,7 +29,9 @@ GetDesktopCount() {
 }
 
 MoveCurrentWindowToDesktop(number) {
-    global MoveWindowToDesktopNumberProc, GoToDesktopNumberProc
+    global MoveWindowToDesktopNumberProc, GoToDesktopNumberProc, GetCurrentDesktopNumberProc, LastDesktop
+    current := DllCall(GetCurrentDesktopNumberProc, "Int")
+    LastDesktop := current
     activeHwnd := WinGetID("A")
     DllCall(MoveWindowToDesktopNumberProc, "Ptr", activeHwnd, "Int", number, "Int")
     DllCall(GoToDesktopNumberProc, "Int", number, "Int")
@@ -67,9 +69,9 @@ GoToDesktopNumber(num) {
     return
 }
 MoveOrGotoDesktopNumber(num) {
-    global GetCurrentDesktopNumberProc, GoToDesktopNumberProc, LastDestop
+    global GetCurrentDesktopNumberProc, GoToDesktopNumberProc, LastDesktop
     current := DllCall(GetCurrentDesktopNumberProc, "Int")
-    LastDestop := current
+    LastDesktop := current
     ; If user is holding down Mouse left button, move the current window also
     if (GetKeyState("LButton")) {
         MoveCurrentWindowToDesktop(num)
@@ -102,9 +104,6 @@ RemoveDesktop(remove_desktop_number, fallback_desktop_number) {
     global RemoveDesktopProc
     ran := DllCall(RemoveDesktopProc, "Int", remove_desktop_number, "Int", fallback_desktop_number, "Int")
     return ran
-}
-
-GotoLastDesktop() {
 }
 
 ; SetDesktopName(0, "It works! 🐱")
@@ -146,4 +145,4 @@ OnChangeDesktop(wParam, lParam, msg, hwnd) {
 ; F14 UP:: GoToPrevDesktop()
 ; F15 UP:: GoToNextDesktop()
 
-!Escape::MoveOrGotoDesktopNumber(LastDestop)
+!LControl::MoveOrGotoDesktopNumber(LastDesktop)
