@@ -1,0 +1,2 @@
+﻿LWin::LAlt
+LAlt::LWin

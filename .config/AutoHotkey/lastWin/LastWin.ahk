@@ -71,13 +71,8 @@ GoToDesktopNumber(num) {
 MoveOrGotoDesktopNumber(num) {
     global GetCurrentDesktopNumberProc, GoToDesktopNumberProc, LastDesktop
     current := DllCall(GetCurrentDesktopNumberProc, "Int")
-    LastDesktop := current
-    ; If user is holding down Mouse left button, move the current window also
-    if (GetKeyState("LButton")) {
-        MoveCurrentWindowToDesktop(num)
-    } else {
+        LastDesktop := current
         GoToDesktopNumber(num)
-    }
     return
 }
 GetDesktopName(num) {
