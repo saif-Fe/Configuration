@@ -9,13 +9,18 @@ Function git_commit {
 	$c = (Split-Path -Path (Get-Location) -Leaf)
 	git add .; git commit -m $message; git push && Add-Content -Path "D:\Local Disk D\Saif\timesheet\Entry.txt" -Value "$d | $c | $message"
 }
+Function git_merge {
+	param($branch)
+	git merge origin/$branch; git push
+	
+}
 Function AddToFile {
 	param($message)
 }
 Function grep {
 	param($string)
-		rg $string -g '!{.git,node_modules}/*'
-						     }
+		rg $string -g '!**/{.git,node_modules,package-lock.json,pnpm-lock.yaml}'
+}
 Function touch {
 	param($dir)
 	mkdir $dir; cd $dir
@@ -75,6 +80,21 @@ Function set_tab {
 		}
 	}
 }
+Function Move-To-Window {
+	param($window, $desktop = 0)
+	$window | Move-Window (Get-Desktop -Index $desktop) | Out-Null
+}
+
+Function Get-Commits {
+	param($author)
+	git log --author=$author --pretty=tformat: --numstat
+}
+
+Function Init {
+	$d = (Get-Date -Format "MM/dd/yyyy dddd HH:mm K")
+	Add-Content -Path "D:\Local Disk D\Saif\timesheet\Entry.txt" -Value "==================$d=================="
+}
+
 Set-Alias f GoToDir
 Set-Alias f. GoToThisDir
 Set-Alias v nvim
@@ -84,10 +104,13 @@ Set-Alias ss start_server
 Set-Alias -Name vv -Value neovide_without_title 
 Set-Alias -Name gf -Value graph_with_fetch
 Set-Alias -Name gg -Value graph_without_fetch
+Set-Alias -Name mr -Value git_merge
 Set-Alias -Name gpush -Value git_commit
 Set-Alias -Name ex -Value explorer_cmd
 Set-Alias -Name split -Value split_into_panes
 Set-Alias -Name splitp -Value split_normal_window
+Set-Alias -Name lg -Value lazygit
+Set-Alias -Name mw -Value Move-To-Window
 
 # Write-Host "`e[49m                    `e[38;2;209;85;27;48;2;206;78;20m▄`e[38;2;208;87;30;48;2;208;86;29m▄`e[38;2;208;87;30;48;2;208;85;28m▄`e[38;2;208;86;28;49m▄`e[38;2;208;81;27;49m▄`e[49m                    `e[m"
 # Write-Host "`e[49m                    `e[38;2;209;86;29;48;2;208;86;28m▄`e[48;2;208;87;30m   `e[38;2;208;87;30;48;2;208;86;29m▄`e[38;2;207;86;28;48;2;213;85;28m▄`e[49m                   `e[m"

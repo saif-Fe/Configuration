@@ -1,10 +1,3 @@
-if vim.g.fvim_loaded then
-  if vim.g.fvim_os == 'windows' or vim.g.fvim_render_scale > 1.0 then
-    vim.o.guifont = 'JetBrainsMono Nerd Font'
-  else
-    vim.o.guifont = 'JetBrainsMono Nerd Font'
-  end
-end
 if vim.g.neovide then
   vim.o.guifont = 'JetBrainsMono Nerd Font'
   vim.g.neovide_scale_factor = 1
@@ -17,15 +10,13 @@ if vim.g.neovide then
   vim.g.neovide_cursor_smooth_blink = true
   vim.g.neovide_position_animation_length = 0.15
   vim.g.neovide_refresh_rate = 60
-  vim.g.neovide_transparency = 1
-  vim.g.neovide_text_background_opacity = 0
+  vim.g.neovide_transparency = 0.8
   vim.g.neovide_hide_mouse_when_typing = true
 end
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 vim.g.have_nerd_font = true
 vim.g.disable_autoformat = true
-vim.g.instant_username = 'Saif'
 
 --  NOTE: You can change these options as you wish! For more options, you can see `:help option-list`
 
@@ -304,7 +295,7 @@ require('lazy').setup({
             },
             n = {
               ['<cr>'] = select_default,
-            }
+            },
           },
         },
         pickers = {
@@ -505,6 +496,8 @@ require('lazy').setup({
       --  - capabilities (table): Override fields in capabilities. Can be used to disable certain LSP features.
       --  - settings (table): Override the default settings passed when initializing the server.
       --        For example, to see the options for `lua_ls`, you could go to: https://luals.github.io/wiki/settings/
+      --
+
       local servers = {
         -- clangd = {},
         -- gopls = {},
@@ -720,10 +713,9 @@ require('lazy').setup({
         header = '',
         footer = '',
         items = {
-          starter.sections.recent_files(10, true),
-          { action = require('telescope.builtin').git_files, name = 'G: Git Files', section = 'Actions' },
-          { action = require('telescope.builtin').oldfiles, name = 'R: Recent Files', section = 'Actions' },
-          { action = 'qall!', name = 'Q: Quit Neovim', section = 'Actions' },
+          { action = require('telescope.builtin').git_files, name = 'Git Files', section = 'Actions' },
+          { action = require('telescope.builtin').oldfiles, name = 'Recent Files', section = 'Actions' },
+          { action = 'qall!', name = 'Quit Neovim', section = 'Actions' },
         },
         query_updaters = [[abcdefghilmoqrstuvwxyz0123456789,.ABCDEFGHIJKLMOQRSTUVWXYZ]],
       }

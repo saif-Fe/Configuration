@@ -8,11 +8,24 @@ vim.g.netrw_liststyle = 3
 vim.opt.shell = 'pwsh'
 vim.diagnostic.config { virtual_text = false }
 vim.opt.wrap = false
+vim.opt.concealcursor = ''
 
 -- NOTE: You should make sure your terminal supports this
 vim.o.termguicolors = true
 
+-- [[ Neovide Specific ]]
+vim.keymap.set('n', '<A-enter>', function()
+  if vim.g.neovide_fullscreen then
+    vim.g.neovide_fullscreen = false
+  else
+    vim.g.neovide_fullscreen = true
+  end
+end, { silent = true })
+
 -- [[ Basic Keymaps ]]
+vim.keymap.set('n', '<leader><tab>', '<CMD>tabe %<CR>', { silent = true })
+vim.keymap.set('n', '<tab>', '<CMD>tabnext<CR>', { silent = true })
+vim.keymap.set('n', '<S-tab>', '<CMD>tabprev<CR>', { silent = true })
 
 -- Keymaps for better default experience
 -- See `:help vim.keymap.set()`
@@ -77,7 +90,7 @@ require('oil').setup {
     max_height = 20,
   },
 }
-vim.keymap.set('n', '-', '<CMD>Oil<CR>', { desc = 'Open parent directory' })
+vim.keymap.set('n', '-', '<CMD>Oil --float<CR>', { desc = 'Open parent directory' })
 
 vim.opt.termguicolors = true
 
@@ -144,3 +157,12 @@ vim.api.nvim_create_autocmd('Termopen', {
     vim.wo[winid][0].foldcolumn = '0'
   end,
 })
+
+local lspconfig = require 'lspconfig'
+
+lspconfig.cssmodules_ls.setup {
+  on_attach = function(client, bufnr)
+    -- avoid accepting `definitionProvider` responses from this LSP
+    client.server_capabilities.definitionProvider = false
+  end,
+}

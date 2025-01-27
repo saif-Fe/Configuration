@@ -1,6 +1,6 @@
 local lush = require 'lush'
 local hsl = lush.hsl
-local color = hsl(42, 5, 90)
+local color = hsl(223, 0, 95)
 
 ---@diagnostic disable: undefined-global
 local theme = lush(function(injected_functions)
@@ -18,7 +18,7 @@ local theme = lush(function(injected_functions)
     Base { fg = color.da(10), bg = '' },
     Text { fg = color.de(20).da(40) },
     Accent { fg = color },
-    Selection { bg = Accent.fg.da(80), fg = Base.fg },
+    Selection { bg = hsl(0, 100, 15), fg = Base.fg },
     OilFile { Accent },
     Fold { fg = color.da(60) },
     Border { fg = Accent.fg.da(60) },
