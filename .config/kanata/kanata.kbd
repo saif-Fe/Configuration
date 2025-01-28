@@ -36,9 +36,13 @@ configuration entries.
 ;; )
 
 (defsrc
-  lmet lalt
+  spc
 )
 
 (deflayer default
- lalt lmet
+  @spc
+)
+
+(defalias
+  spc (tap-hold 200 200 spc lalt)
 )
