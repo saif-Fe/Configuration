@@ -36,13 +36,13 @@ configuration entries.
 ;; )
 
 (defsrc
-  spc
+  lctrl
 )
 
 (deflayer default
-  @spc
+  @lctrl
 )
 
 (defalias
-  spc (tap-hold 50 300 spc lalt)
+  lctrl (tap-hold 50 200 esc lctrl)
 )

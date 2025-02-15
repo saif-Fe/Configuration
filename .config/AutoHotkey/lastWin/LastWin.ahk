@@ -140,4 +140,4 @@ OnChangeDesktop(wParam, lParam, msg, hwnd) {
 ; F14 UP:: GoToPrevDesktop()
 ; F15 UP:: GoToNextDesktop()
 
-!LControl::MoveOrGotoDesktopNumber(LastDesktop)
+!Escape::MoveOrGotoDesktopNumber(LastDesktop)
