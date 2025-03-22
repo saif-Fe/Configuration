@@ -1,0 +1,34 @@
+function submitWork(results) {
+  for (let i = 0; i < results.length; i++) {
+    const { PROJECT_ID, DESC, TOTAL_HRS, TOTAL_MINS, TASK_DATE, USER_ID } =
+      results[i];
+    exec(
+      `http --check-status \
+--ignore-stdin \
+--timeout=2.5 \
+--multipart \
+${URL} \
+Cookie:"XSRF-TOKEN=${TOKEN}; timesheet_session=${SESSION}" \
+_token="${TOKEN}" \
+start_time="${START_TIME}" \
+end_time="${END_TIME}" \
+project_id="${PROJECT_ID}" \
+description="${DESC}" \
+total_hrs="${TOTAL_HRS}" \
+total_mins="${TOTAL_MINS}" \
+task_date="${TASK_DATE}" \
+user_id="${USER_ID}" \
+`,
+      (error, stdout, stderr) => {
+        if (error) {
+          console.log(`error: ${error.message}`);
+          return;
+        }
+        if (stderr) {
+          console.log(`stderr: ${stderr}`);
+        }
+        console.log(`stdout: ${stdout}`);
+      },
+    );
+  }
+}
