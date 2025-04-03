@@ -1,0 +1,589 @@
+[
+  {
+    "windows": {
+      "1": {
+        "22": {
+          "id": 22,
+          "index": 3,
+          "windowId": 1,
+          "highlighted": false,
+          "active": false,
+          "attention": false,
+          "pinned": false,
+          "status": "complete",
+          "hidden": false,
+          "discarded": false,
+          "incognito": false,
+          "width": 1888,
+          "height": 1004,
+          "lastAccessed": 1743640937138,
+          "audible": false,
+          "autoDiscardable": true,
+          "mutedInfo": {
+            "muted": false
+          },
+          "isInReaderMode": false,
+          "sharingState": {
+            "camera": false,
+            "microphone": false
+          },
+          "successorTabId": -1,
+          "cookieStoreId": "firefox-default",
+          "url": "https://www.reddit.com/r/gameideas/comments/1jmynma/what_if_you_were_the_monster_horror_game_idea/",
+          "title": "What if you were \"the monster\"? Horror game idea where you play as the creature and hunt people. : r/gameideas",
+          "favIconUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAABgFBMVEX/RQAAAAD+///9/v77/f3t8/X1+fn/QwD+RAD+RQD/RAD+RQD+RADq8fPx9vj+RQD+RQDJ1t7+RQD+RQDP2N//RAD+RADL2N/3+vv9cj3T3uTj7e/Y4+f+SAL/YAH6+Pj+7OXh5ef/RQD9Tg39dEHV3OAFCgz+9PD/RQDljW7c5+oKFBfQ2+H+Zi77UhP+VADxbj+6wMPazcz1jGj/PwDok3f+il//SADyrpj0YjLg6u3/Wh4OFhj/RAD/PwDm7/H/RADN0tMEBwiTMw6vtbccLDHsQgTp39zbWDPtfFPMf3pNMSfqzMTtspz839P/Swr1YizPQicfHx7zoolPWl7seE7Tm5n/Xxr+spbd2tjOzM7008b7wav6aDXYmZX+yLT+OAB+cGn7lnH+uZ9nWFG+Ogn/RADBxsjllod3Sjj0hl2bRCP5hU7+xK6FW0v1azzjjH4mKCm0vcH3g07rOw3xqpDxcEfAxcf/TwD0glj+hFf+bjnyPgj9i1IqLS79i1MGsjjCAAAAgHRSTlP/AP//////JJz2zfrq//+Q1/9cn//97f//////////////NP//////K////////wn/////EP//I///////Dwj/f/////////////////////////////////////////8J//////9O//////////////////////8Q/////////7gQ52IAAAIfSURBVHicdZNne9pAEIQX6SS6wBBAdNNCt6k2YLDj7rjFDfeS3nvv+evZu3OQ5OD5oHLvPFd258A00FePxeb3+fw2i6enjQ4MZq8VBrJ6c1cMd112DVPZXdN6w6TbiKncZs2QdBjZ91cPygCO5D+D+QqfEAQhO4WOSW6YNs6/NP8wIQjifbrKODO4DPzRztq9hKoqdfrjooacYf9LOy+gkikUamPsLGY0eA0TzK/hY6uZZxzAa4Kerj4wlX72Oo3b0yrWAA99p4I/7kD5cBS3jxo9LEM0mE5R4gELPVcWRy9Ejpku0JudQGQBG0BQj3QSg4DYD3B6neEUEPsATohIRCG+fx7nIH6+j1+iSE4AMRo2JJkQcfXjm6fc8Pbn51VBJLK0QQ24RDvjVAnZjh60uaEdPdgWierMbNElcJNQWVZkdSUWC3JDOhZbIaq8XEFkY8eET5Iir3/4tUlEFNn883JdVqQWJRZeqG9hp6QocmL2SbX6ZTYhI3bOPOeFatBSp446YadT+j13EzX3TkIcPqKVtPYum9UvRQqd8EK32C0Wuwsz4U4hdPuyWSYza3d+JFAKRap7i4t77yORUCmQZ+3OaYHpH4+gAqFQIIDv4z4bZIExjfPIjTVrmRtMpVqTx8GN0deHNnpW3221dutnUf7voMFnsWe1+E9a7G8N5W4aemYYyu0ujDw3PB6CrV5+75ghqU8t9pde/4Z2/f8Cy6NB3lu7Zk8AAAAASUVORK5CYII="
+        },
+        "23": {
+          "id": 23,
+          "index": 4,
+          "windowId": 1,
+          "highlighted": false,
+          "active": false,
+          "attention": false,
+          "pinned": false,
+          "status": "complete",
+          "hidden": false,
+          "discarded": false,
+          "incognito": false,
+          "width": 1888,
+          "height": 1004,
+          "lastAccessed": 1743641018189,
+          "audible": false,
+          "autoDiscardable": true,
+          "mutedInfo": {
+            "muted": false
+          },
+          "isInReaderMode": false,
+          "sharingState": {
+            "camera": false,
+            "microphone": false
+          },
+          "successorTabId": -1,
+          "cookieStoreId": "firefox-default",
+          "url": "https://www.reddit.com/r/gameideas/comments/1jmynma/what_if_you_were_the_monster_horror_game_idea/",
+          "title": "What if you were \"the monster\"? Horror game idea where you play as the creature and hunt people. : r/gameideas",
+          "favIconUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAABgFBMVEX/RQAAAAD+///9/v77/f3t8/X1+fn/QwD+RAD+RQDx9vj/RAD+RQD+RADq8fP+RQD+RQDJ1t7+RQD+RQDP2N//RAD+RADL2N/3+vv9cj3T3uTj7e/Y4+f+SAL/YAHh5ef6+Pj+7OX/RQD9Tg39dEHV3OAFCgzxbj//RQDljW7c5+oKFBfQ2+H+Zi77UhP1jGj+VAC6wMPazcz+9PD/Wh7ok3f/RAD+il//SADyrpj0YjLg6u0OFhj/PwD/PwDm7/H/RADN0tMEBwjsQgSvtbccLDGTMw7bWDPtfFPYmpXMf3pNMSfqzMTtspz839P/Swr1YizPQicfHx7zoolPWl7reE/+spbd2tjp39z6aDXOzM7008b7wavTm5n/Xxn+yLT+OAB+cGn7lnH+uZ9nWFG+Ogn/RADBxsh3SjibRCP5hU7+xK7lloeFW0v0hl0mKCm0vcH3g07rOw3jjH7xqpDxcEfAxcf/TwD0glj+hFf1azz+bjnyPgj9i1IqLS79i1NW6TjvAAAAgHRSTlP/AP//////JJz2/8366v+Q1/9cn//97f//////////////NP//////K/////////8J//////8P/yP/////EAj/f/////////////////////////////////////////8J//////9O/////////////////////xD//////////7WQ1BEAAAIfSURBVHicdZNne9pAEIQX6SS6wBBAdEwJ3Rgw2DQ77nGNG+4lvffe89ezd+cgycHzQeXeea7szoFpoC8ei93v8/ntFk9TGx0YzF4rDGT15q4Y7rocGqZyuKb1him3EVO5zZoh6TSyby8elAGcyX8G8xU+KQhCfQIdU9wwbZx/fulhXBDE+3SVcWZwGfijnbV7cVW1VeiPixpyhv3P7zyDbKZQqI2xs5jR4DVMsLSGj61GnnEArwmauvrARPrpqzRuT6tYDzz0nQr+uAPl/VHcPmp0vwzRYDpFiQcs9Fx1HL0QOWa6QG99EpEF7ABBPdJJDAJiP8DpdYZTQOwDOCEiEYXE2UqCg8TKGX6JIjkBxGjYkGRCxNX3319yw4efn1YFkcjSBjXgEu2MohKyHT1vc0M7er4tElXJbNElcJOQPbTJ6nIsFuSGdCy2TFT5MIvIzo4JHyWbvP7u1yYRUWTzz/N12Sa1KLHwQn0NK5LNJsdnn1Srn2fjMmJl5jUvVI+WOnXQCSuK9HvuJmrujYQ4fEAraW1eNqtfihQ64YVusVssdhdmwp1C6PZls0xm1u78SKAUilT3Fhf33kYioVIgz9qd0wLTPx5BBUKhQADfx302yAJjGueRG2vUMjeYSrUGj4Mbo68PbfSosttq7VaOovzfSYPPYs9q8Z+02N8ayt009MwwlDtcGHlueDwEW7383jFDUp9a7C+9/j3t+v8FtFZB34x1UBMAAAAASUVORK5CYII="
+        },
+        "24": {
+          "id": 24,
+          "index": 5,
+          "windowId": 1,
+          "highlighted": false,
+          "active": false,
+          "attention": false,
+          "pinned": false,
+          "status": "complete",
+          "hidden": false,
+          "discarded": false,
+          "incognito": false,
+          "width": 1888,
+          "height": 1004,
+          "lastAccessed": 1743641047587,
+          "audible": false,
+          "autoDiscardable": true,
+          "mutedInfo": {
+            "muted": false
+          },
+          "isInReaderMode": false,
+          "sharingState": {
+            "camera": false,
+            "microphone": false
+          },
+          "successorTabId": -1,
+          "cookieStoreId": "firefox-default",
+          "url": "https://www.reddit.com/r/gameideas/comments/1jmbpgf/a_city_management_game_with_super_heroesbut_as/",
+          "title": "A city management game with super heroes...but as the mayor, you have no control over the Supers/Villains, forcing you into a fight for survival against the increasingly dangerous threats they attract : r/gameideas",
+          "favIconUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAABgFBMVEX/RQAAAAD+///9/v77/f3t8/X1+fn/QwD+RAD+RQD+RQD/RAD+RADq8fPx9vj+RQD+RQDJ1t7+RQD+RQDP2N//RAD+RAD3+vvL2N/9cj3T3uTj7e/Y4+f+SAL/YAH+7OXh5ef/RQD9Tg36+Pj9dEHV3OAFCgz+9PD/RQDljW7c5+oKFBf+Zi77UhP+VADxbj+6wMPazcz/Wh7Q2+H1jGj/PwD+il//SADyrpj0YjLg6u0OFhj/RAD/PwDm7/H/RADN0tMEBwiTMw6vtbccLDHsQgTp39xQWl7bWDPtfFPYmpXMf3pNMSfqzMTtspzd2tj839P/Swr1YizPQicfHx7zoonseE7+spb6aDXOzM7008b7wavpk3bTm5n/Xxn9i1L+yLT+OAB+cGn7lnH+uZ++Ogn/RADBxsh3Sjj0hl2bRCP5hU7+xK5nWFHlloeFW0vjjH4mKCm0vcH3g07rOw3xqpDxcEfAxcf/TwD0glj+hFf1azz+bjnyPggqLS7llXpIEuyYAAAAgHRSTlP/AP//////JJz2+s3q//+Q1/9cn//97f////////////80////////K///////Cf///////xD/I/////8PCP9/////////////////////////////////////////////Cf////9O//////////////////////8Q/////////8OM0LUAAAIgSURBVHicdZNnW+JAFIUvySSAkICwELrUpSogoDRdu659LdjL9t57/+t7Z8YlicueDynznmfKvWfA0tcXj83h9/n8Dpunq4/2DVavHfqye3PXDHddQzqmGnJNGQ2TbjOmclt1Q8JpZt9ePCgBOBN/DdZrfEIQhOw4Oia5Yco8/+Lcy7ggiPfpKmPM4DLxh3vr9+Kaptbpj4sacqb9L+49g3KmUKiOsrNY0eA1TTC3jo+d33nGAbwW6BrqA+PpJ6/TuD29Yg3w0Hcy+OMOlA5GcPuokYMSRIPpJCUesNFzZXH0UuSY6RK92QlENnAABI3IIDEIiP0AJ/8znABiH8AxEYkopM5WUxykVs/wSxTJMSBGw6YkEyKuffj+ihve/Py0JohEljapAZdoZRSNkN3oeYsbWtHzXZFoSmaHLoGbhPKSKmsrsViQG9Kx2ArR5KUyIgc7JnyUVHnj/cU2EVFk++L5hqxKTUpsvFBfw4qkqnJ85nGl8nkmLiNWpp/yQjVoqZNb7bCiSL9mb6Jm30qIw1u0kvbuVbN6tUihHZ7vFDvFYmd+OtwuhG5fNctiZe3ODwdqoUhleWFh+V0kEqoF8qzdOT0wvaNhVCAUCgTwfdRjgywwljEeudHTauYGU616yuPgxugbQxs9rO83m/v1wyj/d9Lgs9izWvwjPfa3BnI3DT0zDORDLow8NzwagO1efu+YIWFMLfaXXv+Gfv3/ABg2QgPxIPo/AAAAAElFTkSuQmCC"
+        },
+        "25": {
+          "id": 25,
+          "index": 6,
+          "windowId": 1,
+          "highlighted": false,
+          "active": false,
+          "attention": false,
+          "pinned": false,
+          "status": "complete",
+          "hidden": false,
+          "discarded": false,
+          "incognito": false,
+          "width": 1888,
+          "height": 1004,
+          "lastAccessed": 1743641086411,
+          "audible": false,
+          "autoDiscardable": true,
+          "mutedInfo": {
+            "muted": false
+          },
+          "isInReaderMode": false,
+          "sharingState": {
+            "camera": false,
+            "microphone": false
+          },
+          "successorTabId": -1,
+          "cookieStoreId": "firefox-default",
+          "url": "https://www.reddit.com/r/gameideas/comments/1jnrrib/a_multiplayer_cozy_game_taking_place_entirely/",
+          "title": "A Multiplayer Cozy Game taking place entirely within a Virtual Computer. : r/gameideas",
+          "favIconUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAABgFBMVEX/RQAAAAD+///9/v77/f3t8/X1+fn/QwD+RAD+RQDx9vj/RAD+RQD+RADq8fP+RQD+RQDJ1t7+RQD+RQDP2N//RAD+RADL2N/3+vv9cj3T3uTj7e/Y4+f+SAL/YAH6+Pj+7OXh5ef/RQD9Tg39dEHV3OAFCgz/RQDljW7c5+oKFBfyrpjQ2+H+Zi77UhP+VADxbj+6wMPazcz+9PD1jGj/PwD+il//SAD0YjLg6u3/Wh4OFhj/RAD/PwDm7/H/RADN0tMEBwjsQgSvtbccLDGTMw7p39xQWl7bWDPtfFPYmpXMf3pNMSfqzMT839P/Swr1YizPQicfHx7zoonseE7/Xxr+spbd2tj6aDXOzM7008b7wavpk3btspz9i1LTm5n+yLT+OAB+cGn7lnH+uZ++Ogn/RADBxsh3Sjj0hl2bRCP5hU7+xK5nWFHlloeFW0vjjH4mKCm0vcH3g07rOw3xqpDxcEfAxcf/TwD0glj1azz+bjn+hFfyPggqLS7llXrYq4kJAAAAgHRSTlP/AP//////JJz2/8366v+Q1/9cn//97f//////////////NP////8r/////////wn//////xD/I/////8PCP9/////////////////////////////////////////////Cf////9O//////////////////////8Q/////////88xcxwAAAIfSURBVHicdZNnW+JAFIUvySRAkICwQOjSlq5UBUHXrmtbC/a6vffe//remXFJ4rLnQ8q855ly7xmw9PXFY3P4fT6/w+bp6qN9g9Vrh77s3uw1w13XkI6phlxTRsOE24yp3FbdkHSa2Y8XD8oAzuRfg/UaHxcEoT6JjglumDLPP7f4MiEI4n26yhgzuEz84c76vYSmKQ3646KGrGn/czvPoJLJ52uj7CxWNHhNEyyu42Prd45xAK8Fuob6wGT6yes0bk+vWBM89J0Kfr8D5f0R3D5qZL8M0WA6RYkHbPRcdRy9FDlmukRvfRyRDRwAQSMySAwCYj/Ayf8MJ4DYB3BMRCIK8YvVOAfx1Qv8EkVyDIjRcCbJhIhrH7694oY3Pz+tCSKRpTNqwCVaGVUjZDu61+KGVnRvWySamtmiS+AmobKkyNpKLBbkhnQstkI0eamCyMGOCR8lRd54f75JRBTZPH++IStSkRIbL9TXsCopipyYeVytfp5JyIjV6ae8UE1a6tRBO6yq0q/Zm6jZtxLi8AGtpL171axeKZJvh+c7hU6h0JmfDrfzodtXzbJYWbtzw4FSKFJdXlhYfheJhEqBHGt3Vg9M72gYFQiFAgF8H/XYIAuMZYxHbvS0lrnBVKqd8ji4MfrG0EYPG7vF4m7jMMr/nTT4LPasFv9Ij/2tgdxNQ88MA/mQCyPPDY8GYLuX3ztmSBpTi/2l17+pX/8/kzRB/eNe/M4AAAAASUVORK5CYII="
+        },
+        "26": {
+          "id": 26,
+          "index": 7,
+          "windowId": 1,
+          "highlighted": false,
+          "active": false,
+          "attention": false,
+          "pinned": false,
+          "status": "complete",
+          "hidden": false,
+          "discarded": false,
+          "incognito": false,
+          "width": 1888,
+          "height": 1004,
+          "lastAccessed": 1743641098608,
+          "audible": false,
+          "autoDiscardable": true,
+          "mutedInfo": {
+            "muted": false
+          },
+          "isInReaderMode": false,
+          "sharingState": {
+            "camera": false,
+            "microphone": false
+          },
+          "successorTabId": -1,
+          "cookieStoreId": "firefox-default",
+          "url": "https://www.reddit.com/r/gameideas/comments/1jkvcx9/game_ideas_for_a_simple_webbased_game_on_browser/",
+          "title": "Game ideas for a simple web-based game (on browser). : r/gameideas",
+          "favIconUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAABgFBMVEX/RQAAAAD+///9/v77/f3t8/X1+fn/QwD+RAD+RQD/RAD+RQD+RADq8fPx9vj+RQD+RQDJ1t7+RQD+RQDP2N//RAD+RAD3+vvL2N/9cj3T3uTj7e/Y4+f+SAL/YAH+7OXh5ef/RQD9Tg36+Pj9dEHV3OAFCgz+9PDxbj//RQDljW7c5+oKFBfQ2+H+Zi77UhP1jGi6wMPazcz/PwD+il//SADyrpj+VAD0YjLg6u3/Wh4OFhj/RAD/PwDm7/H/RADN0tMEBwivtbccLDHp39xQWl7bWDPtfFOTMw7YmpXMf3pNMSfqzMTtspz839P/Swr1YizQQicfHx7zoonreE//Xxr+spbd2tj6aDXOzM7008b7wavrQwTpk3bTm5n9i1L+yLT+OAB+cGm+OgnrOw37lnH+uZ//RADBxsh3Sjj/TwCbRCP5hU7+xK5nWFHlloeFW0vjjH70hl0mKCm0vcH3g07xqpDxcEfAxcf0glj+hFf+bjn1azzyPggqLS7llXoZf3QZAAAAgHRSTlP/AP//////JJz2zfrq//+Q1/9cn//97f////////////80/////////yv///////////8Q/yP/Cf////8PCP9/////////////////////////////////////////////Cf//////Tv//EP////////////////////////////xNXvIAAAIfSURBVHicdZNne9pAEIQX6SSKkcAQEN3U0DHFxmCw4x73uOBe03vv/a9n785BkkPmg8q981zZnQNLX888Noff5/M7bJ6uPto3WL126MvuzV8z3HUN6ZhqyDVlNIy7zZjKbdUNCaeZfXv5qALgTPw1WK/xMUEQspPoGOeGKfP8p8uv4oIgPqSrTDCDy8Tv76zdi2uaWqU/LmrIm/Z/uvMccplisT7KzmJFg9c0wfIaPrZ+FxgH8Fqga6gPTKafvknj9vSKNcBD38ng9ztQ2R/B7aNG9isQDaaTlHjARs+VxdFLkWOmS/RmxxDZwAEQNCKDxCAg9gOc/M9wAoh9AMdEJKKQOl9JcZBaOccvUSTHgBgNG5JMiLj64Mdrbnj78/OqIBJZ2qAGXKKVUTRCtqN7LW5oRfe2RaIpmS26BG4ScguqrC3FYkFuSMdiS0STF3KIHOyY8ElS5fWPF5tERJHNixfrsio1KbHxQn0NK5KqyvGZJ7Xal5m4jFiZfscL1aClTh60w4oi/Zq9iZp9LyEOH9BK2rtXzeqVI8V2eK5T6pRKnbnpcLsYun3VLIuVtbswHCiHIrXF+fnFD5FIqBwosHbn9cD0joZRgVAoEMD3UY8NssBYJnjkRs/qmRtM5foZj4Mbo28MbfSwutts7lYPo/zfSYPPYs9q8Y/02N8ayN009MwwkA+5MPLc8HgAtnv5vWOGhDG12F96/Rv69f8DYKRCAiBmuawAAAAASUVORK5CYII="
+        },
+        "27": {
+          "id": 27,
+          "index": 8,
+          "windowId": 1,
+          "highlighted": false,
+          "active": false,
+          "attention": false,
+          "pinned": false,
+          "status": "complete",
+          "hidden": false,
+          "discarded": false,
+          "incognito": false,
+          "width": 1888,
+          "height": 1004,
+          "lastAccessed": 1743641178629,
+          "audible": false,
+          "autoDiscardable": true,
+          "mutedInfo": {
+            "muted": false
+          },
+          "isInReaderMode": false,
+          "sharingState": {
+            "camera": false,
+            "microphone": false
+          },
+          "successorTabId": -1,
+          "cookieStoreId": "firefox-default",
+          "url": "https://www.reddit.com/r/gameideas/comments/1jmq69u/a_more_detective_style_social_deduction_game_a/",
+          "title": "A more \"Detective Style\" social deduction game. a game where players actually leave evidence when they do things : r/gameideas",
+          "favIconUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAABgFBMVEX/RQAAAAD+///9/v77/f3t8/X1+fn/QwD+RAD+RQDJ1t7x9vj/RAD+RQD+RADq8fP+RQD+RQD+RQD+RQDP2N//RAD+RADL2N/3+vv9cj3T3uTj7e/Y4+f+SAL/YAH6+Pj+7OXh5ef/RQD9Tg39dEHV3OAFCgzxbj//RQDljW7c5+oKFBfyrpj7UhO6wMPazcz+9PD/Wh7Q2+H+Zi71jGj/PwD+il//SAD+VAD0YjLg6u0OFhj/RAD/PwDm7/H/RAAEBwivtbccLDHsQgTp39xQWl7bWDPtfFOTMw7YmpXMf3pNMifqzMTd2tj839P6aDX/Swr1YizQQicgHx3zoonreE/+spbN0dPOzM7008b7wavpk3btspz9i1LTm5n/Xxn+yLT+OAB+cGm+Ogn7lnH+uZ//RADBxsh3Sjj0hl3/TwCbRCP5hU7+xK5nWFHlloeFW0vjjH4mKCm0vcH3g07rOw3xqpDxcEfAxcf0glj1azz+bjn+hFfyPggqLS7llXoiLcpHAAAAgHRSTlP/AP//////JJz2///N+ur/kNdcn//97f//////////////NP//////K////////////////xD/Iwn///8PCP9/////////////////////////////////////////////Cf////9O////EP///////////////////////////6h4vWMAAAIgSURBVHicdZNle+JAFIUvySRAQwmyQPBiixYo0hZpt771boW6rbu7//W9M9MlSZc9HyLznmfk3jNg6euZx+bw+3x+h83T1Uf7BqvXDn3ZvblrhruuYR1TDbumjIYJtxlTua26Iek0sx8vH9YBnMm/Bus1Pi4IQnUMHRPcMGWef375VUIQxAd0lUlmcJn4/d21ewlNUxr0x0UNOdP+53efQzZTKFRG2VmsaPCaJlhew8f27zzjAF4LdA31gbH0kzdp3J5esSZ46DsV/H4H6vsjuH3UyH4dosF0ihIP2Oi5qjh6KXLMdIne6jgiGzgAgkZkkBgExH6A4/8ZjgGxD+CIiEQU4ucrcQ7iK+f4JYrkCBCj4VSSCRFXP357zQ1vf35eFUQiS6fUgEu0MqpGyE70osUNrejFjkg0NbNNl8BNQnZBkbWlWCzIDelYbIlo8kIWkYMdEz5Jirz+4WyTiCiyefZiXVakEiU2XqivYVVSFDlx8Lhc/nKQkBGr0095oZq01KmNdlhVpV8zN1Ez7yTE4Q1aSXv3qlm9WqTQDs92ip1isTM7HW4XQrevmmWxsnbnhwK1UKS8ODe3+D4SCdUCedbunB6Y3uEQKhAKBQL4PuyxQRYYyySP3OhJJXODqVY54XFwY/SNoY1uNfZKpb3GVpT/O2nwWexZLf6RHvtbA7mbhp4ZBvJhF0aeGx4NwHYvv3fMkDSmFvtLr39Tv/5/AKT4Qf4KaD3eAAAAAElFTkSuQmCC"
+        },
+        "28": {
+          "id": 28,
+          "index": 9,
+          "windowId": 1,
+          "highlighted": false,
+          "active": false,
+          "attention": false,
+          "pinned": false,
+          "status": "complete",
+          "hidden": false,
+          "discarded": false,
+          "incognito": false,
+          "width": 1888,
+          "height": 1004,
+          "lastAccessed": 1743641323144,
+          "audible": false,
+          "autoDiscardable": true,
+          "mutedInfo": {
+            "muted": false
+          },
+          "isInReaderMode": false,
+          "sharingState": {
+            "camera": false,
+            "microphone": false
+          },
+          "successorTabId": -1,
+          "cookieStoreId": "firefox-default",
+          "url": "https://www.reddit.com/r/gameideas/comments/1jjmbge/desert_western_survival_game_with_story_telling/",
+          "title": "Desert western survival game with story telling and bounty : r/gameideas",
+          "favIconUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAABgFBMVEX/RQAAAAD+///9/v77/f3t8/X1+fn/QwD+RAD+RQDx9vj/RAD+RQD+RADq8fP+RQD+RQDJ1t7+RQD+RQDP2N//RAD+RADL2N/3+vv9cj3T3uTj7e/Y4+f+SAL/YAHh5ef6+Pj+7OX/RQD9Tg39dEHV3OAFCgz/RQDljW7c5+oKFBfQ2+H+Zi77UhP+VADxbj/0YjK6wMPazcz+9PD/Wh71jGj/PwDok3f+il//SADyrpjg6u0OFhj/RAD/PwDm7/H/RADN0tMEBwiTMw6vtbccLDHsQgRQWl7bWDPtfFPYmpXMf3pNMifqzMTtspz839P/SwrPQicgHx3zoonseE7+spbd2tjp39z6aDXOzM7008b7wav1YizTm5n/Xxn+yLT+OAB+cGn7lnH+uZ++Ogn/RADBxsh3Sjj0hl2bRCP5hU7+xK5nWFHlloeFW0vjjH4mKCm0vcH0gljrOw3xqpDxcEfAxcf/TwD3g07+hFf1azz+bjnyPgj9i1IqLS79i1P82jOkAAAAgHRSTlP/AP//////JJz2/8366v+Q1/9cn//97f//////////////NP////8r////////Cf////////8Q//8j////Dwj/f/////////////////////////////////////////8J/////07//////////////////////xD//////////5+pc5MAAAIfSURBVHicdZNnWxpBFIUvu7NLXxACLB0poSpNQCkau7FGxd7Se+89fz13Zgy7a/B82DLveabcewZMA33xWOx+n89vt3h62ujAYPZaYSCrN3vFcNfl0DCVwzWtN0y5jZjKbdYMSaeRfXvxoATgTP4zmK/wSUEQ6hPomOKGaeP8S/Mv44Ig3qerjDODy8Af7qzfi6uqrUF/XNSQNex/aecZlDP5fG2MncWMBq9hgvl1fJy2cowDeE3Q09UHJtJPXqdxe1rFmuCh71Twxx0o7Y3i9lGjeyWIBtMpSjxgoeeq4+iFyDHTBXrrk4gsYAcI6pFOYhAQ+wFOrjOcAGIfwDERiSgkzlYTHCRWz/BLFMkxIEbDpiQTIq59+P6KG978/LQmiESWNqkBl6hkFJWQ7eh5hRsq0fNtkahK5pQugZuE8oFNVldisSA3pGOxFaLKB2VEdnZM+CjZ5I2vv7aIiCJbf55vyDapTYmFF+p9WJFsNjk++7ha/TwblxErM095oZq01Kn9TlhRpN9zN1FzbyXE4X1aSWvvsln9YiTfCS90C91CobswE+7kQ7cvm2Uys3bnRgLFUKS6vLi4/C4SCRUDOdburBaY/tEIKhAKBQL4PuqzQRYY0ziP3FirlrnBVKy1eBzcGH19aKOHjd12e7dxGOX/Thp8FntWi/+kxf7WUO6moWeGodzhwshzw6Mh2Orl944ZkvrUYn/p9W9q1/8v+21B2SA/PywAAAAASUVORK5CYII="
+        },
+        "29": {
+          "id": 29,
+          "index": 10,
+          "windowId": 1,
+          "highlighted": false,
+          "active": false,
+          "attention": false,
+          "pinned": false,
+          "status": "complete",
+          "hidden": false,
+          "discarded": false,
+          "incognito": false,
+          "width": 1888,
+          "height": 1004,
+          "lastAccessed": 1743641416891,
+          "audible": false,
+          "autoDiscardable": true,
+          "mutedInfo": {
+            "muted": false
+          },
+          "isInReaderMode": false,
+          "sharingState": {
+            "camera": false,
+            "microphone": false
+          },
+          "successorTabId": -1,
+          "cookieStoreId": "firefox-default",
+          "url": "https://www.reddit.com/r/gameideas/comments/1jj149b/lethal_companylike_played_as_an_adventuring_party/",
+          "title": "Lethal Company-like played as an adventuring party : r/gameideas",
+          "favIconUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAABgFBMVEX/RQAAAAD+///9/v77/f3t8/X1+fn/QwD+RAD+RQD+RQDx9vj/RAD+RADq8fP+RQD+RQDJ1t7+RQD+RQDP2N//RAD+RADL2N/3+vv9cj3T3uTj7e/Y4+f+SAL/YAHh5ef9Tg36+Pj+7OX/RQD9dEHV3OAFCgzxbj//RQDljW7c5+oKFBfQ2+H+Zi77UhP1jGi6wMPazcz+9PD/PwD+il//SADyrpj+VAD0YjLg6u3/Wh4OFhj/RAD/PwDm7/H/RADN0tMEBwiTMw6vtbccLDHqzMRQWl7bWDPtfFPMf3pNMSftspz839P1YizPQicfHx7zoonreE/Tm5n/Xxr+spbd2tjp39z6aDXOzM7008b7wavrQwTpk3b/TAr9i1LYmZX+ybX+OAB+cGnrOw37lnG+Ogn/RADBxsjllod3Sjj+uZ//TwCbRCP5hU7+xK5nWFGFW0vjjH70hl0mKCm0vcH3g07xqpDxcEfAxcf0glj1azz+bjn+hFfyPggqLS7llXqi9d8JAAAAgHRSTlP/AP//////JJz2+v/N6v+Q1/9cn//97f///////////////zT/////K/////////////8Q/yP/Cf////8PCP9/////////////////////////////////////////////Cf////9O/////xD//////////////////////////+4/9XAAAAIgSURBVHicdZNnW+JAFIUvySSAgYCwQOggsHRpiiDo2l272Nuq23vv/a/vnRmXJC57PqTMe54p954BS1/PPTaH3+fzO2yerj7aN1i9dujL7s1dM9x1DemYasg1ZTSMu82Yym3VDSmnmf149awM4Ez9NViv8TFBEOqT6Bjnhinz/Kdzr+OCID6gq0wwg8vEH26t3otrmlKhPy5qyJn2f7r1ArKZQqE2ys5iRYPXNMHcKj42fucZB/BaoGuoD0ymn75J4/b0ijXAQ9+J4Pc7UN4bwe2jRvbKEA2mE5R4wEbPVcfRS5Fjpkv01scQ2cABEDQig8QgIPYDnPzPcAKIfQDHRCSikNy5SHKQvNjBL1Ekx4AYDWuSTIi4cv/bE254+/PziiASWVqjBlyilVE1Qjajuy1uaEV3N0WiqZkNugRuErIHiqwtx2JBbkjHYstEkw+yiBzsmPBJUuTFj+frRESR9fOXi7IiNSmx8UJ9DauSosjxmcfV6peZuIxYnX7HC9WgpU7st8OqKv2avYmafS8hDu/TStq7V83qlSKFdni+U+wUi5356XC7ELp91SyLlbU7PxwohSLVpYWFpQ+RSKgUyLN25/TA9I6GUYFQKBDA91GPDbLAWCZ45EbPapkbTKXaGY+DG6NvDG30sLLdbG5XDqP830mDz2LPavGP9NjfGsjdNPTMMJAPuTDy3PBoALZ7+b1jhpQxtdhfev0b+vX/A3zqQe7RWWKlAAAAAElFTkSuQmCC"
+        },
+        "30": {
+          "id": 30,
+          "index": 11,
+          "windowId": 1,
+          "highlighted": false,
+          "active": false,
+          "attention": false,
+          "pinned": false,
+          "status": "complete",
+          "hidden": false,
+          "discarded": false,
+          "incognito": false,
+          "width": 1888,
+          "height": 1004,
+          "lastAccessed": 1743641461958,
+          "audible": false,
+          "autoDiscardable": true,
+          "mutedInfo": {
+            "muted": false
+          },
+          "isInReaderMode": false,
+          "sharingState": {
+            "camera": false,
+            "microphone": false
+          },
+          "successorTabId": -1,
+          "cookieStoreId": "firefox-default",
+          "url": "https://www.reddit.com/r/gameideas/comments/1jigge6/the_thicket_3rd_person_rpg_where_you_explore_and/",
+          "title": "The Thicket - 3rd Person RPG where you explore and try to escape, destroy, or save a cursed forest : r/gameideas",
+          "favIconUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAABgFBMVEX/RQAAAAD+///9/v77/f3t8/X1+fn/QwD+RAD+RQD/RAD+RQD+RADq8fPx9vj+RQD+RQDJ1t7+RQD+RQDP2N//RAD+RADL2N/3+vv9cj3T3uTj7e/Y4+f+SAL/YAH6+Pj+7OXh5ef/RQD9Tg39dEHV3OAFCgz+9PDxbj//RQDljW7c5+oKFBfQ2+H+Zi77UhO6wMPazcz1jGj/PwDok3f+il//SADyrpj+VAD0YjLg6u3/Wh4OFhj/RAD/PwDm7/H/RADN0tMEBwiTMw6vtbccLDHsQgTp39xQWl7bWDPtfFPTm5nMf3pNMifqzMTtspz839P/Swr1YizPQicgHx3zoonreE//Xxr+spbd2tj6aDXOzM7008b7wavYmpX+yLT+OAB+cGn7lnH+uZ++Ogn/RADBxsh3Sjj0hl3/TwCbRCP5hU7+xK5nWFHlloeFW0vjjH4mKCm0vcH3g07rOw3xqpDxcEfAxcf0glj9i1P1azz+bjnyPgj9i1IqLS7+hFerKfvJAAAAgHRSTlP/AP//////JJz2zfrq//+Q1/9cn//97f//////////////NP///////yv///////////8Q//8j/wn/////Dwj/f/////////////////////////////////////////8J/////07///8Q/////////////////////////////4PsxlUAAAIfSURBVHicdZNnWxpBFIUvu7NLXxACLF1a6EhTBEFj11hjwa7pvfeev547M4bdNXg+bJn3PFPuPQOmgZ55LDa/z+e3WTw9bXRgMHutMJDVm79iuOuya5jK7prWGybcRkzlNmuGpMPI/rx8UAFwJP8ZzFf4uCAI2Sl0THDDtHH+pflXCUEQ79NVJpnBZeAP9zbuJVRVqdMfFzXkDftf2nsOuUyxWBtjZzGjwWuYYH4DHzvNAuMAXhP0dPWBqfSTN2ncnlaxBnjoOxX8cQcqh6O4fdToYQWiwXSKEg9Y6LmyOHohcsx0gd7sOCIL2ACCeqSTGATEfoCz6wxngNgHcEpEIgrxtfM4B/HzNfwSRXIKiNGwJcmEiOsfv7/mhrc/P68LIpGlLWrAJdoZp0rIbvSgzQ3t6MGuSFRnZocugZuE3LIiq6uxWJAb0rHYKlHl5RwiGzsmfJIUefPDr20iosj2txebsiK1KLHwQn0NOyVFkROzj6vVL7MJGbFz5ikvVIOWOnXUCTud0u+5m6i5dxLi8BGtpLV32ax+OVLshBe6pW6p1F2YCXeKoduXzTKZWbsLI4FyKFJdWVxceR+JhMqBAmt3XgtM/2QEFQiFAgF8n/TZIAuMaZJHbqxZy9xgKteaPA5ujL4+tNHj+n6rtV8/jvJ/Bw0+iz2rxX/SYn9rKHfT0DPDUG53YeS54dEQbPXye8cMSX1qsb/0+je06/8XzjdB3xB3vmQAAAAASUVORK5CYII="
+        },
+        "31": {
+          "id": 31,
+          "index": 12,
+          "windowId": 1,
+          "highlighted": false,
+          "active": false,
+          "attention": false,
+          "pinned": false,
+          "status": "complete",
+          "hidden": false,
+          "discarded": false,
+          "incognito": false,
+          "width": 1888,
+          "height": 1004,
+          "lastAccessed": 1743641617878,
+          "audible": false,
+          "autoDiscardable": true,
+          "mutedInfo": {
+            "muted": false
+          },
+          "isInReaderMode": false,
+          "sharingState": {
+            "camera": false,
+            "microphone": false
+          },
+          "successorTabId": -1,
+          "cookieStoreId": "firefox-default",
+          "url": "https://www.reddit.com/r/gameideas/comments/1jd2le4/a_very_powerful_psycological_horror_game_at_least/",
+          "title": "A very powerful psycological horror game (at least i think) Named \"DREAM\" : r/gameideas",
+          "favIconUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAABgFBMVEX/RQAAAAD+///9/v77/f3t8/X1+fn/QwD+RAD+RQD+RQDx9vj/RAD+RADq8fP+RQD+RQDJ1t7+RQD+RQDP2N//RAD+RADL2N/3+vv9cj3T3uTj7e/+SALY4+f/YAHh5ef6+Pj+7OX/RQD9Tg39dEHV3OAFCgz/RQDljW7c5+oKFBfQ2+H+Zi77UhPxbj+6wMPazcz+9PD/Wh71jGj/PwD+il//SADyrpj+VAD0YjLg6u0OFhj/RAD/PwDm7/H/RADN0tMEBwiTMw6vtbccLDFQWl7bWDPtfFPYmpXMf3pNMifqzMTtspz839P/Swr1YizPQicgHx3zoonseE7+spbd2tjp39z6aDXpk3bOzM7008b7wavrQwTTm5n/Xxn9i1L+yLT+OAB+cGnrOw37lnH+uZ++Ogn/RADBxsh3Sjj0hl3/TwCbRCP5hU7+xK5nWFHlloeFW0smKCm0vcH3g07jjH7xqpDxcEfAxcf0glj+hFf1azz+bjnyPggqLS7llXremVqGAAAAgHRSTlP/AP//////JJz2+v/N6v+Q1/9cn//97f//////////////NP////8r////////////////EP8j/wn///8PCP9/////////////////////////////////////////////Cf//////Tv///xD//////////////////////////zHnWEYAAAIgSURBVHicdZNne9pAEIQX6STAAoEhgOiYEqopBhtT7LjHNS649/Tee//r2btzkOSQ+aBy7zxXdufA0tdzj83h9/n8Dpunq4/2DVavHfqye7PXDHddQzqmGnJNGQ0TbjOmclt1Q9JpZt9ePSwBOJN/DdZrfFwQhNoYOia4Yco8/+nc67ggiA/oKpPM4DLxR9ur9+KaptTpj4sasqb9n26/gHImn6+OsrNY0eA1TTC3io/N3znGAbwW6BrqA2Ppp2/TuD29Yg3w0Hcq+OMOlHZHcPuokd0SRILpFCUesNFz1XD0UuSY6RK9tXFENnAABI3IIDEIiP0AJ/8znABiH8AxEYkoJM6WExwkls/wSxTJMSBGw7okEyKu3P/+hhs+/vy8IohEltapAZdoZVSNkK3IeYsbWpHzLZFoamaTLoGbhPK+ImtLsViQG9Kx2BLR5P0yIgc7JnySFHntw8UGEVFk4+LlmqxITUpsvFBfw6qkKHJ85kml8mUmLiNWp5/xQjVoqVN77bCqSr9mb6Jm30mIw3u0kvbuVbN6xWi+HZ7vFDqFQmd+OtzOh25fNctiZe3ODQeKoWhlcWFh8X00GioGcqzdWT0wvaNhVCAUCgTwfdRjgywwlkkeudHDauYGU7F6yOPgxugbQxs5qO80mzv1gwj/d9Lgs9izWvwjPfa3BnI3DT0zDORDLow8NzwegO1efu+YIWlMLfaXXv+Gfv3/AGcWQfyygsI0AAAAAElFTkSuQmCC"
+        },
+        "32": {
+          "id": 32,
+          "index": 13,
+          "windowId": 1,
+          "highlighted": false,
+          "active": false,
+          "attention": false,
+          "pinned": false,
+          "status": "complete",
+          "hidden": false,
+          "discarded": false,
+          "incognito": false,
+          "width": 1888,
+          "height": 1004,
+          "lastAccessed": 1743641647710,
+          "audible": false,
+          "autoDiscardable": true,
+          "mutedInfo": {
+            "muted": false
+          },
+          "isInReaderMode": false,
+          "sharingState": {
+            "camera": false,
+            "microphone": false
+          },
+          "successorTabId": -1,
+          "cookieStoreId": "firefox-default",
+          "url": "https://www.reddit.com/r/gameideas/comments/1jcfkmf/sleep_walker_a_horror_game_that_shifts_between/",
+          "title": "Sleep Walker, A horror game that shifts between social life and survival : r/gameideas",
+          "favIconUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAABgFBMVEX/RQAAAAD+///9/v77/f3t8/X1+fn/QwD+RAD+RQD/RAD+RQD+RADq8fPx9vj+RQD+RQDJ1t7+RQD+RQDP2N//RAD+RADL2N/3+vv9cj3T3uTj7e/Y4+f+SAL/YAH6+Pj+7OXh5ef/RQD9Tg39dEHV3OAFCgz+9PDxbj//RQDljW7c5+oKFBfyrpj+Zi77UhP+VAC6wMPazczQ2+H1jGj/PwDok3f+il//SAD0YjLg6u3/Wh4OFhj/RAD/PwDm7/H/RADN0tMEBwiTMw7sQgTp39yvtbdQWl7bWDPtfFPTm5nMf3pNMSfqzMTd2tj839P/Swr1YizPQicfHx7zoonreE//Xxr+spb6aDUcKzHOzM700sb7waztspzYmpX+yLT+OAB+cGn+uZ8mKCn7lnG+Ogn/RADBxsh3Sjj0hl2bRCP5hU7+xK5nWFHlloeFW0vjjH60vcH3g07rOw3xqpDxcEfAxcf/TwD0glj9i1P1azz+bjnyPgj9i1IqLS7+hFdwcJJEAAAAgHRSTlP/AP//////JJz2zfrq//+Q1/9cn//97f//////////////NP///////yv///////8J/////xD//yP/////Dwj/f/////////////////////////////////////////8J//////9O/////////////////////xD//////////y0hlswAAAIfSURBVHicdZNne9pAEIQX6SS6wBBAdNNCx6baYLDj7rjGBfeS3nvv+evZu3OQ5OD5oHLvPFd258A00BePxeb3+fw2i6enjQ4MZq8VBrJ681cMd112DVPZXdN6w6TbiKncZs2QdBjZn5f3KwCO5D+D+QqfEAQhO4WOSW6YNs6/MP8qIQjiQ7rKODO4DPzR7vq9hKoqDfrjooa8Yf8Lu88hlykWa2PsLGY0eA0TzK/jY7tVYBzAa4Kerj4wlX76Jo3b0yrWBA99p4I/7kDlYBS3jxo9qEA0mE5R4gELPVcWRy9Ejpku0JudQGQBG0BQj3QSg4DYD3B6neEUEPsATohIRCG+eh7nIH6+il+iSE4AMRrOJJkQce3D99fc8PbnpzVBJLJ0Rg24RDvjVAnZie63uaEd3d8RierMbNMlcJOQW1RkdSUWC3JDOhZbIaq8mENkY8eEj5Iib7z/tUVEFNn69mJDVqQyJRZeqK9hp6QocmL2SbX6eTYhI3bOPOOFatJSpzY7YadT+j13EzX3QEIc3qSVtPYum9WvR4qd8FK31C2Vuksz4U4xdPuyWSYza3dhJFAPRarLR0fL7yKRUD1QYO3Oa4HpH4+gAqFQIIDv4z4bZIExjfPIjbVqmRtM9VqLx8GN0deHNnrY2CuX9xqHUf7voMFnsWe1+E9a7G8N5W4aemYYyu0ujDw3PB6CrV5+75ghqU8t9pde/6Z2/f8CAb1B5u/+vnIAAAAASUVORK5CYII="
+        },
+        "33": {
+          "id": 33,
+          "index": 14,
+          "windowId": 1,
+          "highlighted": false,
+          "active": false,
+          "attention": false,
+          "pinned": false,
+          "status": "complete",
+          "hidden": false,
+          "discarded": false,
+          "incognito": false,
+          "width": 1888,
+          "height": 1004,
+          "lastAccessed": 1743641811379,
+          "audible": false,
+          "autoDiscardable": true,
+          "mutedInfo": {
+            "muted": false
+          },
+          "isInReaderMode": false,
+          "sharingState": {
+            "camera": false,
+            "microphone": false
+          },
+          "successorTabId": -1,
+          "cookieStoreId": "firefox-default",
+          "url": "https://www.reddit.com/r/gameideas/comments/1ja4hxm/a_heavily_watchdogs_inspired_game_but_you_are_a/",
+          "title": "A heavily Watchdogs inspired game but you are a spider with the inspect element ability and a few others. : r/gameideas",
+          "favIconUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAABgFBMVEX/RQAAAAD+///9/v77/f3t8/X1+fn/QwD+RAD+RQD/RAD+RQD+RADq8fPx9vj+RQD+RQDJ1t7+RQD+RQDP2N//RAD+RADL2N/3+vv9cj3T3uTj7e/Y4+f+SAL/YAH6+Pj+7OXh5ef/RQD9Tg39dEHV3OAFCgz+9PDxbj//RQDljW7c5+oKFBfQ2+H+Zi77UhO6wMPazcz/Wh71jGj/PwDok3f+il//SADyrpj+VAD0YjLg6u0OFhj/RAD/PwDm7/H/RADN0tMEBwivtbccLDHp39zbWDPtfFOTMw7Mf3pNMifqzMTtspz839P/Swr1YizQQicgHx3zoolQW17reE/YmpX+spbd2tjOzM7008b7wavrQwT+h1XTm5n/Xxn+yLT/TwB+cGm+OgnyPgj7lnH+uZ9nWFH/RADBxsjllod3Sjj0hl3+OACbRCP5hU7+xK6FW0v5aDXjjH4mKCm0vcH3g07xqpDxcEfAxcf0glj6aDXrOw31azz+bjn9i1IqLS45tfxcAAAAgHRSTlP/AP//////JJz2zfrq//+Q1/9cn//97f//////////////NP///////yv/////////////EP//I/8J////Dwj/f/////////////////////////////////////////8Q////////Tv////8J/////////////////////////1Q72DAAAAIgSURBVHicdZNnWxpBFIUvu7NLXxACLF1a6AgCihSNNdbYsEdN771X89dzZ8awuwbPhy3znmfKvWfANNA9j8Xm9/n8Nounp40ODGavFQayevNXDK9cdg1T2V3TesOk24ip3GbNkHQY2d23jysAjuQ/g/kKnxAEITuOjklumDbOf7L8JCEI4iO6yhQzuAz8wfbq/YSqKnX646KGvGH/J9uvIZcpFmtj7CxmNHgNEyyv4mOzWWAcwGuCnq4+MJ5+8S6N29Mq1gAPfaeCv+9AZX8Ut48a3a9ANJhOUeIBCz1XFkfPRY6ZztGbnUBkARtAUI90EoOA2A9wfJ3hGBD7AI6ISEQhfroX5yC+d4pfokiOADEa1iWZEHHl56/n3PDh4dcVQSSytE4NuEQ741QJ2YqetbmhHT3bEonqzGzSJXCTkFtUZHUpFgtyQzoWWyKqvJhDZGPHhC+SIq99vtggIopsXLxZkxWpRYmFF+p72CkpipyYfVatfptNyIidMy95oRq01KmDTtjplP7M3UTNfZQQhw9oJa29y2b1y5FiJzzfLXVLpe78TLhTDN2+bJbJzNpdGAmUQ5Hq7sLC7qdIJFQOFFi781pg+ocjqEAoFAjg+7DPBllgTFM8cmPNWuYGU7nW5HFwY/T1oY3+qO+0Wjv191H+76DBZ7FntfhPWuxvDeVuGnpmGMrtLow8Nzwdgq1efu+YIalPLfaXXv+Gdv3/AqyJQgV4CVGzAAAAAElFTkSuQmCC"
+        },
+        "34": {
+          "id": 34,
+          "index": 15,
+          "windowId": 1,
+          "highlighted": false,
+          "active": false,
+          "attention": false,
+          "pinned": false,
+          "status": "complete",
+          "hidden": false,
+          "discarded": false,
+          "incognito": false,
+          "width": 1888,
+          "height": 1004,
+          "lastAccessed": 1743641894510,
+          "audible": false,
+          "autoDiscardable": true,
+          "mutedInfo": {
+            "muted": false
+          },
+          "isInReaderMode": false,
+          "sharingState": {
+            "camera": false,
+            "microphone": false
+          },
+          "successorTabId": -1,
+          "cookieStoreId": "firefox-default",
+          "url": "https://www.reddit.com/r/gameideas/comments/1j6fxn1/all_your_ideas_suck_and_i_hate_you_all_please_stop/",
+          "title": "All your ideas suck and I hate you all please stop : r/gameideas",
+          "favIconUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAABgFBMVEX/RQAAAAD+///9/v77/f3t8/X1+fn/QwD+RAD+RQDx9vj/RAD+RQD+RADq8fP+RQD+RQDJ1t7+RQD+RQDP2N//RAD+RADL2N/3+vv9cj3T3uTj7e/Y4+f+SAL/YAH6+Pj+7OXV3ODh5ef/RQD9Tg39dEEFCgz/RQDljW7c5+oKFBf+Zi77UhP+VADxbj+6wMPazcz+9PD1jGj/RAD+il//SADyrpj0YjLQ2+Hg6u3/Wh4OFhj/PwD/PwDm7/H/RADN0tMEBwivtbccLDHp39xQWl7bWDPtfFOTMw7Mf3pNMSfqzMTtspzd2tj839P/Swr1YizQQicfHx7zoonseE7YmpX/Xxr+spb6aDXOzM7008b7wavrQwTpk3b9i1LTm5n+yLT+OAB+cGnyPgi+Ogn7lnH+uZ//RADBxsjllod3Sjj0hl2bRCP5hU7+xK5nWFGFW0vjjH4mKCm0vcH3g07xqpDxcEfAxcf/TwD0glj1azz+bjn+hFfrOw0qLS7llXrEK+XuAAAAgHRSTlP/AP//////JJz2/8366v+Q1/9cn//97f///////////////zT///8r//////8J//////8P/yP///////8QCP9/////////////////////////////////////////////Cf//////Tv////////////////////8Q/////////4+mErQAAAIfSURBVHicdZNne9pAEIQX6SRAGIEhgOimhWZTbYrBjnvc44J7Te+997+evTsHSQ6ZDyr3znNldw4sfX3x2Bx+n8/vsHnq+mjfYPXaoS+7N3vNcNc1pGOqIdeU0TDhNmMqt1U3pJxm9uPVoyKAM/XXYL3GxwVBqE6iY4Ibpszzny6/TgqC+JCuMsYMLhN/sLN6L6lpSo3+uKgha9r/6c4LKCXy+cooO4sVDV7TBMur+Nj6nWMcwGuBuqE+MJl59iaD29Mr1gUPfaeD3+9A8WAEt48aOShCNJhJU+IBGz1XFUcvRY6ZLtFbHUdkAwdA0IgMEoOA2A9w8j/DCSD2ARwTkYhC/GIvzkF87wK/RJEcA2I0rEsyIeLKz29PueHt/U8rgkhkaZ0acIlmQtUI2Y7uN7mhGd3fFommJrboErhJKC0osrYUiwW5IROLLRFNXighcrBjwkdJkdc+nG8SEUU2z1+uyYrUoMTGC/U1rEqKIidnnpTLn2eSMmJ1+jkvVJeWOr3RDquq9Gv2Jmr2nYQ4vEEraa9fNavXiuTb4blOoVModOamw+186PZVsyxW1u7ccKAVipQX5+cX30cioVYgx9qd1QPTOxpGBUKhQADfRz02yAJjGeORGz2rJG4wtSpnPA5ujL4xtNHD2m6jsVs7jPJ/Jw0+iz2rxT/SY39rIHfT0DPDQD7kwshzw+MB2O7l944ZUsbUYn/p9e/q1/8PnkxCCe6OARIAAAAASUVORK5CYII="
+        },
+        "35": {
+          "id": 35,
+          "index": 16,
+          "windowId": 1,
+          "highlighted": false,
+          "active": false,
+          "attention": false,
+          "pinned": false,
+          "status": "complete",
+          "hidden": false,
+          "discarded": false,
+          "incognito": false,
+          "width": 1888,
+          "height": 1004,
+          "lastAccessed": 1743641958370,
+          "audible": false,
+          "autoDiscardable": true,
+          "mutedInfo": {
+            "muted": false
+          },
+          "isInReaderMode": false,
+          "sharingState": {
+            "camera": false,
+            "microphone": false
+          },
+          "successorTabId": -1,
+          "cookieStoreId": "firefox-default",
+          "url": "https://www.reddit.com/r/gameideas/comments/1j4009o/truth_or_donate_game_idea_a_game_in_which_instead/",
+          "title": "Truth or Donate game idea - a game in which instead of drinking, how about donating to charity? : r/gameideas",
+          "favIconUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAABgFBMVEX/RQAAAAD+///9/v77/f3t8/X1+fn/QwD+RAD+RQDx9vj/RAD+RQD+RAD+RQD+RQDk7fDJ1t7+RQD+RQDP2N//RAD+RADL2N/3+vv9cj3T3uTY4+f+SAL/YAHo8PL6+Pj+7OT/RQD9Tg39dEHV3ODh6ewFCgzr8vTxbj//RQDc5+rljW7g5eYKFBfyrpj+Zi77UhP1jGj+VAC6wMPazcz+9PD/Wh7Q2+H/PwDok3f+il//SAD0YjIOFhj/RAD/PwD/RADN0tMEBwiTMw6vtbfzoolQWl7bWDPtfFPMf3pNMSfqzMTd2tj839P/Swr1YizPQicfHx7reE/Tm5n+spb6aDXp39wcKzHOzM7008b7wavrQwTtspzYmZX/Xxn+yLT+OAB+cGkmKCnrOw3+uZ++Ogn/RADBxsjllod3Sjj7lnGbRCP5hU7+xK5nWFGFW0vjjH70hl20vcH3g07xqpDxcEfAxcf/TwD0glj9i1P1azz+bjnyPgj9i1IqLS7+hFd+oUm5AAAAgHRSTlP/AP//////JJz2/8366pDX//9cn//97f////////////80/////////yv//////////wn//////xD//yP//w8If/////////////////////////////////////////8J//////9O/////////////////////xD//////////7IswA8AAAIgSURBVHicdZNnWxpBFIUvu7NLE1ghwNKlhQ4iIKCAsccWFXtP7733/PXcmTHsrsHzYcu855ly7xkwDfTFbbH7vF6f3eLuaaMDg9ljhYGsntwVw13niIapRpwzesO0y4ipXGbNEHcY2Z9XDysAjvg/g/kKnxIEoTGJjmlumDHOfzL/uigI4nO6ygQzOA380fbqvaKq2qr0x0kNOcP+T7ZfQDaVz9fH2VnMaPAYJphfxcdmu8A4gMcEPV19YDL57E0St6dVrAVu+k4EftyByu4Ybh81tluBcCCZoMQNFnquBo5eiBwzXaC3MYXIAnaAgB7pJAYAsQ/g+DrDMSD2AhwRkYhCbOcsxkHsbAe/RJEcAWI0nEoyIeLKg+9PueHtz08rgkhk6ZQacIlOKqoSshU+73BDJ3y+JRI1k9qkS+AmIbtvk9XlSCTADclIZJmo8n4WkZ0dEz5KNnntw68NIqLIxreXa7JNKlNi4YX6qkQlm01Ozz6p1T7PFmXEmeg7XqgWLXViPa1EM9LvuZuoufsSYmWdVtLau2xWvxnKp5WFbqlbKnUXFCWdD96+bJbJzNpdGPU3g6Ha0sHB0vtQKNj0F1i7c1pg+oejKH8w6Pfj+7DPBllgTBM8cuPteuoGU7Pe5nFwYfT1oQ3vVRfL5cXqXpj/O2jwWexZLf6TFvtbQ7mLhp4ZhvIRJ0aeGx4PwVYPv3fMENenFvtLr39Lu/5/ASBYQgPnq3mTAAAAAElFTkSuQmCC"
+        },
+        "36": {
+          "id": 36,
+          "index": 17,
+          "windowId": 1,
+          "highlighted": false,
+          "active": false,
+          "attention": false,
+          "pinned": false,
+          "status": "complete",
+          "hidden": false,
+          "discarded": false,
+          "incognito": false,
+          "width": 1888,
+          "height": 1004,
+          "lastAccessed": 1743642060843,
+          "audible": false,
+          "autoDiscardable": true,
+          "mutedInfo": {
+            "muted": false
+          },
+          "isInReaderMode": false,
+          "sharingState": {
+            "camera": false,
+            "microphone": false
+          },
+          "successorTabId": -1,
+          "cookieStoreId": "firefox-default",
+          "url": "https://www.reddit.com/r/gameideas/comments/1j69je6/amazeing_a_game_about_creating_3d_mazes_and/",
+          "title": "A-MAZE-ing: A game about creating 3D mazes and sharing them online, and then having people race through to see who can complete it first! : r/gameideas",
+          "favIconUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAABgFBMVEX/RQAAAAD+///9/v77/f3t8/X1+fn/QwD+RAD+RQD+RQD/RAD+RADq8fPx9vj+RQD+RQDJ1t7+RQD+RQDP2N//RAD+RAD3+vvL2N/9cj3T3uTj7e/Y4+f+SAL/YAH+7OXh5ef/RQD9Tg36+Pj9dEHV3OAFCgz+9PDxbj//RQDc5+rljW4KFBfyrpj+Zi77UhP+VAC6wMPazcz/Wh7Q2+H1jGj/PwDok3f+il//SAD0YjLg6u0OFhj/RAD/PwDm7/H/RADN0tMEBwivtbccLDHp39zbWDPtfFOTMw7Mf3pNMSfqzMTd2tj839P/Swr1YizQQicfHx7zoolPWl7reE/Tm5n+spb6aDXOzM7008b7wavrQwTtspzYmpX/Xxn+yLT+OAB+cGm+OgnrOw37lnH+uZ9nWFHllof/RADBxsh3Sjj0hl2bRCP5hU7+xK6FW0vjjH4mKCm0vcH3g07xqpDxcEfAxcf/TwD0glj9i1P1azz+bjnyPgj9i1IqLS7+hFcvxDBvAAAAgHRSTlP/AP//////JJz2+s3q//+Q1/9cn//97f////////////80/////////yv///////8J//////8Q//8j////Dwj/f/////////////////////////////////////////8J/////////07//////////////////xD//////////59/fygAAAIeSURBVHicdZNlexpBFIUvu7OLLwQKiwctTgJBEiRptNHGiFvd3b1/vXdmUnY3JefDyrznGbn3DJgG+uKx2P0+n99u8fS00YHB7LXCQFZv/orhrsumYSqba1pvmHIbMZXbrBkSDiP78/pRBcCR+GcwX+GTgiBkJ9AxxQ3TxvlPlh/HBUF8SFcZZwaXgd/fXr0XV1WlQX9c1JA37P9k+yXkMoVCbYydxYwGr2GC5VV8bLaKjAN4TdDT1Qcm0s/fpHF7WsWa4KHvZPDHHajsj+L2UaP7FYgG00lKPGCh58ri6IXIMdMFerOTiCxgBwjqkU5iEBD7AY6vMxwDYh/AERGJKKT2zlIcpM728EsUyREgRsOpJBMirjz4/oQb3v78tCKIRJZOqQGXaGecKiFb0fM2N7Sj51siUZ2ZTboEbhJyi4qsLsViQW5Ix2JLRJUXc4js7JjwUVLktQ+/NoiIIhvfXq3JilSmxMIL9TXslBRFjs8+q1Y/z8ZlxM6ZF7xQTVrq5Hon7HRKv+duoubeSYjD67SS1t5ls/r1SKETnu+WuqVSd34m3CmEbl82y2Rm7S6OBOqhSHV3YWH3fSQSqgeKrN15LTD9wxFUIBQKBPB92GeDLDCmcR65sVYtc4OpXmvxOLgx+vrQRg8aO+XyTuMgyv8dNPgs9qwW/0mL/a2h3E1DzwxDuc2FkeeGp0Ow1cvvHTMk9KnF/tLr39Su/18qykHo8A3l3QAAAABJRU5ErkJggg=="
+        },
+        "41": {
+          "id": 41,
+          "index": 0,
+          "windowId": 1,
+          "highlighted": true,
+          "active": true,
+          "attention": false,
+          "pinned": false,
+          "status": "complete",
+          "hidden": false,
+          "discarded": false,
+          "incognito": false,
+          "width": 1888,
+          "height": 1004,
+          "lastAccessed": 1743642308494,
+          "audible": false,
+          "autoDiscardable": true,
+          "mutedInfo": {
+            "muted": false
+          },
+          "isInReaderMode": false,
+          "sharingState": {
+            "camera": false,
+            "microphone": false
+          },
+          "successorTabId": -1,
+          "cookieStoreId": "firefox-default",
+          "url": "https://www.reddit.com/r/gameideas/comments/1j0cwn8/a_concept_of_a_first_aid_simulator_turned/",
+          "title": "A concept of a first aid simulator turned fourth-wall-breaking psychological horror. : r/gameideas",
+          "favIconUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAABgFBMVEX/RQAAAAD+///9/v77/f3t8/X1+fn/QwD+RAD+RQDx9vj/RAD+RQD+RADq8fP+RQD+RQDJ1t7+RQD+RQDP2N//RAD+RADL2N/3+vv9cj3T3uTj7e/Y4+f+SAL/YAH6+Pj+7OXh5ef/RQD9Tg39dEHV3OAFCgzxbj//RQDljW7c5+oKFBfQ2+H+Zi77UhP+VAC6wMPazcz+9PD1jGj/PwD+il//SADyrpj0YjLg6u3/Wh4OFhj/RAD/PwDm7/HbWDP/RADN0tMEBwjsQgSvtbccLDGTMw7p39ztfFPYmpXMf3pNMSfqzMTtspz839P/Swr1YizPQicfHx7zoolPWl7reE//Xxr+spbd2tj6aDXOzM7008b7wav9i1LTm5n+yLTpknV+cGn7lnH+uZ9nWFG+Ogn/RADBxsh3Sjj+OAD0hl2bRCP5hU7+xK7lloeFW0vjjH4mKCm0vcH3g07rOw3llXrxqpDxcEfAxcf/TwD0glj1azz+bjn+hFfyPggqLS4Bu2LqAAAAgHRSTlP/AP//////JJz2/8366v+Q1/9cn//97f//////////////NP//////K////////wn/////EP8j//////8PCP//f/////////////////////////////////////////////////9O//8J////////////////////EP///////10dJwEAAAIfSURBVHicdZNne9pAEIQX6SRAGIEhgOimhW7TbMBgO+5xjRvuLb333v969u4cJDlkPqjcO8+V3Tmw9PXVY3P4fT6/w+bp6qN9g9Vrh77s3tw1w1PXkI6phlxTRsOE24yp3FbdkHSa2c+X98sAzuRfg/UaHxcEoTaJjglumDLPP7/0ICEI4j26yhgzuEz84c7a3YSmKXX646KGnGn/8zvPIZspFKqj7CxWNHhNEyyt4WPrY55xAK8Fuob6wGT6yes0bk+vWAM89J0K/rgD5YMR3D5q5KAM0WA6RYkHbPRcNRy9EDlmukBvbRyRDRwAQSMySAwCYj/A6f8Mp4DYB3BCRCIK8fOVOAfxlXP8EkVyAojRsCHJhIirH76/4oY3vz6vCiKRpQ1qwCVaGVUjZDu63+KGVnR/WySamtmiS+AmIbusyNpMLBbkhnQsNkM0eTmLyMGOCZ8kRV5/f7ZJRBTZPHuxLitSkxIbL9S3sCopipyYfVypfJlNyIjV6We8UA1a6tRhO6yq0u+5m6i5txLi8CGtpL171axeKVJohxc6xU6x2FmYDrcLodtXzbJYWbvzw4FSKFLZW1zcexeJhEqBPGt3Tg9M73gYFQiFAgF8H/fYIAuMZYxHbvSymrnBVKpe8ji4MfrG0EaP6rvN5m79KMr/nTT4LPasFv9Ij/2tgdxNQ88MA/mQCyPPDY8GYLuX3ztmSBpTi/2l17+hX/8/QVpCALfrdqAAAAAASUVORK5CYII="
+        },
+        "42": {
+          "id": 42,
+          "index": 1,
+          "windowId": 1,
+          "highlighted": false,
+          "active": false,
+          "attention": false,
+          "pinned": false,
+          "status": "complete",
+          "hidden": false,
+          "discarded": false,
+          "incognito": false,
+          "width": 1888,
+          "height": 1004,
+          "lastAccessed": 1743642255029,
+          "audible": false,
+          "autoDiscardable": true,
+          "mutedInfo": {
+            "muted": false
+          },
+          "isInReaderMode": false,
+          "sharingState": {
+            "camera": false,
+            "microphone": false
+          },
+          "successorTabId": -1,
+          "cookieStoreId": "firefox-default",
+          "url": "https://www.reddit.com/r/gameideas/comments/1j3gwtr/an_idea_for_a_game_that_i_had_where_its_the/",
+          "title": "An idea for a game that I had where it's the zombie apocalypse and you're stuck in a fire tower : r/gameideas",
+          "favIconUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAABgFBMVEX/RQAAAAD+///9/v77/f3t8/X1+fn/QwD+RAD+RQD+RQDx9vj/RAD+RADq8fP+RQD+RQDJ1t7+RQD+RQDP2N//RAD+RADL2N/3+vv9cj3T3uTj7e/Y4+f+SAL/YAH6+Pj+7OTh5ef/RQD9Tg39dEHV3OAFCgz7UhP/RQDc5+rljW4KFBfyrpjQ2+H+Zi7+VADxbj+6wMPazcz+9PD/Wh71jGj/PwDok3f+il//SAD0YjLg6u0OFhj/RAD/PwDm7/H/RADN0tMEBwiTMw6vtbfsQgRQWl7bWDPtfFPp39zMf3pNMSfqzMT839P/Swr1YizPQicfHx7zoonseE7YmpX+spbd2tj6aDUcKzHOzM7008b7wavtspzTm5n/Xxn+yLT+OAB+cGkmKCn7lnH+uZ/lloe+Ogn/RADBxsh3Sjj0hl2bRCP5hU7+xK5nWFGFW0vjjH60vcH3g07rOw3xqpDxcEfAxcf/TwD0glj+hFf1azz+bjnyPgj9i1IqLS79i1PGAYsIAAAAgHRSTlP/AP//////JJz2+v/N6v+Q1/9cn//97f//////////////NP//////K////////wn///////8Q//8j////Dwj/f/////////////////////////////////////////8J////////Tv///////////////////xD//////////zY9+osAAAIfSURBVHicdZNlexpBFIUvu7OLLwQKLB6swYMESJCk8cYaIa51d/f+9d6ZSdndlJwPK/OeZ+TeM2Aa6IvH4vD7fH6HxdPTRgcGs9cKA1m92SuGuy6bhqlsrmm9YcptxFRus2ZIOo3s26uHZQBn8p/BfIVPCoJQn0DHFDdMG+dfnH+dEATxAV1lnBlcBv54e+1eQlXtDfrjooasYf+L2y+gksnlamPsLGY0eA0TzK/hY7OVZxzAa4Kerj4wkX72Jo3b0yrWBA99p4I/7kB5bxS3jxrdK0M0mE5R4gELPVcdRy9Ejpku0FufRGQBB0BQj3QSg4DYD3ByneEEEPsAjolIRCF+thvnIL57hl+iSI4BMRpOJZkQcfXD90fc8Pbnp1VBJLJ0Sg24RDujqIRsRc/b3NCOnm+JRFUym3QJ3CRUVuyyuhyLBbkhHYstE1VeqSBysGPCR8kur7//tUFEFNn483JdtktFSiy8UF/DimS3y4nZp9Xq59mEjFiZec4L1aSlTu13wooi/Z67iZq7LyEO79NKWnuXzeqXIrlOeKFb6BYK3YWZcCcXun3ZLJOZtTs/EiiFItWlw8Old5FIqBTIs3ZntcD0j0ZQgVAoEMD3UZ8NssCYxnnkxlq1zA2mUq3F4+DG6OtDGz1o7BSLO42DKP930uCz2LNa/Cct9reGcjcNPTMM5TYXRp4bngzBVi+/d8yQ1KcW+0uvf1O7/n8BDaBB13G3AosAAAAASUVORK5CYII="
+        },
+        "43": {
+          "id": 43,
+          "index": 2,
+          "windowId": 1,
+          "highlighted": false,
+          "active": false,
+          "attention": false,
+          "pinned": false,
+          "status": "complete",
+          "hidden": false,
+          "discarded": false,
+          "incognito": false,
+          "width": 1888,
+          "height": 1004,
+          "lastAccessed": 1743642295098,
+          "audible": false,
+          "autoDiscardable": true,
+          "mutedInfo": {
+            "muted": false
+          },
+          "isInReaderMode": false,
+          "sharingState": {
+            "camera": false,
+            "microphone": false
+          },
+          "successorTabId": -1,
+          "cookieStoreId": "firefox-default",
+          "url": "https://www.reddit.com/r/gameideas/comments/1j1e9kp/chill_game_about_peoplewatching_set_in_a_small/",
+          "title": "Chill game about people-watching set in a small town/neighborhood : r/gameideas",
+          "favIconUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAABgFBMVEX/RQAAAAD+///9/v77/f3t8/X1+fn/QwD+RAD+RQD/RAD+RQD+RADq8fPx9vj+RQD+RQDJ1t7+RQD+RQDP2N//RAD+RADL2N/3+vv9cj3T3uTj7e/Y4+f+SAL/YAH6+Pj+7OXh5ef/RQD9Tg39dEHV3OAFCgz+9PDxbj//RQDljW7c5+oKFBfQ2+H7UhP+VAC6wMPazcz+Zi71jGj/RADok3f+il//SADyrpj0YjLg6u3/Wh4OFhj/PwD/PwDm7/H/RADN0tMEBwiTMw6vtbccLDHsQgTp39ztspzbWDPtfFPMf3pNMifqzMT839P6aDX/Swr1YizPQicgHx3zoolQW17reE/YmpX/Xxr+s5fd2tjOzM7008b7wavTm5n+yLT+OAB+cGn+uZ9nWFG+Ogn/RADBxsjllod3Sjj7lnH0hl2bRCP5hU7+xK6FW0vjjH4mKCm0vcH0gljrOw3xqpDxcEfAxcf/TwD3g07+hFf1azz+bjnyPgj9i1IqLS79i1N5Yg8TAAAAgHRSTlP/AP//////JJz2zfrq//+Q1/9cn//97f//////////////NP///////yv//////wn/////D///I///////EAj/f/////////////////////////////////////////8J/////07//////////////////////xD//////////6KDEnwAAAIfSURBVHicdZNnWxpBFIUvu7NLXxACLF1a6EpVQNDYNbbYsGt6773nr+fOjGF3DZ4PW+Y9z5R7z4BpoC8ei83v8/ltFk9DGx0YzF4rDGT15q8Y7rrsGqayu6b1hkm3EVO5zZoh6TCyb6/u1wAcyX8G8xU+IQhCdgodk9wwbZx/af5BQhDEZ3SVcWZwGfjD3fV7CVVV6vTHRQ15w/6Xdl9ALlMsVsfYWcxo8BommF/Hx3azwDiA1wQNXX1gKv30dRq3p1WsBx76TgV/3IHa0ShuHzV6VINoMJ2ixAMWeq4sjl6IHDNdoDc7gcgCNoCgHukkBgGxH+DsOsMZIPYBnBKRiEL8/CDOQfzgHL9EkZwCYjSsSDIh4tqH70+44c3PT2uCSGRphRpwiXbGqRKyEz1sc0M7ergjEtWZ2aZL4CYht6zI6mosFuSGdCy2SlR5OYfIxo4JHyVF3vj6a5OIKLL55+WGrEgtSiy8UO/DTklR5MTs40rl82xCRuycec4L1aOlTh13wk6n9HvuJmrurYQ4fEwraW1cNqtfjhQ74YVuqVsqdRdmwp1i6PZls0xm1u7CSKAcilT2Fxf330UioXKgwNqd1wLTPxlBBUKhQADfJ302yAJjGueRG2tWMzeYytUmj4Mbo68PbXSrvtdq7dW3ovzfQYPPYs9q8Z+02N8ayt009MwwlNtdGHlueDQEW7383jFDUp9a7C+9/j3t+v8F2CpB3zaOqdgAAAAASUVORK5CYII="
+        }
+      }
+    },
+    "windowsNumber": 1,
+    "windowsInfo": {
+      "1": {
+        "id": 1,
+        "focused": true,
+        "top": 14,
+        "left": 8,
+        "width": 1904,
+        "height": 1056,
+        "incognito": false,
+        "type": "normal",
+        "state": "normal",
+        "alwaysOnTop": false,
+        "title": "A concept of a first aid simulator turned fourth-wall-breaking psychological horror. : r/gameideas — Firefox Developer Edition"
+      }
+    },
+    "tabsNumber": 18,
+    "name": "A concept of a first aid simulator turned fourth-wall-breaking psychological horror. : r/gameideas",
+    "date": 1743642308493,
+    "lastEditedTime": 1743642310880,
+    "tag": [],
+    "sessionStartTime": 1743642014091,
+    "id": "779d1fde-1b97-4e27-ac01-07e48040470d"
+  }
+]
