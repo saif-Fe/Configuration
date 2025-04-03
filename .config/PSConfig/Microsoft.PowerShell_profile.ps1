@@ -20,11 +20,14 @@ function Invoke-Starship-PreCommand {
 }
 
 Function git_commit {
-	param($message)
+	param($message, $details = "", $hours, $minutes)
 	$elapsedTime = Stop-Timer
+	$time = calculate-time $elapsedTime
+	$hours = $time.hours
+	$minutes = $time.minutes
 	$d = (Get-Date -Format "MM/dd/yyyy dddd HH:mm K")
 	$c = (Split-Path -Path (Get-Location) -Leaf)
-	git add --all; git commit -m $message; git push && Add-Content -Path "D:\Local Disk D\Saif\timesheet\Entry.txt" -Value "$d | $elapsedTime | $c | $message"
+	git add --all; git commit -m $message; git push && Add-Content -Path "D:\Local Disk D\Saif\timesheet\Entry.txt" -Value "$d | $hours | $minutes | $c | $message $details"
 }
 Function git_merge {
 	param($branch)
@@ -131,6 +134,19 @@ function Stop-Timer {
     }
 }
 
+function calculate-time {
+param (
+		[Parameter(Mandatory = $true)]
+		[int]$seconds
+	)
+	$value = 0 | Select-Object -Property @{n='hours';e={[math]::Floor($seconds / 3600)}},@{n='minutes';e={[math]::Floor(($seconds % 3600) / 60)}}
+	return $value
+}
+
+function get-last-execution-time {
+	return (Get-History)[-1].EndExecutionTime - (Get-History)[-1].StartExecutionTime
+}
+
 Set-Alias f GoToDir
 Set-Alias f. GoToThisDir
 Set-Alias v nvim
@@ -149,6 +165,7 @@ Set-Alias -Name lg -Value lazygit
 Set-Alias -Name mw -Value Move-To-Window
 Set-Alias -Name srt -Value Start-Timer
 Set-Alias -Name spt -Value Stop-Timer
+Set-Alias -Name glet -Value get-last-execution-time
 
 Write-Host "`e[49m                    `e[38;2;209;85;27;48;2;206;78;20m▄`e[38;2;208;87;30;48;2;208;86;29m▄`e[38;2;208;87;30;48;2;208;85;28m▄`e[38;2;208;86;28;49m▄`e[38;2;208;81;27;49m▄`e[49m                    `e[m"
 Write-Host "`e[49m                    `e[38;2;209;86;29;48;2;208;86;28m▄`e[48;2;208;87;30m   `e[38;2;208;87;30;48;2;208;86;29m▄`e[38;2;207;86;28;48;2;213;85;28m▄`e[49m                   `e[m"
