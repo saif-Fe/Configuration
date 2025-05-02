@@ -116,6 +116,25 @@ OnChangeDesktop(wParam, lParam, msg, hwnd) {
     ; TraySetIcon(".\Icons\icon" NewDesktop ".ico")
 }
 
+PinWindow() {
+    global IsPinnedWindowProc, PinWindow
+    hwnd := WinExist("A")
+    if (DllCall(IsPinnedWindowProc, "hwnd", hwnd)) {
+        DllCall(UnPinWindow, "hwnd", hwnd)
+    } else {
+        DllCall(PinWindow, "hwnd", hwnd)
+    }
+}
+
+UnPinWindow() {
+    global IsPinnedWindowProc, UnPinWindow
+    hwnd := WinExist("A")
+    MsgBox [DllCall(IsPinnedWindowProc, "hwnd", hwnd, "Int")]
+    if (DllCall(IsPinnedWindowProc, "hwnd", hwnd, "Int")) {
+        DllCall(UnPinWindow, "hwnd", hwnd, "Int")
+    }
+}
+
 !1::MoveOrGotoDesktopNumber(0)
 !2::MoveOrGotoDesktopNumber(1)
 !3::MoveOrGotoDesktopNumber(2)
@@ -126,6 +145,7 @@ OnChangeDesktop(wParam, lParam, msg, hwnd) {
 !8::MoveOrGotoDesktopNumber(7)
 !9::MoveOrGotoDesktopNumber(8)
 !0::MoveOrGotoDesktopNumber(9)
+!p::PinWindow()
 
 !+1::MoveCurrentWindowToDesktop(0)
 !+2::MoveCurrentWindowToDesktop(1)
@@ -137,7 +157,9 @@ OnChangeDesktop(wParam, lParam, msg, hwnd) {
 !+8::MoveCurrentWindowToDesktop(7)
 !+9::MoveCurrentWindowToDesktop(8)
 !+0::MoveCurrentWindowToDesktop(9)
-; F14 UP:: GoToPrevDesktop()
-; F15 UP:: GoToNextDesktop()
+!+p::UnPinWindow()
+
+!-:: GoToPrevDesktop()
+!=:: GoToNextDesktop()
 
 !Escape::MoveOrGotoDesktopNumber(LastDesktop)

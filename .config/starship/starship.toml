@@ -1,0 +1,52 @@
+# #bf6d36
+add_newline = true
+format = """$directory$character$status$git_branch$git_status$cmd_duration${custom.timer}
+[󰣏](fg:#bf6d36) """
+
+[character]
+success_symbol = "[󰣏](fg:#bf6d36)"
+error_symbol = "[󰣏](fg:#bf6d36)"
+vicmd_symbol = "[󰣏](fg:#bf6d36)"
+
+
+[git_branch]
+format = '[$branch]($style) '
+style = 'fg:#bf6d36'
+
+[git_state]
+format = '\([$state( $progress_current/$progress_total)]($style)\) '
+style = "bright-black"
+
+[python]
+format = '\($virtualenv\) '
+
+[git_status]
+format = '$all_status$ahead_behind '
+ahead = '[😼](fg:#bf6d36) '
+behind = '[😼](fg:#bf6d36) '
+staged = '[😽](fg:#adc982) '
+deleted = '[😿](fg:#c22627) '
+renamed = '[😾](fg:#bf6d36) '
+stashed = '[😻](fg:#bf6d36) '
+untracked = '[😹](white) '
+modified = '[😾](fg:#bf6d36) '
+conflicted = '[🙀](fg:#bf6d36) '
+diverged = 'diverged'
+up_to_date = '[🐱](fg:#e09e1a)'
+
+[directory]
+style = "white"
+truncation_length = 1
+truncation_symbol = ""
+# fish_style_pwd_dir_length = 1
+
+[cmd_duration]
+style = "fg:#bf6d36"
+format = '[$duration]($style)'
+
+[line_break]
+disabled = true
+
+[status]
+disabled = false
+symbol = '✘ '

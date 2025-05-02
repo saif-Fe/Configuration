@@ -1,17 +1,22 @@
 if vim.g.neovide then
-  vim.o.guifont = 'JetBrainsMono Nerd Font'
+  vim.o.guifont = 'JetBrainsMono Nerd Font Mono:h18'
   vim.g.neovide_scale_factor = 1
   vim.g.neovide_padding_top = 0
   vim.g.neovide_padding_bottom = 0
   vim.g.neovide_padding_right = 0
   vim.g.neovide_padding_left = 0
-  vim.g.neovide_cursor_animation_length = 0.1
-  vim.g.neovide_cursor_trail_size = 0.3
+  vim.g.neovide_cursor_animation_length = 0.06
+  vim.g.neovide_cursor_trail_size = 1
   vim.g.neovide_cursor_smooth_blink = true
   vim.g.neovide_position_animation_length = 0.15
   vim.g.neovide_refresh_rate = 60
-  vim.g.neovide_transparency = 0.8
+  vim.g.neovide_no_idle = true
+  -- vim.g.neovide_window_blurred = true
+  vim.g.neovide_normal_opacity = 0.8
+  vim.g.neovide_opacity = 1
   vim.g.neovide_hide_mouse_when_typing = true
+  vim.g.neovide_title_background_color = '#000000'
+  vim.g.neovide_title_text_color = '#000000'
 end
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
@@ -35,6 +40,7 @@ vim.opt.updatetime = 250
 vim.opt.timeoutlen = 300
 vim.opt.splitright = true
 vim.opt.splitbelow = true
+vim.o.cmdheight = 0
 
 -- Sets how neovim will display certain whitespace in the editor.
 --  See `:help 'list'`
@@ -49,7 +55,7 @@ vim.opt.inccommand = 'split'
 vim.opt.cursorline = true
 
 -- Minimal number of screen lines to keep above and below the cursor.
-vim.opt.scrolloff = 1
+vim.opt.scrolloff = 15
 
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
@@ -81,14 +87,15 @@ vim.keymap.set('t', '<Esc><Esc>', '<C-\\><C-n>', { desc = 'Exit terminal mode' }
 --  Use CTRL+<hjkl> to switch between windows
 --
 --  See `:help wincmd` for a list of all window commands
-vim.keymap.set('n', '<C-S-h>', '<C-w><C-h><C-w>|0', { desc = 'Move focus to the left window and maximize pane' })
-vim.keymap.set('n', '<C-S-l>', '<C-w><C-l><C-w>|0', { desc = 'Move focus to the right window and maximize pane' })
-vim.keymap.set('n', '<C-S-j>', '<C-w><C-j><C-w>_0', { desc = 'Move focus to the lower window and maximize pane' })
-vim.keymap.set('n', '<C-S-k>', '<C-w><C-k><C-w>_0', { desc = 'Move focus to the upper window and maximize pane' })
-vim.keymap.set('n', '<C-h>', '<C-w><C-h>', { desc = 'Move focus to the left window' })
-vim.keymap.set('n', '<C-l>', '<C-w><C-l>', { desc = 'Move focus to the right window' })
-vim.keymap.set('n', '<C-j>', '<C-w><C-j>', { desc = 'Move focus to the lower window' })
-vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper window' })
+vim.keymap.set('n', '+', '<C-w>|0<C-w>_0', { desc = 'Maximize pane' })
+-- vim.keymap.set('n', '<C-S-h>', '<C-w><C-h><C-w>|0', { desc = 'Move focus to the left window and maximize pane' })
+-- vim.keymap.set('n', '<C-S-l>', '<C-w><C-l><C-w>|0', { desc = 'Move focus to the right window and maximize pane' })
+-- vim.keymap.set('n', '<C-S-j>', '<C-w><C-j><C-w>_0', { desc = 'Move focus to the lower window and maximize pane' })
+-- vim.keymap.set('n', '<C-S-k>', '<C-w><C-k><C-w>_0', { desc = 'Move focus to the upper window and maximize pane' })
+-- vim.keymap.set('n', '<C-h>', '<C-w><C-h>', { desc = 'Move focus to the left window' })
+-- vim.keymap.set('n', '<C-l>', '<C-w><C-l>', { desc = 'Move focus to the right window' })
+-- vim.keymap.set('n', '<C-j>', '<C-w><C-j>', { desc = 'Move focus to the lower window' })
+-- vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper window' })
 
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
@@ -372,7 +379,16 @@ require('lazy').setup({
 
       -- Useful status updates for LSP.
       -- NOTE: `opts = {}` is the same as calling `require('fidget').setup({})`
-      { 'j-hui/fidget.nvim', opts = {} },
+      {
+        'j-hui/fidget.nvim',
+        opts = {
+          notification = {
+            window = {
+              normal_hl = 'Comment', -- Base highlight group in the notification window
+            },
+          },
+        },
+      },
     },
     config = function()
       -- Brief Aside: **What is LSP?**
@@ -511,6 +527,31 @@ require('lazy').setup({
         -- But for many setups, the LSP (`tsserver`) will work just fine
         -- tsserver = {},
         --
+        emmet_language_server = {
+          filetypes = { 'css', 'eruby', 'html', 'javascript', 'javascriptreact', 'less', 'sass', 'scss', 'pug', 'typescriptreact' },
+          -- Read more about this options in the [vscode docs](https://code.visualstudio.com/docs/editor/emmet#_emmet-configuration).
+          -- **Note:** only the options listed in the table are supported.
+          init_options = {
+            ---@type table<string, string>
+            includeLanguages = {},
+            --- @type string[]
+            excludeLanguages = {},
+            --- @type string[]
+            extensionsPath = {},
+            --- @type table<string, any> [Emmet Docs](https://docs.emmet.io/customization/preferences/)
+            preferences = {},
+            --- @type boolean Defaults to `true`
+            showAbbreviationSuggestions = true,
+            --- @type "always" | "never" Defaults to `"always"`
+            showExpandedAbbreviation = 'always',
+            --- @type boolean Defaults to `false`
+            showSuggestionsAsSnippets = false,
+            --- @type table<string, any> [Emmet Docs](https://docs.emmet.io/customization/syntax-profiles/)
+            syntaxProfiles = {},
+            --- @type table<string, string> [Emmet Docs](https://docs.emmet.io/customization/snippets/#variables)
+            variables = {},
+          },
+        },
 
         lua_ls = {
           -- cmd = {...},
@@ -731,7 +772,12 @@ require('lazy').setup({
       -- cursor location to LINE:COLUMN
       ---@diagnostic disable-next-line: duplicate-set-field
       statusline.section_location = function()
-        return '%2l:%-2v'
+        local recording_register = vim.fn.reg_recording()
+        if recording_register == '' then
+          return '%2l:%-2v'
+        else
+          return '@' .. recording_register .. ' ' .. '%2l:%-2v'
+        end
       end
       statusline.section_diff = function()
         return ''
@@ -740,9 +786,6 @@ require('lazy').setup({
         return ''
       end
       statusline.section_fileinfo = function()
-        return ''
-      end
-      statusline.section_searchcount = function()
         return ''
       end
 

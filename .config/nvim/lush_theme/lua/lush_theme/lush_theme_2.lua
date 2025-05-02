@@ -1,6 +1,6 @@
 local lush = require 'lush'
 local hsl = lush.hsl
-local color = hsl(223, 0, 95)
+local color = hsl(35, 5, 100)
 
 ---@diagnostic disable: undefined-global
 local theme = lush(function(injected_functions)
@@ -15,10 +15,11 @@ local theme = lush(function(injected_functions)
     -- to reorder items as you go.
     --
     -- See :h highlight-groups
-    Base { fg = color.da(10), bg = '' },
-    Text { fg = color.de(20).da(40) },
-    Accent { fg = color },
-    Selection { bg = hsl(0, 100, 15), fg = Base.fg },
+    icon_style { fg = color.da(40), bg = '' },
+    Base { fg = color.da(40), bg = '' },
+    Text { fg = color.da(20) },
+    Accent { fg = color.da(30) },
+    Selection { bg =  hsl(24, 56, 10), fg = Base.fg },
     OilFile { Accent },
     Fold { fg = color.da(60) },
     Border { fg = Accent.fg.da(60) },
@@ -108,10 +109,10 @@ local theme = lush(function(injected_functions)
     --
     -- Uncomment and edit if you want more specific syntax highlighting.
 
-    Comment { fg = Accent.fg.da(60) }, -- Any comment
+    Comment { fg = Accent.fg.da(40) }, -- Any comment
 
     Constant { Text }, -- (*) Any constant
-    String { fg = Accent.fg.da(20) }, --   A string constant: "this is a string"
+    String { fg = Accent.fg.da(10).da(20) }, --   A string constant: "this is a string"
     Character { fg = Accent.fg.da(30) }, --   A character constant: 'c', '\n'
     Number { fg = Accent.fg }, --   A number constant: 234, 0xff
     Boolean { fg = Accent.fg }, --   A boolean constant: TRUE, false

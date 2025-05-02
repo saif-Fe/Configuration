@@ -1,0 +1,30 @@
+[general]
+live_config_reload = true
+working_directory = "D:/Local Disk D/Saif"
+
+
+[cursor]
+# Set to false to disable completely
+smooth_motion = true
+# 0.0 = cursor is not moving, 1.0 = cursor moves instantly
+smooth_motion_factor = 0.6
+# 0.0 = broken, 1.0 = cursor shape is unaffected by movement
+smooth_motion_spring = 0.8
+# Limits how the cursor size may change
+smooth_motion_max_stretch_x = 1.0
+smooth_motion_max_stretch_y = 1.0
+# block_replace_shape = "Underline"
+
+[window]
+decorations = "None"
+opacity = 0.8
+
+[font]
+normal = { family = "JetBrainsMono Nerd Font Mono", style = "Medium" }
+size = 18
+
+[terminal]
+shell = "pwsh"
+
+[colors.primary]
+background = "#000000"

@@ -1,0 +1,14 @@
+inherits = "rose_pine"
+"ui.background" = { }
+"ui.statusline" = { }
+"ui.bufferline" = { }
+"ui.bufferline.background" = { }
+"ui.popup" = { }
+"ui.help" = { }
+"ui.menu" = { }
+"ui.popup.info" = { }
+"ui.text.focus" = { }
+"ui.background.separator" = { }
+"ui.cursor.match" = { }
+"ui.window" = { }
+"ui.statusline.inactive" = { }

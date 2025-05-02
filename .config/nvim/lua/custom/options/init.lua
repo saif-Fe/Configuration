@@ -9,6 +9,9 @@ vim.opt.shell = 'pwsh'
 vim.diagnostic.config { virtual_text = false }
 vim.opt.wrap = false
 vim.opt.concealcursor = ''
+vim.opt.shellcmdflag = '-nologo -noprofile -ExecutionPolicy RemoteSigned -command'
+vim.opt.shelltemp = false
+vim.opt.shellxquote = ''
 
 -- NOTE: You should make sure your terminal supports this
 vim.o.termguicolors = true
@@ -23,15 +26,19 @@ vim.keymap.set('n', '<A-enter>', function()
 end, { silent = true })
 
 -- [[ Basic Keymaps ]]
-vim.keymap.set('n', '<leader><tab>', '<CMD>tabe %<CR>', { silent = true })
-vim.keymap.set('n', '<tab>', '<CMD>tabnext<CR>', { silent = true })
-vim.keymap.set('n', '<S-tab>', '<CMD>tabprev<CR>', { silent = true })
+vim.keymap.set('n', '<leader><tab>', '<CMD>tabe %<CR>', { noremap = true, silent = true })
+vim.keymap.set('n', '<tab>', '<CMD>tabnext<CR>', { noremap = true, silent = true })
+vim.keymap.set('n', '<S-tab>', '<CMD>tabprev<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<C-i>', '<C-i>', { noremap = true })
 
 -- Keymaps for better default experience
 -- See `:help vim.keymap.set()`
 vim.keymap.set({ 'n', 'v' }, '<Space>', '<Nop>', { silent = true })
-vim.keymap.set('n', '<A-]>', '<CMD>cnext<CR>', { noremap = true, silent = true })
-vim.keymap.set('n', '<A-[>', '<CMD>cprev<CR>', { noremap = true, silent = true })
+vim.keymap.set('n', '<A-}>', '<CMD>cnext<CR>', { noremap = true, silent = true })
+vim.keymap.set('n', '<A-{>', '<CMD>cprev<CR>', { noremap = true, silent = true })
+
+vim.keymap.set('n', '<A-,>', '<CMD>bp<CR>', { noremap = true, silent = true })
+vim.keymap.set('n', '<A-.>', '<CMD>bn<CR>', { noremap = true, silent = true })
 
 -- Remap for dealing with word wrap
 vim.keymap.set('n', 'k', "v:count == 0 ? 'gk' : 'k'", { expr = true, silent = true })
@@ -39,7 +46,12 @@ vim.keymap.set('n', 'j', "v:count == 0 ? 'gj' : 'j'", { expr = true, silent = tr
 
 -- Harpoon Configure
 local harpoon = require 'harpoon'
-harpoon:setup()
+harpoon:setup {
+  settings = {
+    save_on_toggle = true,
+  },
+}
+
 -- REQUIRED
 
 vim.keymap.set('n', '<A-a>', function()
@@ -73,24 +85,24 @@ end)
 vim.keymap.set('n', '<A-r>', function()
   harpoon:list():select(8)
 end)
-vim.keymap.set('n', '<A-,>', function()
+vim.keymap.set('n', '<A-[>', function()
   harpoon:list():prev()
 end)
-vim.keymap.set('n', '<A-.>', function()
+vim.keymap.set('n', '<A-]>', function()
   harpoon:list():next()
 end)
 
-require('oil').setup {
-  keymaps = {
-    ['q'] = 'actions.close',
-  },
-  float = {
-    padding = 2,
-    max_width = 120,
-    max_height = 20,
-  },
-}
-vim.keymap.set('n', '-', '<CMD>Oil --float<CR>', { desc = 'Open parent directory' })
+require("no-neck-pain").setup({
+    buffers = {
+        wo = {
+            fillchars = "eob: ",
+        },
+    },
+})
+
+require('oil-git-status').setup {}
+
+vim.keymap.set('n', '-', '<CMD>Oil<CR>', { desc = 'Open parent directory' })
 
 vim.opt.termguicolors = true
 
