@@ -137,6 +137,61 @@
       text-align: center;
       font-weight: bold;
     }
+
+    .edge-controls {
+      display: none;
+      margin-top: 10px;
+      padding: 10px;
+      background-color: #e8f4f8;
+      border-radius: 4px;
+    }
+
+    .edge-controls.active {
+      display: block;
+    }
+
+    .bezier-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      pointer-events: none;
+      z-index: 10;
+    }
+
+    .bezier-overlay.active {
+      pointer-events: auto;
+      cursor: crosshair;
+    }
+
+    .bezier-point {
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      background: #007bff;
+      border: 2px solid white;
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+      cursor: move;
+      z-index: 12;
+    }
+
+    .bezier-control {
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      background: #ff6b6b;
+      border: 2px solid white;
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+      cursor: move;
+      z-index: 11;
+    }
+
+    .canvas-container {
+      position: relative;
+      display: inline-block;
+      margin: 0 auto;
+    }
   </style>
 </head>
 <body>
@@ -184,6 +239,30 @@
           <input type="checkbox" id="showGrid"> Show Pixel Grid
         </label>
       </div>
+
+      <div class="control-group">
+        <label for="enableEdgeDetection">
+          <input type="checkbox" id="enableEdgeDetection"> Edge Detection (Transparent Background)
+        </label>
+        <div class="edge-controls" id="edgeControls">
+          <label for="edgeThreshold">Edge Threshold:</label>
+          <input type="range" id="edgeThreshold" min="10" max="100" value="30">
+          <span class="range-value" id="edgeThresholdValue">30</span>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <label for="enableBezierSelection">
+          <input type="checkbox" id="enableBezierSelection"> Manual Selection (Bezier Curves)
+        </label>
+        <div class="edge-controls" id="bezierControls">
+          <button id="startBezierBtn" style="margin: 5px 0;">Start Drawing</button>
+          <button id="clearBezierBtn" style="margin: 5px 0;">Clear Selection</button>
+          <p style="font-size: 12px; color: #666; margin: 5px 0;">
+            Click to add points, drag to adjust curves. Double-click or press Enter to close shape.
+          </p>
+        </div>
+      </div>
     </div>
     
     <div style="text-align: center;">
@@ -196,7 +275,10 @@
     <div class="output-container">
       <div class="output-section">
         <h3>Pixel Art Canvas</h3>
-        <canvas id="canvas" style="min-height: 200px; background: #f0f0f0;"></canvas>
+        <div class="canvas-container">
+          <canvas id="canvas" style="min-height: 200px; background: #f0f0f0;"></canvas>
+          <canvas id="bezierOverlay" class="bezier-overlay"></canvas>
+        </div>
         <p style="text-align: center; color: #666; font-size: 12px; margin-top: 10px;">
           Upload an image to start. Adjust pixel size to control the level of pixelation.
         </p>
@@ -218,10 +300,27 @@
     const colorCountSlider = document.getElementById('colorCount');
     const processBtn = document.getElementById('processBtn');
     const asciiOutput = document.getElementById('asciiOutput');
+    const enableEdgeDetection = document.getElementById('enableEdgeDetection');
+    const edgeControls = document.getElementById('edgeControls');
+    const edgeThresholdSlider = document.getElementById('edgeThreshold');
+    const enableBezierSelection = document.getElementById('enableBezierSelection');
+    const bezierControls = document.getElementById('bezierControls');
+    const bezierOverlay = document.getElementById('bezierOverlay');
+    const bezierCtx = bezierOverlay.getContext('2d');
+    const startBezierBtn = document.getElementById('startBezierBtn');
+    const clearBezierBtn = document.getElementById('clearBezierBtn');
     
     let uploadedImage = null;
     let currentPalette = [];
     let pixelData = [];
+    let transparencyMask = null;
+    
+    // Bezier curve data
+    let bezierPoints = [];
+    let bezierControlPoints = [];
+    let isDrawingBezier = false;
+    let selectedPoint = null;
+    let bezierPath = null;
     
     // Initialize canvas with a message
     canvas.width = 400;
@@ -231,17 +330,312 @@
     ctx.textAlign = 'center';
     ctx.fillText('Upload an image to create pixel art', canvas.width / 2, canvas.height / 2);
     
+    // Toggle edge detection controls
+    enableEdgeDetection.addEventListener('change', () => {
+      edgeControls.classList.toggle('active', enableEdgeDetection.checked);
+      if (enableEdgeDetection.checked && enableBezierSelection.checked) {
+        enableBezierSelection.checked = false;
+        bezierControls.classList.remove('active');
+        stopBezierDrawing();
+      }
+      if (uploadedImage) processImage();
+    });
+    
+    // Toggle bezier selection controls
+    enableBezierSelection.addEventListener('change', () => {
+      bezierControls.classList.toggle('active', enableBezierSelection.checked);
+      if (enableBezierSelection.checked && enableEdgeDetection.checked) {
+        enableEdgeDetection.checked = false;
+        edgeControls.classList.remove('active');
+      }
+      if (!enableBezierSelection.checked) {
+        stopBezierDrawing();
+      }
+      if (uploadedImage) processImage();
+    });
+    
+    // Bezier drawing controls
+    startBezierBtn.addEventListener('click', () => {
+      if (!uploadedImage) {
+        alert('Please upload an image first');
+        return;
+      }
+      startBezierDrawing();
+    });
+    
+    clearBezierBtn.addEventListener('click', () => {
+      clearBezierSelection();
+    });
+    
+    // Bezier overlay events
+    bezierOverlay.addEventListener('click', handleBezierClick);
+    bezierOverlay.addEventListener('dblclick', closeBezierPath);
+    bezierOverlay.addEventListener('mousemove', handleBezierMouseMove);
+    bezierOverlay.addEventListener('mousedown', handleBezierMouseDown);
+    bezierOverlay.addEventListener('mouseup', handleBezierMouseUp);
+    
+    // Keyboard shortcut to close bezier path
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' && isDrawingBezier && bezierPoints.length > 2) {
+        closeBezierPath();
+      }
+    });
+    
+    // Update bezier overlay size when window is resized
+    window.addEventListener('resize', () => {
+      if (uploadedImage && enableBezierSelection.checked) {
+        updateBezierOverlaySize();
+      }
+    });
+    
+    function startBezierDrawing() {
+      isDrawingBezier = true;
+      bezierOverlay.classList.add('active');
+      clearBezierSelection();
+      updateBezierOverlaySize();
+      updateBezierCanvas();
+    }
+    
+    function stopBezierDrawing() {
+      isDrawingBezier = false;
+      bezierOverlay.classList.remove('active');
+    }
+    
+    function clearBezierSelection() {
+      bezierPoints = [];
+      bezierControlPoints = [];
+      bezierPath = null;
+      updateBezierCanvas();
+      if (uploadedImage) processImage();
+    }
+    
+    function updateBezierOverlaySize() {
+      // Wait for canvas to be rendered and get its actual displayed size
+      setTimeout(() => {
+        const canvasRect = canvas.getBoundingClientRect();
+        bezierOverlay.width = canvasRect.width;
+        bezierOverlay.height = canvasRect.height;
+        bezierOverlay.style.width = canvasRect.width + 'px';
+        bezierOverlay.style.height = canvasRect.height + 'px';
+        
+        // Redraw bezier overlay if there are existing points
+        if (bezierPoints.length > 0) {
+          updateBezierCanvas();
+        }
+      }, 100);
+    }
+    
+    function handleBezierClick(e) {
+      if (!isDrawingBezier || selectedPoint !== null) return;
+      
+      const rect = bezierOverlay.getBoundingClientRect();
+      const canvasRect = canvas.getBoundingClientRect();
+      
+      // Calculate the scale factor between overlay and actual canvas
+      const scaleX = canvas.width / canvasRect.width;
+      const scaleY = canvas.height / canvasRect.height;
+      
+      // Get click position relative to overlay
+      const overlayX = e.clientX - rect.left;
+      const overlayY = e.clientY - rect.top;
+      
+      // Scale to match the actual canvas coordinates for processing
+      const x = overlayX;
+      const y = overlayY;
+      
+      // Add new point
+      bezierPoints.push({ x, y });
+      
+      // Add control points for the new segment
+      if (bezierPoints.length > 1) {
+        const prevPoint = bezierPoints[bezierPoints.length - 2];
+        const midX = (prevPoint.x + x) / 2;
+        const midY = (prevPoint.y + y) / 2;
+        
+        bezierControlPoints.push({
+          p1: { x: prevPoint.x + (midX - prevPoint.x) * 0.5, y: prevPoint.y + (midY - prevPoint.y) * 0.5 },
+          p2: { x: x - (x - midX) * 0.5, y: y - (y - midY) * 0.5 }
+        });
+      }
+      
+      updateBezierCanvas();
+    }
+    
+    function closeBezierPath() {
+      if (!isDrawingBezier || bezierPoints.length < 3) return;
+      
+      // Add final control points to close the shape
+      const firstPoint = bezierPoints[0];
+      const lastPoint = bezierPoints[bezierPoints.length - 1];
+      const midX = (lastPoint.x + firstPoint.x) / 2;
+      const midY = (lastPoint.y + firstPoint.y) / 2;
+      
+      bezierControlPoints.push({
+        p1: { x: lastPoint.x + (midX - lastPoint.x) * 0.5, y: lastPoint.y + (midY - lastPoint.y) * 0.5 },
+        p2: { x: firstPoint.x - (firstPoint.x - midX) * 0.5, y: firstPoint.y - (firstPoint.y - midY) * 0.5 }
+      });
+      
+      // Create closed path
+      bezierPath = new Path2D();
+      bezierPath.moveTo(bezierPoints[0].x, bezierPoints[0].y);
+      
+      for (let i = 0; i < bezierPoints.length; i++) {
+        const nextIndex = (i + 1) % bezierPoints.length;
+        const control = bezierControlPoints[i];
+        
+        bezierPath.bezierCurveTo(
+          control.p1.x, control.p1.y,
+          control.p2.x, control.p2.y,
+          bezierPoints[nextIndex].x, bezierPoints[nextIndex].y
+        );
+      }
+      
+      bezierPath.closePath();
+      stopBezierDrawing();
+      updateBezierCanvas();
+      processImage();
+    }
+    
+    function handleBezierMouseMove(e) {
+      if (selectedPoint === null) return;
+      
+      const rect = bezierOverlay.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      
+      selectedPoint.x = x;
+      selectedPoint.y = y;
+      
+      updateBezierCanvas();
+    }
+    
+    function handleBezierMouseDown(e) {
+      if (!isDrawingBezier) return;
+      
+      const rect = bezierOverlay.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      
+      // Check if clicking on existing point
+      for (let point of bezierPoints) {
+        if (Math.abs(point.x - x) < 10 && Math.abs(point.y - y) < 10) {
+          selectedPoint = point;
+          return;
+        }
+      }
+      
+      // Check if clicking on control point
+      for (let control of bezierControlPoints) {
+        if (Math.abs(control.p1.x - x) < 8 && Math.abs(control.p1.y - y) < 8) {
+          selectedPoint = control.p1;
+          return;
+        }
+        if (Math.abs(control.p2.x - x) < 8 && Math.abs(control.p2.y - y) < 8) {
+          selectedPoint = control.p2;
+          return;
+        }
+      }
+    }
+    
+    function handleBezierMouseUp(e) {
+      selectedPoint = null;
+    }
+    
+    function updateBezierCanvas() {
+      bezierCtx.clearRect(0, 0, bezierOverlay.width, bezierOverlay.height);
+      
+      if (bezierPoints.length === 0) return;
+      
+      // Draw the path
+      bezierCtx.strokeStyle = '#007bff';
+      bezierCtx.lineWidth = 2;
+      bezierCtx.setLineDash([5, 5]);
+      
+      if (bezierPath) {
+        // Draw closed path
+        bezierCtx.fillStyle = 'rgba(0, 123, 255, 0.1)';
+        bezierCtx.fill(bezierPath);
+        bezierCtx.stroke(bezierPath);
+      } else if (bezierPoints.length > 1) {
+        // Draw open path
+        bezierCtx.beginPath();
+        bezierCtx.moveTo(bezierPoints[0].x, bezierPoints[0].y);
+        
+        for (let i = 0; i < bezierPoints.length - 1; i++) {
+          const control = bezierControlPoints[i];
+          bezierCtx.bezierCurveTo(
+            control.p1.x, control.p1.y,
+            control.p2.x, control.p2.y,
+            bezierPoints[i + 1].x, bezierPoints[i + 1].y
+          );
+        }
+        
+        bezierCtx.stroke();
+      }
+      
+      bezierCtx.setLineDash([]);
+      
+      // Draw control lines
+      bezierCtx.strokeStyle = '#ff6b6b';
+      bezierCtx.lineWidth = 1;
+      
+      for (let i = 0; i < bezierControlPoints.length; i++) {
+        const control = bezierControlPoints[i];
+        const point1 = bezierPoints[i];
+        const point2 = bezierPoints[(i + 1) % bezierPoints.length];
+        
+        bezierCtx.beginPath();
+        bezierCtx.moveTo(point1.x, point1.y);
+        bezierCtx.lineTo(control.p1.x, control.p1.y);
+        bezierCtx.stroke();
+        
+        bezierCtx.beginPath();
+        bezierCtx.moveTo(point2.x, point2.y);
+        bezierCtx.lineTo(control.p2.x, control.p2.y);
+        bezierCtx.stroke();
+      }
+      
+      // Draw points
+      bezierPoints.forEach((point, index) => {
+        bezierCtx.fillStyle = '#007bff';
+        bezierCtx.strokeStyle = 'white';
+        bezierCtx.lineWidth = 2;
+        bezierCtx.beginPath();
+        bezierCtx.arc(point.x, point.y, 6, 0, Math.PI * 2);
+        bezierCtx.fill();
+        bezierCtx.stroke();
+      });
+      
+      // Draw control points
+      bezierControlPoints.forEach(control => {
+        // Control point 1
+        bezierCtx.fillStyle = '#ff6b6b';
+        bezierCtx.beginPath();
+        bezierCtx.arc(control.p1.x, control.p1.y, 4, 0, Math.PI * 2);
+        bezierCtx.fill();
+        bezierCtx.stroke();
+        
+        // Control point 2
+        bezierCtx.beginPath();
+        bezierCtx.arc(control.p2.x, control.p2.y, 4, 0, Math.PI * 2);
+        bezierCtx.fill();
+        bezierCtx.stroke();
+      });
+    }
+    
     // Update range values
     document.querySelectorAll('input[type="range"]').forEach(slider => {
       const valueDisplay = document.getElementById(slider.id + 'Value');
-      slider.addEventListener('input', () => {
-        valueDisplay.textContent = slider.value;
-      });
-      
-      // Auto-update on change
-      slider.addEventListener('change', () => {
-        if (uploadedImage) processImage();
-      });
+      if (valueDisplay) {
+        slider.addEventListener('input', () => {
+          valueDisplay.textContent = slider.value;
+        });
+        
+        // Auto-update on change
+        slider.addEventListener('change', () => {
+          if (uploadedImage) processImage();
+        });
+      }
     });
     
     imageInput.addEventListener('change', (e) => {
@@ -253,6 +647,8 @@
         const img = new Image();
         img.onload = () => {
           uploadedImage = img;
+          // Clear bezier selection when new image is loaded
+          clearBezierSelection();
           // Auto-process with canvas output only
           document.getElementById('outputType').value = 'canvas';
           processImage();
@@ -271,12 +667,95 @@
       if (uploadedImage) processImage();
     });
     
+    function detectEdges(imageData, threshold) {
+      const width = imageData.width;
+      const height = imageData.height;
+      const data = imageData.data;
+      const edges = new Uint8ClampedArray(width * height);
+      
+      // Sobel operators
+      const sobelX = [-1, 0, 1, -2, 0, 2, -1, 0, 1];
+      const sobelY = [-1, -2, -1, 0, 0, 0, 1, 2, 1];
+      
+      for (let y = 1; y < height - 1; y++) {
+        for (let x = 1; x < width - 1; x++) {
+          let pixelX = 0;
+          let pixelY = 0;
+          
+          // Apply Sobel operators
+          for (let j = -1; j <= 1; j++) {
+            for (let i = -1; i <= 1; i++) {
+              const idx = ((y + j) * width + (x + i)) * 4;
+              const gray = (data[idx] + data[idx + 1] + data[idx + 2]) / 3;
+              const kernelIdx = (j + 1) * 3 + (i + 1);
+              
+              pixelX += gray * sobelX[kernelIdx];
+              pixelY += gray * sobelY[kernelIdx];
+            }
+          }
+          
+          const magnitude = Math.sqrt(pixelX * pixelX + pixelY * pixelY);
+          edges[y * width + x] = magnitude > threshold ? 255 : 0;
+        }
+      }
+      
+      return edges;
+    }
+    
+    function floodFill(edges, width, height) {
+      const mask = new Uint8ClampedArray(width * height);
+      const visited = new Uint8ClampedArray(width * height);
+      
+      // Start flood fill from all border pixels
+      const queue = [];
+      
+      // Add border pixels to queue
+      for (let x = 0; x < width; x++) {
+        queue.push([x, 0]);
+        queue.push([x, height - 1]);
+      }
+      for (let y = 1; y < height - 1; y++) {
+        queue.push([0, y]);
+        queue.push([width - 1, y]);
+      }
+      
+      // Flood fill from outside
+      while (queue.length > 0) {
+        const [x, y] = queue.shift();
+        const idx = y * width + x;
+        
+        if (x < 0 || x >= width || y < 0 || y >= height || visited[idx] || edges[idx] > 0) {
+          continue;
+        }
+        
+        visited[idx] = 1;
+        mask[idx] = 0; // Outside = transparent
+        
+        // Add neighbors
+        queue.push([x + 1, y]);
+        queue.push([x - 1, y]);
+        queue.push([x, y + 1]);
+        queue.push([x, y - 1]);
+      }
+      
+      // Invert mask (inside = 255, outside = 0)
+      for (let i = 0; i < mask.length; i++) {
+        if (!visited[i]) {
+          mask[i] = 255;
+        }
+      }
+      
+      return mask;
+    }
+    
     function processImage() {
       if (!uploadedImage) return;
       
       const pixelSize = parseInt(pixelSizeSlider.value);
       const colorCount = parseInt(colorCountSlider.value);
       const outputType = document.getElementById('outputType').value;
+      const useEdgeDetection = enableEdgeDetection.checked;
+      const edgeThreshold = parseInt(edgeThresholdSlider.value);
       
       // Calculate pixelated dimensions
       const pixelWidth = Math.floor(uploadedImage.width / pixelSize);
@@ -293,6 +772,9 @@
       canvas.width = pixelWidth * pixelSize;
       canvas.height = pixelHeight * pixelSize;
       
+      // Update bezier overlay size to match the displayed canvas size
+      updateBezierOverlaySize();
+      
       // Create temporary canvas for sampling
       const tempCanvas = document.createElement('canvas');
       const tempCtx = tempCanvas.getContext('2d');
@@ -303,6 +785,75 @@
       // Get pixel data by sampling
       const imageData = tempCtx.getImageData(0, 0, uploadedImage.width, uploadedImage.height);
       const data = imageData.data;
+      
+      // Edge detection if enabled
+      transparencyMask = null;
+      if (useEdgeDetection) {
+        const edges = detectEdges(imageData, edgeThreshold);
+        const fullMask = floodFill(edges, uploadedImage.width, uploadedImage.height);
+        
+        // Create downsampled mask for pixelated version
+        transparencyMask = new Uint8ClampedArray(pixelWidth * pixelHeight);
+        for (let py = 0; py < pixelHeight; py++) {
+          for (let px = 0; px < pixelWidth; px++) {
+            // Sample from center of each pixel block
+            const x = Math.floor(px * pixelSize + pixelSize / 2);
+            const y = Math.floor(py * pixelSize + pixelSize / 2);
+            const idx = y * uploadedImage.width + x;
+            transparencyMask[py * pixelWidth + px] = fullMask[idx];
+          }
+        }
+      } else if (enableBezierSelection.checked && bezierPath) {
+        // Create mask from bezier path
+        const maskCanvas = document.createElement('canvas');
+        const maskCtx = maskCanvas.getContext('2d');
+        maskCanvas.width = canvas.width;
+        maskCanvas.height = canvas.height;
+        
+        // Scale the bezier path to match the actual canvas size
+        const canvasRect = canvas.getBoundingClientRect();
+        const scaleX = canvas.width / canvasRect.width;
+        const scaleY = canvas.height / canvasRect.height;
+        
+        // Create scaled path
+        const scaledPath = new Path2D();
+        if (bezierPoints.length > 0) {
+          scaledPath.moveTo(bezierPoints[0].x * scaleX, bezierPoints[0].y * scaleY);
+          
+          for (let i = 0; i < bezierPoints.length; i++) {
+            const nextIndex = (i + 1) % bezierPoints.length;
+            const control = bezierControlPoints[i];
+            
+            if (control) {
+              scaledPath.bezierCurveTo(
+                control.p1.x * scaleX, control.p1.y * scaleY,
+                control.p2.x * scaleX, control.p2.y * scaleY,
+                bezierPoints[nextIndex].x * scaleX, bezierPoints[nextIndex].y * scaleY
+              );
+            }
+          }
+          scaledPath.closePath();
+        }
+        
+        // Fill the scaled bezier path
+        maskCtx.fillStyle = 'white';
+        maskCtx.fill(scaledPath);
+        
+        // Get mask data
+        const maskData = maskCtx.getImageData(0, 0, canvas.width, canvas.height);
+        
+        // Create downsampled mask for pixelated version
+        transparencyMask = new Uint8ClampedArray(pixelWidth * pixelHeight);
+        for (let py = 0; py < pixelHeight; py++) {
+          for (let px = 0; px < pixelWidth; px++) {
+            // Sample from center of each pixel block
+            const x = Math.floor(px * pixelSize + pixelSize / 2);
+            const y = Math.floor(py * pixelSize + pixelSize / 2);
+            const idx = (y * canvas.width + x) * 4;
+            transparencyMask[py * pixelWidth + px] = maskData.data[idx];
+          }
+        }
+      }
       
       // Sample colors from the original image
       const sampledColors = [];
@@ -317,7 +868,16 @@
           const idx = (y * uploadedImage.width + x) * 4;
           
           const color = [data[idx], data[idx + 1], data[idx + 2]];
-          sampledColors.push(color);
+          
+          // Add alpha channel based on mask
+          if (transparencyMask) {
+            const maskIdx = py * pixelWidth + px;
+            color.push(transparencyMask[maskIdx]);
+          } else {
+            color.push(255); // Fully opaque
+          }
+          
+          sampledColors.push(color.slice(0, 3)); // Only RGB for quantization
           row.push(color);
         }
         pixelData.push(row);
@@ -330,7 +890,8 @@
         // Map each pixel to nearest palette color
         for (let y = 0; y < pixelData.length; y++) {
           for (let x = 0; x < pixelData[y].length; x++) {
-            pixelData[y][x] = findNearestColor(pixelData[y][x], currentPalette);
+            const nearestColor = findNearestColor(pixelData[y][x].slice(0, 3), currentPalette);
+            pixelData[y][x] = [...nearestColor, pixelData[y][x][3]]; // Keep alpha
           }
         }
       } else {
@@ -342,11 +903,35 @@
       ctx.imageSmoothingEnabled = false;
       ctx.clearRect(0, 0, canvas.width, canvas.height);
       
+      // Draw checkerboard pattern for transparency
+      if (useEdgeDetection || (enableBezierSelection.checked && bezierPath)) {
+        const checkSize = 10;
+        ctx.fillStyle = '#ccc';
+        for (let y = 0; y < canvas.height; y += checkSize) {
+          for (let x = 0; x < canvas.width; x += checkSize) {
+            if ((x / checkSize + y / checkSize) % 2 === 0) {
+              ctx.fillRect(x, y, checkSize, checkSize);
+            }
+          }
+        }
+        ctx.fillStyle = '#fff';
+        for (let y = 0; y < canvas.height; y += checkSize) {
+          for (let x = 0; x < canvas.width; x += checkSize) {
+            if ((x / checkSize + y / checkSize) % 2 === 1) {
+              ctx.fillRect(x, y, checkSize, checkSize);
+            }
+          }
+        }
+      }
+      
+      // Draw pixels
       for (let y = 0; y < pixelData.length; y++) {
         for (let x = 0; x < pixelData[y].length; x++) {
           const color = pixelData[y][x];
-          ctx.fillStyle = `rgb(${color[0]}, ${color[1]}, ${color[2]})`;
-          ctx.fillRect(x * pixelSize, y * pixelSize, pixelSize, pixelSize);
+          if (color[3] > 0) { // Only draw if not transparent
+            ctx.fillStyle = `rgba(${color[0]}, ${color[1]}, ${color[2]}, ${color[3] / 255})`;
+            ctx.fillRect(x * pixelSize, y * pixelSize, pixelSize, pixelSize);
+          }
         }
       }
       
@@ -474,8 +1059,12 @@
       let html = '';
       pixelData.forEach(row => {
         row.forEach(color => {
-          const hex = rgbToHex(color[0], color[1], color[2]);
-          html += `<span style="color: ${hex}">██</span>`;
+          if (color[3] < 128) { // Transparent
+            html += '  '; // Two spaces for transparent pixels
+          } else {
+            const hex = rgbToHex(color[0], color[1], color[2]);
+            html += `<span style="color: ${hex}">██</span>`;
+          }
         });
         html += '\n';
       });
@@ -488,10 +1077,14 @@
       
       pixelData.forEach(row => {
         row.forEach(color => {
-          const brightness = (color[0] + color[1] + color[2]) / 3;
-          const charIndex = Math.floor((brightness / 255) * (chars.length - 1));
-          const hex = rgbToHex(color[0], color[1], color[2]);
-          text += `<span style="color: ${hex}">${chars[charIndex]}</span>`;
+          if (color[3] < 128) { // Transparent
+            text += ' ';
+          } else {
+            const brightness = (color[0] + color[1] + color[2]) / 3;
+            const charIndex = Math.floor((brightness / 255) * (chars.length - 1));
+            const hex = rgbToHex(color[0], color[1], color[2]);
+            text += `<span style="color: ${hex}">${chars[charIndex]}</span>`;
+          }
         });
         text += '\n';
       });
@@ -507,11 +1100,16 @@
         let psLine = 'Write-Host "';
         
         row.forEach((color, x) => {
-          // ANSI escape code format
-          ansiLine += `\\e[38;2;${color[0]};${color[1]};${color[2]}m█`;
-          
-          // PowerShell format
-          psLine += `\`e[38;2;${color[0]};${color[1]};${color[2]}m█`;
+          if (color[3] < 128) { // Transparent
+            ansiLine += ' ';
+            psLine += ' ';
+          } else {
+            // ANSI escape code format
+            ansiLine += `\\e[38;2;${color[0]};${color[1]};${color[2]}m█`;
+            
+            // PowerShell format
+            psLine += `\`e[38;2;${color[0]};${color[1]};${color[2]}m█`;
+          }
         });
         
         ansiLine += '\\e[0m\\n';
@@ -525,8 +1123,12 @@
       let html = '';
       pixelData.forEach(row => {
         row.forEach(color => {
-          const hex = rgbToHex(color[0], color[1], color[2]);
-          html += `<span style="color: ${hex}">█</span>`;
+          if (color[3] < 128) { // Transparent
+            html += ' ';
+          } else {
+            const hex = rgbToHex(color[0], color[1], color[2]);
+            html += `<span style="color: ${hex}">█</span>`;
+          }
         });
         html += '\n';
       });
