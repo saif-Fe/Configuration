@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Advanced Pixel Art Generator</title>
-  <style>
-    body {
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Pixel Art Generator</title>
+    <style>
+      body {
       font-family: Arial, sans-serif;
       max-width: 1200px;
       margin: 0 auto;
@@ -192,108 +192,99 @@
       display: inline-block;
       margin: 0 auto;
     }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <h1>Advanced Pixel Art Generator</h1>
-    
-    <div class="controls">
-      <div class="control-group">
-        <label for="imageInput">Upload Image:</label>
-        <input type="file" id="imageInput" accept="image/*">
-      </div>
-      
-      <div class="control-group">
-        <label for="pixelSize">Pixel Size:</label>
-        <input type="range" id="pixelSize" min="4" max="50" value="16">
-        <span class="range-value" id="pixelSizeValue">16</span>
-      </div>
-      
-      <div class="control-group">
-        <label for="colorCount">Color Count:</label>
-        <input type="range" id="colorCount" min="2" max="256" value="16">
-        <span class="range-value" id="colorCountValue">16</span>
-      </div>
-      
-      <div class="control-group">
-        <label for="outputType">Output Type:</label>
-        <select id="outputType">
-          <option value="canvas">Canvas Only</option>
-          <option value="both">Both</option>
-          <option value="ascii">ASCII Only</option>
-        </select>
-      </div>
-      
-      <div class="control-group">
-        <label for="asciiStyle">ASCII Style:</label>
-        <select id="asciiStyle">
-          <option value="blocks">Color Blocks</option>
-          <option value="chars">Characters</option>
-          <option value="ansi">ANSI Escape</option>
-        </select>
-      </div>
-      
-      <div class="control-group">
-        <label for="showGrid">
-          <input type="checkbox" id="showGrid"> Show Pixel Grid
-        </label>
-      </div>
-
-      <div class="control-group">
-        <label for="enableEdgeDetection">
-          <input type="checkbox" id="enableEdgeDetection"> Edge Detection (Transparent Background)
-        </label>
-        <div class="edge-controls" id="edgeControls">
-          <label for="edgeThreshold">Edge Threshold:</label>
-          <input type="range" id="edgeThreshold" min="10" max="100" value="30">
-          <span class="range-value" id="edgeThresholdValue">30</span>
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Advanced Pixel Art Generator</h1>
+      <div class="controls">
+        <div class="control-group">
+          <label for="imageInput">Upload Image:</label>
+          <input type="file" id="imageInput" accept="image/*">
+        </div>
+        <div class="control-group">
+          <label for="pixelSize">Pixel Size:</label>
+          <input type="range" id="pixelSize" min="4" max="50" value="16">
+          <span class="range-value" id="pixelSizeValue">16</span>
+        </div>
+        <div class="control-group">
+          <label for="colorCount">Color Count:</label>
+          <input type="range" id="colorCount" min="2" max="256" value="16">
+          <span class="range-value" id="colorCountValue">16</span>
+        </div>
+        <div class="control-group">
+          <label for="outputType">Output Type:</label>
+          <select id="outputType">
+            <option value="canvas">Canvas Only</option>
+            <option value="both">Both</option>
+            <option value="ascii">ASCII Only</option>
+          </select>
+        </div>
+        <div class="control-group">
+          <label for="asciiStyle">ASCII Style:</label>
+          <select id="asciiStyle">
+            <option value="blocks">Color Blocks</option>
+            <option value="chars">Characters</option>
+            <option value="ansi">ANSI Escape</option>
+          </select>
+        </div>
+        <div class="control-group">
+          <label for="showGrid">
+            <input type="checkbox" id="showGrid">
+            Show Pixel Grid
+          </label>
+        </div>
+        <div class="control-group">
+          <label for="enableEdgeDetection">
+            <input type="checkbox" id="enableEdgeDetection">
+            Edge Detection (Transparent Background)
+          </label>
+          <div class="edge-controls" id="edgeControls">
+            <label for="edgeThreshold">Edge Threshold:</label>
+            <input type="range" id="edgeThreshold" min="10" max="100" value="30">
+            <span class="range-value" id="edgeThresholdValue">30</span>
+          </div>
+        </div>
+        <div class="control-group">
+          <label for="enableBezierSelection">
+            <input type="checkbox" id="enableBezierSelection">
+            Manual Selection (Bezier Curves)
+          </label>
+          <div class="edge-controls" id="bezierControls">
+            <button id="startBezierBtn" style="margin: 5px 0;">Start Drawing</button>
+            <button id="clearBezierBtn" style="margin: 5px 0;">Clear Selection</button>
+            <p style="font-size: 12px; color: #666; margin: 5px 0;">
+              Click to add points, drag to adjust curves. Double-click or press Enter to close shape.
+            </p>
+          </div>
         </div>
       </div>
-
-      <div class="control-group">
-        <label for="enableBezierSelection">
-          <input type="checkbox" id="enableBezierSelection"> Manual Selection (Bezier Curves)
-        </label>
-        <div class="edge-controls" id="bezierControls">
-          <button id="startBezierBtn" style="margin: 5px 0;">Start Drawing</button>
-          <button id="clearBezierBtn" style="margin: 5px 0;">Clear Selection</button>
-          <p style="font-size: 12px; color: #666; margin: 5px 0;">
-            Click to add points, drag to adjust curves. Double-click or press Enter to close shape.
+      <div style="text-align: center;">
+        <button id="processBtn">Generate Pixel Art</button>
+        <button id="downloadCanvas">Download Image</button>
+        <button id="downloadAscii">Download ASCII</button>
+        <button id="copyAnsi">Copy ANSI Code</button>
+      </div>
+      <div class="output-container">
+        <div class="output-section">
+          <h3>Pixel Art Canvas</h3>
+          <div class="canvas-container">
+            <canvas id="canvas" style="min-height: 200px; background: #f0f0f0;"></canvas>
+            <canvas id="bezierOverlay" class="bezier-overlay"></canvas>
+          </div>
+          <p style="text-align: center; color: #666; font-size: 12px; margin-top: 10px;">
+            Upload an image to start. Adjust pixel size to control the level of pixelation.
           </p>
+          <div id="colorPalette"></div>
+        </div>
+        <div class="output-section">
+          <h3>ASCII Art Output</h3>
+          <div id="asciiOutput"><p style="color: #666; text-align: center;">Select "Both" or "ASCII Only" to generate ASCII art</p></div>
         </div>
       </div>
     </div>
-    
-    <div style="text-align: center;">
-      <button id="processBtn">Generate Pixel Art</button>
-      <button id="downloadCanvas">Download Image</button>
-      <button id="downloadAscii">Download ASCII</button>
-      <button id="copyAnsi">Copy ANSI Code</button>
-    </div>
-    
-    <div class="output-container">
-      <div class="output-section">
-        <h3>Pixel Art Canvas</h3>
-        <div class="canvas-container">
-          <canvas id="canvas" style="min-height: 200px; background: #f0f0f0;"></canvas>
-          <canvas id="bezierOverlay" class="bezier-overlay"></canvas>
-        </div>
-        <p style="text-align: center; color: #666; font-size: 12px; margin-top: 10px;">
-          Upload an image to start. Adjust pixel size to control the level of pixelation.
-        </p>
-        <div id="colorPalette"></div>
-      </div>
-      
-      <div class="output-section">
-        <h3>ASCII Art Output</h3>
-        <div id="asciiOutput"><p style="color: #666; text-align: center;">Select "Both" or "ASCII Only" to generate ASCII art</p></div>
-      </div>
-    </div>
-  </div>
-
-  <script>
-    const canvas = document.getElementById('canvas');
+    <script>
+      const canvas = document.getElementById('canvas');
     const ctx = canvas.getContext('2d');
     const imageInput = document.getElementById('imageInput');
     const pixelSizeSlider = document.getElementById('pixelSize');
@@ -1184,6 +1175,6 @@
         alert('ANSI code copied to clipboard!');
       }
     });
-  </script>
-</body>
+    </script>
+  </body>
 </html>
