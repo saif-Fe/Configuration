@@ -1,0 +1,1 @@
+magick input -channel RGB -fx "1" -channel RGBA output
