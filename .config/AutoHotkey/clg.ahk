@@ -35,4 +35,4 @@ GetActiveWindowHWND() {
         hwnd := WinActive("A")
               A_Clipboard := String(hwnd)
 }
-F1::GetActiveWindowHWND()
+F11::GetActiveWindowHWND()
