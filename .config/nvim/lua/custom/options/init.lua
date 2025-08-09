@@ -41,8 +41,8 @@ vim.keymap.set('n', '<A-,>', '<CMD>bp<CR>', { noremap = true, silent = true })
 vim.keymap.set('n', '<A-.>', '<CMD>bn<CR>', { noremap = true, silent = true })
 
 -- Remap for dealing with word wrap
-vim.keymap.set('n', 'k', "v:count == 0 ? 'gk' : 'k'", { expr = true, silent = true })
-vim.keymap.set('n', 'j', "v:count == 0 ? 'gj' : 'j'", { expr = true, silent = true })
+-- vim.keymap.set('n', 'k', "v:count == 0 ? 'gk' : 'k'", { expr = true, silent = true })
+-- vim.keymap.set('n', 'j', "v:count == 0 ? 'gj' : 'j'", { expr = true, silent = true })
 
 -- Harpoon Configure
 local harpoon = require 'harpoon'
@@ -92,13 +92,13 @@ vim.keymap.set('n', '<A-]>', function()
   harpoon:list():next()
 end)
 
-require("no-neck-pain").setup({
-    buffers = {
-        wo = {
-            fillchars = "eob: ",
-        },
+require('no-neck-pain').setup {
+  buffers = {
+    wo = {
+      fillchars = 'eob: ',
     },
-})
+  },
+}
 
 require('oil-git-status').setup {}
 
@@ -129,6 +129,7 @@ end, {
   desc = 'Disable autoformat-on-save',
   bang = true,
 })
+
 vim.keymap.set('', '<leader>f', function()
   require('conform').format { async = true, lsp_fallback = true }
 end, { desc = '[F]ormat' })
@@ -138,6 +139,7 @@ vim.api.nvim_create_user_command('FormatEnable', function()
 end, {
   desc = 'Re-enable autoformat-on-save',
 })
+
 vim.keymap.set('n', '<leader>F', function()
   if vim.b.disable_autoformat or vim.g.disable_autoformat then
     vim.cmd 'FormatEnable'
@@ -157,6 +159,48 @@ vim.api.nvim_create_user_command('Q', function()
   end
 end, {
   desc = 'Exit',
+})
+
+vim.api.nvim_create_user_command('OrganizeImport', function()
+  vim.lsp.buf.code_action {
+    apply = true,
+    context = {
+      only = { 'source.organizeImports' },
+      diagnostics = {},
+    },
+    buffer = vim.api.nvim_get_current_buf(),
+    silent = true,
+  }
+end, {
+  desc = 'OrganizeImport',
+})
+
+vim.api.nvim_create_user_command('RemoveUnusedImports', function()
+  vim.lsp.buf.code_action {
+    apply = true,
+    context = {
+      only = { 'source.removeUnusedImports' },
+      diagnostics = {},
+    },
+    buffer = vim.api.nvim_get_current_buf(),
+    silent = true,
+  }
+end, {
+  desc = 'RemoveUnusedImports',
+})
+
+vim.api.nvim_create_user_command('RemoveUnused', function()
+  vim.lsp.buf.code_action {
+    apply = true,
+    context = {
+      only = { 'source.removeUnused' },
+      diagnostics = {},
+    },
+    buffer = vim.api.nvim_get_current_buf(),
+    silent = true,
+  }
+end, {
+  desc = 'RemoveUnused',
 })
 
 vim.api.nvim_create_autocmd('Termopen', {

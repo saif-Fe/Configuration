@@ -1,6 +1,6 @@
 local lush = require 'lush'
 local hsl = lush.hsl
-local color = hsl(35, 5, 100)
+local color = hsl(211, 20, 85)
 
 ---@diagnostic disable: undefined-global
 local theme = lush(function(injected_functions)
@@ -17,9 +17,9 @@ local theme = lush(function(injected_functions)
     -- See :h highlight-groups
     icon_style { fg = color.da(40), bg = '' },
     Base { fg = color.da(40), bg = '' },
-    Text { fg = color.da(20) },
-    Accent { fg = color.da(30) },
-    Selection { bg =  hsl(24, 56, 10), fg = Base.fg },
+    Text { fg = color.da(10) },
+    Accent { fg = color.da(20) },
+    Selection { bg = color.sa(0).da(85), fg = Base.fg },
     OilFile { Accent },
     Fold { fg = color.da(60) },
     Border { fg = Accent.fg.da(60) },
@@ -40,7 +40,7 @@ local theme = lush(function(injected_functions)
     DiffChange { Yellow }, -- Diff mode: Changed line |diff.txt|
     DiffDelete { Red }, -- Diff mode: Deleted line |diff.txt|
     DiffText { Base }, -- Diff mode: Changed text within a changed line |diff.txt|
-    EndOfBuffer { fg= Text.fg.da(60) }, -- Filler lines (~) after the end of the buffer. By default, this is highlighted like |hl-NonText|.
+    EndOfBuffer { fg = Text.fg.da(60) }, -- Filler lines (~) after the end of the buffer. By default, this is highlighted like |hl-NonText|.
     NonText { Base },
     -- TermCursor     { }, -- Cursor in a focused terminal
     -- TermCursorNC   { }, -- Cursor in an unfocused terminal
@@ -96,7 +96,7 @@ local theme = lush(function(injected_functions)
     -- VisualNOS      { }, -- Visual mode selection when vim is "Not Owning the Selection".
     WarningMsg { Red }, -- Warning messages
     Whitespace { fg = Accent.fg.da(50) }, -- "nbsp", "space", "tab" and "trail" in 'listchars'
-    Winseparator   { fg = Accent.fg.da(80) }, -- Separator between window splits. Inherts from |hl-VertSplit| by default, which it will replace eventually.
+    Winseparator { fg = Accent.fg.da(80) }, -- Separator between window splits. Inherts from |hl-VertSplit| by default, which it will replace eventually.
     WildMenu { Text }, -- Current match in 'wildmenu' completion
     -- WinBar         { }, -- Window bar of current window
     -- WinBarNC       { }, -- Window bar of not-current windows
@@ -112,20 +112,20 @@ local theme = lush(function(injected_functions)
     Comment { fg = Accent.fg.da(40) }, -- Any comment
 
     Constant { Text }, -- (*) Any constant
-    String { fg = Accent.fg.da(10).da(20) }, --   A string constant: "this is a string"
+    String { fg = Accent.fg.da(20) }, --   A string constant: "this is a string"
     Character { fg = Accent.fg.da(30) }, --   A character constant: 'c', '\n'
     Number { fg = Accent.fg }, --   A number constant: 234, 0xff
     Boolean { fg = Accent.fg }, --   A boolean constant: TRUE, false
     -- Float          { }, --   A floating point constant: 2.3e10
 
     Identifier { Accent }, -- (*) Any variable name
-    Function       { Accent }, --   Function name (also: methods for classes)
+    Function { Accent }, --   Function name (also: methods for classes)
 
     Statement { Text }, -- (*) Any statement
     -- Conditional    { }, --   if, then, else, endif, switch, etc.
     -- Repeat         { }, --   for, do, while, etc.
     -- Label          { }, --   case, default, etc.
-    Operator       { Fold }, --   "sizeof", "+", "*", etc.
+    Operator { Fold }, --   "sizeof", "+", "*", etc.
     -- Keyword        { }, --   any other keyword
     -- Exception      { }, --   try, catch, throw
 
@@ -143,7 +143,7 @@ local theme = lush(function(injected_functions)
     Special { Text }, -- (*) Any special symbol
     -- SpecialChar    { }, --   Special character in a constant
     -- Tag            { }, --   You can use CTRL-] on this
-    Delimiter      { fg = Text.fg.da(40) }, --   Character that needs attention
+    Delimiter { fg = Text.fg.da(40) }, --   Character that needs attention
     -- SpecialComment { }, --   Special things inside a comment (e.g. '\n')
     -- Debug          { }, --   Debugging statements
 
@@ -158,7 +158,7 @@ local theme = lush(function(injected_functions)
     -- See :h lsp-highlight, some groups may not be listed, submit a PR fix to lush-template!
     --
     -- LspReferenceText            { } , -- Used for highlighting "text" references
-    LspReferenceRead            { Selection } , -- Used for highlighting "read" references
+    LspReferenceRead { Selection }, -- Used for highlighting "read" references
     -- LspReferenceWrite           { } , -- Used for highlighting "write" references
     -- LspCodeLens                 { } , -- Used to color the virtual text of the codelens. See |nvim_buf_set_extmark()|.
     -- LspCodeLensSeparator        { } , -- Used to color the seperator between two or more code lens.
@@ -168,6 +168,7 @@ local theme = lush(function(injected_functions)
     --
     DiagnosticError { Red }, -- Used as the base highlight group. Other Diagnostic highlights link to this by default (except Underline)
     DiagnosticWarn { Yellow }, -- Used as the base highlight group. Other Diagnostic highlights link to this by default (except Underline)
+    DiagnosticUnnecessary { fg= color.da(70) }, -- Used as the base highlight group. Other Diagnostic highlights link to this by default (except Underline)
     -- DiagnosticInfo             { } , -- Used as the base highlight group. Other Diagnostic highlights link to this by default (except Underline)
     -- DiagnosticHint             { } , -- Used as the base highlight group. Other Diagnostic highlights link to this by default (except Underline)
     -- DiagnosticOk               { } , -- Used as the base highlight group. Other Diagnostic highlights link to this by default (except Underline)
@@ -244,7 +245,7 @@ local theme = lush(function(injected_functions)
     -- sym"@operator"          { }, -- Operator
     -- sym"@keyword"           { }, -- Keyword
     -- sym"@exception"         { }, -- Exception
-    sym"@variable"          { fg = Accent.fg }, -- Identifier
+    sym '@variable' { fg = Accent.fg }, -- Identifier
     -- sym"@type"              { }, -- Type
     -- sym"@type.definition"   { }, -- Typedef
     -- sym"@storageclass"      { }, -- StorageClass
