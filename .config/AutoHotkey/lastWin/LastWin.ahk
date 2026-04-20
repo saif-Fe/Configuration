@@ -98,20 +98,16 @@ GoToDesktopNumber(num) {
 
 MoveOrGotoDesktopNumber(num) {
     global GetCurrentDesktopNumberProc, GoToDesktopNumberProc, LastDesktop
-    
     current := DllCall(GetCurrentDesktopNumberProc, "Int")
     if (current = num)
         return
-    
     LastDesktop := current
-    
     DllCall("AllowSetForegroundWindow", "UInt", 0xFFFFFFFF)
-    
     DllCall(GoToDesktopNumberProc, "Int", num)
-    
     Sleep 80          ; give Windows a moment to settle the desktop switch
-    
-    WinActivate "A"   ; activate whatever is now on top
+    if (WinExist("A")) {
+        WinActivate "A"   ; activate whatever is now on top
+    }
 }
 
 GetDesktopName(num) {
